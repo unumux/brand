@@ -43,3 +43,10 @@ hr {
     position: fixed;
     top: 24px;
 }
+
+.copyright {
+    background-color: $theme-primary;
+    border-radius: $component-border-radius;
+    color: $theme-text-inverse;
+    padding: 24px;
+}
