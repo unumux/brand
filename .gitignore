@@ -1,4 +1,5 @@
 coloniallife/node_modules
+!coloniallife/node_modules/@unumux/theme-coloniallife-default/icons
 
 # Logs
 logs
