@@ -1,0 +1,18 @@
+@mixin base() {
+    align-items: center;
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    padding-left: space(1);
+    padding-right: space(1);
+}
+
+&__swatch {
+    @include base;
+
+    &--inverse-text {
+        @include base;
+
+        color: $component-body-text-color-inverse;
+    }
+}

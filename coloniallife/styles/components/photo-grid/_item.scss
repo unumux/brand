@@ -1,0 +1,31 @@
+@mixin base() {
+    @for $i from 1 through 12 {
+        &--#{$i} {
+            margin-bottom: space(2);
+            
+            @media screen and (min-width: breakpoint(medium)) {
+                $width: $i*(100%/12);
+
+                flex-basis: auto;
+                flex-grow: 0;
+                flex-shrink: 1;
+                margin-bottom: 0;
+                padding-left: space(0.5);
+                padding-right: space(0.5);
+                width: $width;
+
+                &:first-of-type {
+                    margin-left: space(-0.5);
+                }
+
+                &:last-of-type {
+                    margin-right: space(-2);
+                }
+            }
+        }
+    }
+}
+
+&__item {
+    @include base;
+}

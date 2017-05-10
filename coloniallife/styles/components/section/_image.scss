@@ -1,0 +1,7 @@
+@mixin base() {
+    width: 30rem;
+}
+
+&__image {
+    @include base;
+}

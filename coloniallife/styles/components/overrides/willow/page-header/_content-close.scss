@@ -1,0 +1,7 @@
+@mixin base() {
+    padding-right: 5px;
+}
+
+&__content-close {
+    @include base;
+}

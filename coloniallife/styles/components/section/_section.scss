@@ -1,0 +1,16 @@
+@mixin base() {
+    margin-bottom: space(4);
+
+}
+
+.section {
+    @include base;
+
+    @import "heading";
+    @import "content";
+    @import "actions";
+    @import "action";
+    @import "image";
+    @import "list";
+    @import "subheading";
+}

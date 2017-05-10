@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>check-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M38,15.9871548 L38,22.0128452 C36.5564095,31.0748671 28.7061658,38 19.2375119,38 C8.74357438,38 0.237514488,29.4939375 0.237514488,19 C0.237514488,8.5060625 8.74357438,0 19.2375119,0 C28.7061658,0 36.5564095,6.92513288 38.0000002,15.9871559 L38,15.9871548 Z M27.4383869,10.575875 L30.0366369,12.950875 L15.7866369,28.7220625 L8.43838688,21.3738125 L10.9250119,18.8871875 L15.5633869,23.5255625 L27.4383869,10.5746875 L27.4383869,10.575875 Z" id="path-1"></path>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Web-Mobile" transform="translate(-150.000000, -8930.000000)">
+            <g id="Iconography" transform="translate(15.000000, 8602.000000)">
+                <g id="Group-18" transform="translate(2.000000, 109.000000)">
+                    <g id="check-icon" transform="translate(133.000000, 219.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <polygon id="Fill-1" fill="#67A14C" mask="url(#mask-2)" points="-2.73123575 40.96875 41.2062643 40.96875 41.2062643 -2.96875 -2.73123575 -2.96875"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

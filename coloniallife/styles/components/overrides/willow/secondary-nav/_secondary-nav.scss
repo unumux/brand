@@ -1,0 +1,20 @@
+@mixin base() {
+    margin-bottom: space(2);
+    max-width: 100%;
+    top: space(2);
+    width: 100%;
+
+    @media screen and (min-width: breakpoint(small)) {
+        max-width: 268px;
+    }
+
+    @media screen and (min-width: breakpoint(large)) {
+        // Note: this requires a polyfill for IE/Edge so when editing this, remember that.
+        position: sticky;
+    }
+}
+
+.willow-secondary-nav {
+    @include base;
+
+}

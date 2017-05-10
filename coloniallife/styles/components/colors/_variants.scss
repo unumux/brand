@@ -1,0 +1,6 @@
+@mixin base() {
+}
+
+&__variants {
+    @include base;
+}

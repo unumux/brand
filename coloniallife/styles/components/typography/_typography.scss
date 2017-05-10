@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+@mixin base() {
+    margin-bottom: space(2);
+}
+
+.typography {
+    @include base;
+
+    p {
+        font-weight: 600;
+    }
+
+    &--oswald {
+        @include base;
+        
+        p {
+            @include set-text-style($text-style-heading-1);
+        }
+    }
+
+    &--open-sans {
+        @include base;
+        
+        p {
+            @include set-text-style($text-style-content-1);
+        }
+    }
+    
+    &--open-sans-semibold {
+        @include base;
+        
+        p {
+            @include set-text-style($text-style-heading-3);
+        }
+    }
+
+    &--source-sans-pro-light {
+        @include base;
+
+        p {
+            font-family: 'Source Sans Pro';
+        }
+    }
+
+    &--source-sans-pro-semibold {
+        @include base;
+
+        p {
+            font-family: 'Source Sans Pro';
+            font-weight: 600;
+        }
+    }
+}

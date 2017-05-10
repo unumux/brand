@@ -1,0 +1,9 @@
+@mixin base() {
+
+}
+
+.willow-logo-link {
+    @include base;
+
+    @import "image";
+}

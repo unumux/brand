@@ -1,0 +1,22 @@
+@mixin base() {
+    background-image: url("../images/banner-bg-pattern-2.png");
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.willow-banner.main-banner {
+    @include base;
+
+}
+
+.main-banner__heading-icon {
+    display: block;
+    margin-bottom: space(2);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: space(2);
+    max-width: 60px;
+    min-width: 50px;
+    padding-bottom: space(2);
+    width: 8%;
+}

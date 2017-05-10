@@ -1,0 +1,11 @@
+@mixin base() {
+    height: 50px;
+
+    @media screen and (min-width: breakpoint(medium)) {
+        height: 60px;
+    }
+}
+
+&__image {
+    @include base;
+}

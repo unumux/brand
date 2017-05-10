@@ -1,0 +1,15 @@
+@mixin base() {
+    margin-bottom: space(2);
+}
+
+&__column {
+    @for $i from 1 through 12 {
+        &--#{$i} {
+            @include base;
+
+            @media screen and (min-width: breakpoint(large)) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

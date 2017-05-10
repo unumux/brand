@@ -1,0 +1,24 @@
+@mixin base() {
+    flex-basis: auto;
+    margin-right: space(2);
+    min-width: 30%;
+    
+    @media screen and (min-width: breakpoint(medium)) {
+        min-width: 0;
+        text-align: center;
+    }
+}
+
+&__image-container {
+    @include base;
+
+
+    &--large {
+        @include base;
+    }
+
+    &--medium {
+        @include base;
+    }
+}
+    

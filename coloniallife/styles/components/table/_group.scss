@@ -1,0 +1,17 @@
+@mixin base() {
+    align-items: center;
+    display: flex;
+    flex-basis: 100%;
+    order: 3;
+    justify-content: space-between;
+
+    @media screen and (min-width: breakpoint(medium)) {
+        flex-basis: auto;
+        flex-grow: 1;
+        order: 0;
+    }
+}
+
+&__group {
+    @include base;
+}

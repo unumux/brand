@@ -1,0 +1,13 @@
+@mixin base() {
+    flex-grow: 1;
+}
+
+&__item {
+    @include base;
+
+    &--align-right {
+        @include base;
+
+        text-align: right;
+    }
+}

@@ -1,0 +1,54 @@
+@mixin base() {
+    background-color:#E0DDCE;
+}
+
+&--sand {
+    @include base;
+
+    &-dark-4 {
+        background-color: #A69F7F;
+    }
+
+    &-dark-3 {
+        background-color: #B6AF93;
+    }
+
+    &-dark-2 {
+        background-color: #C6C0A8;
+    }
+
+    &-dark-1 {
+        background-color: #D6D0BD;
+    }
+
+    &-light-1 {
+        background-color: #E4E1D5;
+    }
+
+    &-light-2 {
+        background-color: #E9E6DC;
+    }
+
+    &-light-3 {
+        background-color: #EEECE4;
+    }
+
+    &-light-4 {
+        background-color: #F3F2EC;
+    }
+
+    &--print {
+        @include base;
+        
+        border-radius: 0.2rem;
+        height: 10rem;
+        width: 17rem;
+    }
+
+    &--reverse {
+        @include base;
+
+        border-radius: 0.4rem;
+    }
+
+}
