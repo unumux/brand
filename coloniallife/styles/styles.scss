@@ -8,45 +8,6 @@ $icons-folder: "node_modules/@unumux/theme-coloniallife-default/icons";
 hr {
     background-color: #DEE5EB;
     border-style: none;
-    height: 0.4rem;
-}
-
-.section__action {
-    .willow-button {
-        width: 100%;
-
-        @media screen and  (min-width: breakpoint(small)) {
-            width: initial;
-        }
-    }
-}
-
-.color {
-    h3 {
-        @include set-text-style($text-style-heading-5);
-        margin-bottom: 0;
-    }
-
-    p {
-        @include set-text-style($text-style-content-2);
-        margin-bottom: 0;
-
-    }
-}
-
-.active {
-    background-color: #ebeff3;
-    border-left: 4px solid #a4cc44;
-}
-
-.fixed {
-    position: fixed;
-    top: 24px;
-}
-
-.copyright {
-    background-color: $theme-primary;
-    border-radius: $component-border-radius;
-    color: $theme-text-inverse;
-    padding: 24px;
+    height: 4px;
+    margin-bottom: space(2);
 }

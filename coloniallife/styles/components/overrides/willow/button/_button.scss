@@ -1,0 +1,14 @@
+@mixin base() {
+    width: 100%;
+
+    @media screen and  (min-width: breakpoint(small)) {
+        width: initial;
+    }
+}
+
+.willow-button {
+    .section_action & {
+        @include base;
+
+    }
+}

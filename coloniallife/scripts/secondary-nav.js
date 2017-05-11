@@ -34,8 +34,8 @@ $(function(){
             return prev;
         }, -1);
         if(currentSection !== activeLinkIndex) {
-            categoryLinks.removeClass("active");
-            categoryLinks.eq(currentSection).addClass("active");
+            categoryLinks.removeClass("willow-secondary-nav__link--active").addClass("willow-secondary-nav__link");
+            categoryLinks.eq(currentSection).removeClass("willow-secondary-nav__link").addClass("willow-secondary-nav__link--active");
         }
     }
 
@@ -53,8 +53,8 @@ $(function(){
             scrollTop:  targetSection.offset().top
         }, function() {
             window.location.hash = targetHash;
-            categoryLinks.removeClass("active");
-            $(e.target).addClass("active");            
+            categoryLinks.removeClass("willow-secondary-nav__link--active").addClass("willow-secondary-nav__link");
+            $(e.target).removeClass("willow-secondary-nav__link").addClass("willow-secondary-nav__link--active");
         });
     });
 });
