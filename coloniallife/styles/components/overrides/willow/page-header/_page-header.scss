@@ -5,5 +5,7 @@
 .willow-page-header {
     @include base;
 
+    @import "content-controls";
+    @import "content-open";
     @import "content-close";
 }

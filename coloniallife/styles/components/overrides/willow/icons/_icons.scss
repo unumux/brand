@@ -1,0 +1,23 @@
+@mixin base() {
+
+}
+
+.willow-icon {
+    @include base;
+
+    &--menu {
+        @include base;
+        
+        margin-top: 0;
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+
+    &--close {
+        @include base;
+        
+        margin-top: -12px;
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+}
