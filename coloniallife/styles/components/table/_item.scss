@@ -1,5 +1,10 @@
 @mixin base() {
-    flex-grow: 1;
+    margin-bottom: space(2);
+
+    @media screen and (min-width: breakpoint(medium)) {
+        margin-bottom: 0;
+        width: 30%;
+    }
 }
 
 &__item {
@@ -7,7 +12,19 @@
 
     &--align-right {
         @include base;
-
+        order: 3;
         text-align: right;
+    }
+
+    .table__group & {
+        margin-bottom: 0;
+
+        &:nth-child(2) {
+            text-align: center;
+        }
+
+        &:last-child {
+            text-align: right;
+        }
     }
 }
