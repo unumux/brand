@@ -10,7 +10,7 @@
     },
     "watch": [
         "index.html",
-        "web.html",
+        "digital.html",
         "print.html",
         "voicetone.html"
     ],
