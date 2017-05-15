@@ -28,7 +28,7 @@ $(function(){
         const scrollTop = $(window).scrollTop();
     
         const currentSection = categoryHeadingPositions.reduce(function(prev, curr, index) {
-            if(scrollTop >= curr) {
+            if(scrollTop >= (curr - 100)) {
                 return index;
             }
             return prev;
