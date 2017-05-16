@@ -1,0 +1,15 @@
+@mixin base() {
+
+}
+
+.willow-logo-link {
+    @include base;
+
+    &__image {
+        width: 100%;
+
+        @media screen and (min-width: breakpoint(small)) {
+            width: initial;
+        }
+    }
+}

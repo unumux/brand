@@ -5,6 +5,7 @@
 .willow-page-header {
     @include base;
 
+    @import "branding";
     @import "content-controls";
     @import "content-open";
     @import "content-close";
