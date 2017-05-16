@@ -1,36 +1,36 @@
 @mixin base() {
-    background-color: #547552;
+    background-color: #537650;
 }
 
 &--moss {
     @include base;
 
     &-dark-4 {
-        background-color: #2B4527;
+        background-color: #2A4525;
     }
 
     &-dark-3 {
-        background-color: #365232;
+        background-color: #355230;
     }
 
     &-dark-2 {
-        background-color: #405F3C;
+        background-color: #3F5F3A;
     }
 
     &-dark-1 {
-        background-color: #4B6C48;
+        background-color: #4A6D46;
     }
 
     &-light-1 {
-        background-color: #9DB89A;
+        background-color: #9DB999;
     }
 
     &-light-2 {
-        background-color: #B2C6AE;
+        background-color: #B2C7AD;
     }
 
     &-light-3 {
-        background-color: #C6D5C3;
+        background-color: #C6D6C3;
     }
 
     &-light-4 {

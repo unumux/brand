@@ -1,40 +1,40 @@
 @mixin base() {
-    background-color: #7AB061;
+    background-color: #78B25D;
 }
 
 &--leaf {
     @include base;
 
     &-dark-4 {
-        background-color: #294A24;
+        background-color: #274A22;
     }
 
     &-dark-3 {
-        background-color: #345D2F;
+        background-color: #325D2C;
     }
 
     &-dark-2 {
-        background-color: #3F6F38;
+        background-color: #3D7035;
     }
 
     &-dark-1 {
-        background-color: #498442;
+        background-color: #46853E;
     }
 
     &-light-1 {
-        background-color: #86BD6F;
+        background-color: #85BE6B;
     }
 
     &-light-2 {
-        background-color: #A9D290;
+        background-color: #A8D38D;
     }
 
     &-light-3 {
-        background-color: #C1DEB0;
+        background-color: #C1DFAE;
     }
 
     &-light-4 {
-        background-color: #DAECD4;
+        background-color: #DAECD3;
     }
 
     &--print {

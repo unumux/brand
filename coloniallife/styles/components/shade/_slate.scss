@@ -1,32 +1,32 @@
 @mixin base() {
-    background-color: #5C7182;
+    background-color: #5B7183;
 }
 
 &--slate {
     @include base;
     
     &-dark-4 {
-        background-color: #2A3E4F;
+        background-color: #293D4F;
     }
 
     &-dark-3 {
-        background-color: #304557;
+        background-color: #2F4457;
     }
 
     &-dark-2 {
-        background-color: #374C5E;
+        background-color: #364B5F;
     }
 
     &-dark-1 {
-        background-color: #3D5367;
+        background-color: #3C5268;
     }
 
     &-light-1 {
-        background-color: #ACBCC9;
+        background-color: #ABBCCA;
     }
 
     &-light-2 {
-        background-color: #BECAD4;
+        background-color: #BECAD5;
     }
 
     &-light-3 {
