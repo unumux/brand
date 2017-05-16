@@ -5,7 +5,7 @@
     "imagemin-cli": "^3.0.0",
     "imagemin-pngquant": "^5.0.0",
     "imagemin-svgo": "^5.2.1",
-    "@unumux/theme-coloniallife-default": "0.2.8"
+    "@unumux/theme-coloniallife-default": "0.2.9"
   },
   "scripts": {
     "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=.",
