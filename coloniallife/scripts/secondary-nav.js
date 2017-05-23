@@ -4,7 +4,7 @@ $(function(){
     let scrolled = true;
 
     const categoryHeadings = $(".category__heading");
-    const categoryLinks = $(".willow-secondary-nav__item a");
+    const categoryLinks = $(".willow-secondary-nav__link");
     let activeLinkIndex = -1;
 
     function getHeadingPositions() {
@@ -26,9 +26,13 @@ $(function(){
         let categoryHeadingPositions = getHeadingPositions();
         //Changed body to window for FF
         const scrollTop = $(window).scrollTop();
+        const scrollBottom = $(document).height() - $(window).height();
+        const lastLinkIndex = categoryLinks.length - 1;
     
         const currentSection = categoryHeadingPositions.reduce(function(prev, curr, index) {
-            if(scrollTop >= (curr - 100)) {
+            if(scrollTop === scrollBottom) {
+                return lastLinkIndex;
+            } else if(scrollTop >= (curr - 100)) {
                 return index;
             }
             return prev;

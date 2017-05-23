@@ -1,7 +1,15 @@
 @mixin base() {
-    
+    height: space(5);
 }
 
 &__image {
-    height: space(5);
+    @include base;
+
+    .examples-grid__image-container--large & {
+        @include base;
+        
+        position: absolute;
+        right: 0;
+        width: 200%;
+    }
 }
