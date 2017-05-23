@@ -1,0 +1,11 @@
+@mixin base() {
+    margin-bottom: space(6) !important;
+
+}
+
+.category {
+    @include base;
+    
+    @import "description";
+    @import "heading";
+}

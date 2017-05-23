@@ -1,0 +1,20 @@
+@mixin base() {
+    align-items: center;
+    border-radius: 3px;
+    display: flex;
+    height: 10rem;
+    justify-content: space-between;
+    margin-bottom: space(0.25);
+    padding-left: space(1);
+    padding-right: space(1);
+}
+
+&__base {
+    @include base;
+
+    &--inverse-text {
+        @include base;
+
+        color: $component-body-text-color-inverse;
+    }
+}

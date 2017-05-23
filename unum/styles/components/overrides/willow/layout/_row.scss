@@ -1,0 +1,7 @@
+@mixin base() {
+    //margin-bottom: 0;
+}
+
+&__row {
+    @include base;
+}

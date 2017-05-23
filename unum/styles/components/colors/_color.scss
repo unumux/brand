@@ -1,0 +1,12 @@
+@mixin base() {
+    margin-bottom: space(4);
+
+    @media screen and (min-width: breakpoint(small)) {
+        flex-basis: 48%;
+    }
+}
+
+&__color {
+    @include base;
+
+}

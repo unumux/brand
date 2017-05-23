@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="40px" viewBox="0 0 41 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Print-Mobile" transform="translate(-63.000000, -3909.000000)">
+            <g id="Logo" transform="translate(13.000000, 561.000000)">
+                <g id="Logo:dont" transform="translate(2.000000, 3230.000000)">
+                    <g id="Group-5" transform="translate(0.000000, 105.000000)">
+                        <g id="Don't-Icon" transform="translate(48.000000, 13.000000)">
+                            <path d="M40.7992,20 C40.7992,31.046 31.8452,40 20.7992,40 C9.7542,40 0.7992,31.046 0.7992,20 C0.7992,8.954 9.7542,0 20.7992,0 C31.8452,0 40.7992,8.954 40.7992,20" id="Fill-1" fill="#FEFEFE"></path>
+                            <path d="M39.7992,20 C39.7992,30.493 31.2932,39 20.7992,39 C10.3062,39 1.7992,30.493 1.7992,20 C1.7992,9.506 10.3062,1 20.7992,1 C31.2932,1 39.7992,9.506 39.7992,20" id="Fill-3" fill="#7E2724"></path>
+                            <polygon id="Fill-5" fill="#FEFEFE" points="26.7367 28.4238 20.7997 22.4868 14.8617 28.4238 12.3757 25.9378 18.3127 19.9998 12.3757 14.0628 14.8617 11.5758 20.7997 17.5128 26.7367 11.5758 29.2237 14.0628 23.2867 19.9998 29.2237 25.9378"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+@mixin base() {
+    margin-bottom: space(2);
+
+    @media screen and (min-width: breakpoint(medium)) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+&__content {
+    @include base;
+}
+

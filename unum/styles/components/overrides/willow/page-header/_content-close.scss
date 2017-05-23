@@ -1,0 +1,16 @@
+@mixin base() {
+    align-items: center;
+    padding-right: 5px;
+    
+    [data-content-open="true"] & {
+        display: flex;
+    }
+
+    [data-content-open="false"] & {
+            display: none;
+    }
+}
+
+&__content-close {
+    @include base;
+}

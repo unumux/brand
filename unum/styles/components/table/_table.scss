@@ -1,0 +1,12 @@
+@mixin base() {
+    border: $component-border-width solid $component-table-border-color;
+}
+
+.table {
+    @include base;
+
+    @import "row";
+    @import "group";
+    @import "item";
+    @import "grouped-content";
+}

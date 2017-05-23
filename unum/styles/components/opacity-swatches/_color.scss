@@ -1,0 +1,40 @@
+@mixin base() {
+         
+    border-radius: 4px;
+    height: 80px;
+    width: 80px;
+
+}
+
+&__color {
+    @include base;
+
+    &--sand {
+        @include base;
+        background-color: #E0DDCE;
+    }
+
+    &--sand-3 {
+        @include base;
+        background-color: #E0DDCE;
+        opacity: .3;
+    }
+
+    &--sand-5 {
+        @include base;
+        background-color: #E0DDCE;
+        opacity: .5;
+    }
+
+    &--pewter-2 {
+        @include base;
+        background-color: #8F9EA9;
+        opacity: .2;
+    }
+
+    &--pewter-5 {
+        @include base;
+        background-color: #8F9EA9;
+        opacity: .5;
+    }
+}

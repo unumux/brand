@@ -1,0 +1,44 @@
+@mixin base {
+    $width: 2*(100%/12);
+
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: $width;
+
+    &.column {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &.legend-content {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: space-between;
+        width: 100%;
+
+        @media screen and (min-width: breakpoint(small)) {
+            flex-basis: auto;
+            width: 10*(100%/12);
+        }
+    }
+    
+    @media screen and (min-width: breakpoint(small)) {
+        padding-left: space(2);
+        padding-right: space(2);
+
+        &:first-of-type {
+            margin-left: space(-2);
+        }
+
+        &:last-of-type {
+            margin-right: space(-2);
+        }
+    }   
+} 
+
+&__item {
+    @include base;
+}

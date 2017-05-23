@@ -1,0 +1,12 @@
+@mixin base() {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+&__actions {
+    @include base;
+
+    @import "action";
+}
