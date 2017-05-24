@@ -1,8 +1,8 @@
 @mixin base() {
-    background-color: #5B7183;
+    background-color: #727A80;
 }
 
-&--slate {
+&--gray {
     @include base;
 
     &--print {

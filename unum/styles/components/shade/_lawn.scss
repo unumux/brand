@@ -1,8 +1,8 @@
 @mixin base() {
-    background-color: #5B7183;
+    background-color: #8DC24B;
 }
 
-&--slate {
+&--lawn {
     @include base;
 
     &--print {

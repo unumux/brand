@@ -1,24 +1,12 @@
-@mixin base() {
-    
-}
-
-
 .shade {
-    @include base;
-
-    @import "asparagus";
-    @import "charcoal";
-    @import "darkred";
-    @import "grape";
-    @import "leaf";
-    @import "mint";
-    @import "moss";
-    @import "ocean";
-    @import "pewter";
-    @import "pumpkin";
-    @import "sand";
+    @import "blue";
+    @import "gold";
+    @import "gray";
+    @import "lawn";
+    @import "neutral-warm";
+    @import "orange";
+    @import "pool";
+    @import "sky";
     @import "slate";
-    @import "steel";
-    @import "tangerine";
-    @import "white";
+    @import "yellow-green";
 }
