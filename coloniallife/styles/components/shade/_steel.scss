@@ -52,10 +52,4 @@
         height: 11.5rem;
         width: 29rem;
     }
-
-    &--reverse {
-        @include base;
-
-        border-radius: 0.4rem;
-    }
 }

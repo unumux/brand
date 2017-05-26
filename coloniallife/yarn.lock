@@ -29,11 +29,11 @@
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@unumux/stylelint-config-unumux/-/stylelint-config-unumux-1.0.1.tgz#34a724c5fdf19482af5d54fc22f5162a972c3378"
 
-"@unumux/theme-coloniallife-default@0.2.8":
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/@unumux/theme-coloniallife-default/-/theme-coloniallife-default-0.2.8.tgz#377b32123268f40bea942378ee1df04a7b8cdea9"
+"@unumux/theme-coloniallife-default@0.2.9":
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/@unumux/theme-coloniallife-default/-/theme-coloniallife-default-0.2.9.tgz#a0c9aa88980287ec3fe4728160bfcb051fef33d1"
   dependencies:
-    "@unumux/willow" "^0.1.15"
+    "@unumux/willow" "^0.1.16"
 
 "@unumux/ux-build-tools@^3.6.0":
   version "3.6.0"
@@ -83,9 +83,9 @@
     vinyl-source-stream "^1.1.0"
     watchify "^3.2.1"
 
-"@unumux/willow@^0.1.15":
-  version "0.1.15"
-  resolved "https://registry.yarnpkg.com/@unumux/willow/-/willow-0.1.15.tgz#91afe86eefa95f536b5e32585b1a23842b6b9dea"
+"@unumux/willow@^0.1.16":
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/@unumux/willow/-/willow-0.1.16.tgz#60faf313ced1eb8f5a53c3304e52b69b3ead1253"
   dependencies:
     normalize.css "^4.0.0"
 
