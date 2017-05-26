@@ -4,7 +4,7 @@ $(function(){
     let scrolled = true;
 
     const categoryHeadings = $(".category__heading");
-    const categoryLinks = $(".willow-secondary-nav__link");
+    const categoryLinks = $(".secondary-nav__link");
     let activeLinkIndex = -1;
 
     function getHeadingPositions() {
@@ -38,8 +38,10 @@ $(function(){
             return prev;
         }, -1);
         if(currentSection !== activeLinkIndex) {
-            categoryLinks.removeClass("willow-secondary-nav__link--active").addClass("willow-secondary-nav__link");
-            categoryLinks.eq(currentSection).removeClass("willow-secondary-nav__link").addClass("willow-secondary-nav__link--active");
+            categoryLinks.attr("data-link-active", false);
+            categoryLinks.eq(currentSection).attr("data-link-active", true);
+            // categoryLinks.removeClass("willow-secondary-nav__link--active").addClass("willow-secondary-nav__link");
+            // categoryLinks.eq(currentSection).removeClass("willow-secondary-nav__link").addClass("willow-secondary-nav__link--active");
         }
     }
 
@@ -51,14 +53,16 @@ $(function(){
         e.preventDefault();
         const targetHash = e.target.href.match(/.*#(.*)/)[1]; 
         const targetSection = $(`#${targetHash}`);
-        
+
         //Add HTML for FF scroll animation
         $("body, html").animate({
             scrollTop:  targetSection.offset().top
         }, function() {
             window.location.hash = targetHash;
-            categoryLinks.removeClass("willow-secondary-nav__link--active").addClass("willow-secondary-nav__link");
-            $(e.target).removeClass("willow-secondary-nav__link").addClass("willow-secondary-nav__link--active");
+            categoryLinks.attr("data-link-active", false);
+            $(e.target).attr("data-link-active", true);
+            // categoryLinks.removeClass("willow-secondary-nav__link--active").addClass("willow-secondary-nav__link");
+            // $(e.target).removeClass("willow-secondary-nav__link").addClass("willow-secondary-nav__link--active");
         });
     });
 });

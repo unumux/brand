@@ -1,0 +1,20 @@
+@mixin base() {
+    background-color: $component-secondary-nav-background-color;
+    border: $component-secondary-nav-border;
+    margin-bottom: space(2);
+    top: space(2);
+
+    @media screen and (min-width: breakpoint(large)) {
+        // Note: this requires a polyfill for IE/Edge so when editing this, remember that.
+        position: sticky;
+    }
+}
+
+.secondary-nav {
+    @include base;
+    
+    @import "heading";
+    @import "list";
+    @import "item";
+    @import "link";
+}
