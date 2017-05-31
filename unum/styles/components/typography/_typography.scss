@@ -13,7 +13,7 @@
         @include base;
         
         p {
-            @include set-text-style($text-style-heading-1);
+            @include set-text-style($text-style-heading-3);
         }
     }
 
