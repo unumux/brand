@@ -6,13 +6,16 @@
     flex-shrink: 0;
     //margin-right: $margin;
     margin-bottom: $margin;
+    margin-right: 2%;
 
     @media screen and (min-width: breakpoint(small)) {
         flex-basis: calc(30% - #{$margin});
+        margin-right: 2%;
     }
 
     @media screen and (min-width: breakpoint(medium)) {
         flex-basis: calc(25% - #{$margin});
+        margin-right: 2%;
     }
 }
 
