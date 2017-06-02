@@ -1,40 +1,40 @@
 @mixin base() {
-    background-color: #8F9EAA;
+    background-color: #BFBFBF;
 }
 
 &--pewter {
     @include base;
 
     &-dark-4 {
-        background-color: #405464;
+        background-color: #7F7F7F;
     }
 
     &-dark-3 {
-        background-color: #4F6171;
+        background-color: #8E8E8E;
     }
 
     &-dark-2 {
-        background-color: #5D6F7E;
+        background-color: #9F9F9F;
     }
 
     &-dark-1 {
-        background-color: #6C7E8C;
+        background-color: #AFAFAF;
     }
 
     &-light-1 {
-        background-color: #96A4B0;
+        background-color: #CFCFCF;
     }
 
     &-light-2 {
-        background-color: #ADB7C0;
+        background-color: #DFDFDF;
     }
 
     &-light-3 {
-        background-color: #C6CDD2;
+        background-color: #EFEFEF;
     }
 
     &-light-4 {
-        background-color: #E1E4E6;
+        background-color: #FFFFFF;
     }
 
     &--print {
