@@ -1,5 +1,36 @@
 $icons-folder: "node_modules/@unumux/theme-coloniallife-default/icons";
 
+$grid-columns:      12;
+$grid-gutter-width-base: 30px;
+
+$grid-gutter-widths: (
+  xs: $grid-gutter-width-base, // 30px
+  sm: $grid-gutter-width-base, // 30px
+  md: $grid-gutter-width-base, // 30px
+  lg: $grid-gutter-width-base, // 30px
+  xl: $grid-gutter-width-base  // 30px
+);
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 350px,
+  // Medium screen / tablet
+  md: 600px,
+  // Large screen / desktop
+  lg: 828px,
+  // Extra large screen / wide desktop
+  xl: 1230px
+);
+
+$container-max-widths: (
+  sm: 600px,
+  md: 780px,
+  lg: 1020px,
+  xl: 1200px
+);
+
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins/breakpoints";
 @import "node_modules/bootstrap/scss/mixins/grid-framework";
@@ -20,18 +51,28 @@ hr {
     margin-bottom: space(2);
 }
 
-.max-container {
+.willow-page {
     $uber-max-width: 1900px;
     max-width: $uber-max-width;
 }
 
-.middle.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100vh;
+.willow-page {
+    &__introduction, 
+    &__content,
+    &__conclusion {
+        @extend .container;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 100vh;
+    }
 }
 
 .row.grow {
     flex-grow: 1;
 }
+
+//how do we handle row margin bottom if we aren't incasing everything in a row? Then the margin bottom has to come from the components? can't come from the top/middle/bottom containers
