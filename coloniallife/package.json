@@ -1,11 +1,12 @@
 {
   "private": true,
   "devDependencies": {
+    "@unumux/theme-coloniallife-default": "0.2.9",
     "@unumux/ux-build-tools": "^3.6.0",
+    "bootstrap": "4.0.0-alpha.6",
     "imagemin-cli": "^3.0.0",
     "imagemin-pngquant": "^5.0.0",
-    "imagemin-svgo": "^5.2.1",
-    "@unumux/theme-coloniallife-default": "0.2.9"
+    "imagemin-svgo": "^5.2.1"
   },
   "scripts": {
     "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=.",
