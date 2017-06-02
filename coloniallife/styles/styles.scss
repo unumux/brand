@@ -21,7 +21,15 @@ hr {
 }
 
 .max-container {
-    height: 100vh;
+    $uber-max-width: 1900px;
+    max-width: $uber-max-width;
+}
+
+.middle.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
 }
 
 .row.grow {
