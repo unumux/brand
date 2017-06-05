@@ -40,8 +40,6 @@ $(function(){
         if(currentSection !== activeLinkIndex) {
             categoryLinks.attr("data-link-active", false);
             categoryLinks.eq(currentSection).attr("data-link-active", true);
-            // categoryLinks.removeClass("willow-secondary-nav__link--active").addClass("willow-secondary-nav__link");
-            // categoryLinks.eq(currentSection).removeClass("willow-secondary-nav__link").addClass("willow-secondary-nav__link--active");
         }
     }
 
@@ -61,8 +59,6 @@ $(function(){
             window.location.hash = targetHash;
             categoryLinks.attr("data-link-active", false);
             $(e.target).attr("data-link-active", true);
-            // categoryLinks.removeClass("willow-secondary-nav__link--active").addClass("willow-secondary-nav__link");
-            // $(e.target).removeClass("willow-secondary-nav__link").addClass("willow-secondary-nav__link--active");
         });
     });
 });
