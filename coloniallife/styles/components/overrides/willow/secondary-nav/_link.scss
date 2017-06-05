@@ -1,5 +1,10 @@
 @mixin base() {
     
+}
+
+&__link {
+    @include base;
+
     &[data-link-active="true"] {
         @include base;
 
@@ -11,9 +16,4 @@
             color: $component-secondary-nav-link-color-active;
         }
     }
-}
-
-&__link {
-    @include base;
-
 }
