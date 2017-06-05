@@ -4,9 +4,9 @@ $(function(){
     let scrolled = true;
 
     const categoryHeadings = $(".category__heading");
-    const categoryLinks = $(".willow-secondary-nav__link");
+    const categoryLinks = Array.prototype.slice.call(document.querySelectorAll(".willow-secondary-nav__link"));
     let activeLinkIndex = -1;
-
+    
     function getHeadingPositions() {
         return $.map(categoryHeadings, function(heading) {
             return $(heading).offset().top;
@@ -30,16 +30,24 @@ $(function(){
         const lastLinkIndex = categoryLinks.length - 1;
     
         const currentSection = categoryHeadingPositions.reduce(function(prev, curr, index) {
-            if(scrollTop === scrollBottom) {
-                return lastLinkIndex;
+            
+            if(scrollTop == 0) {
+                return 0;
             } else if(scrollTop >= (curr - 100)) {
                 return index;
-            }
+            } else if(scrollTop === scrollBottom) {
+                return lastLinkIndex;
+            } 
             return prev;
+
         }, -1);
+
         if(currentSection !== activeLinkIndex) {
-            categoryLinks.removeClass("willow-secondary-nav__link--active").addClass("willow-secondary-nav__link");
-            categoryLinks.eq(currentSection).removeClass("willow-secondary-nav__link").addClass("willow-secondary-nav__link--active");
+            categoryLinks.forEach((link) => {
+                link.dataset.linkActive = "false";
+            });
+
+            categoryLinks[currentSection].dataset.linkActive = "true";
         }
     }
 
@@ -47,18 +55,24 @@ $(function(){
         scrolled = true;
     });
 
-    categoryLinks.on("click", function(e) {
-        e.preventDefault();
-        const targetHash = e.target.href.match(/.*#(.*)/)[1]; 
-        const targetSection = $(`#${targetHash}`);
-        
-        //Add HTML for FF scroll animation
-        $("body, html").animate({
-            scrollTop:  targetSection.offset().top
-        }, function() {
-            window.location.hash = targetHash;
-            categoryLinks.removeClass("willow-secondary-nav__link--active").addClass("willow-secondary-nav__link");
-            $(e.target).removeClass("willow-secondary-nav__link").addClass("willow-secondary-nav__link--active");
+    categoryLinks.forEach((link) => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            const targetHash = e.target.href.match(/.*#(.*)/)[1]; 
+            const targetSection = $(`#${targetHash}`);
+
+            //Add HTML for FF scroll animation
+            $("body, html").animate({
+                scrollTop:  targetSection.offset().top
+            }, function() {
+                window.location.hash = targetHash;
+                
+                categoryLinks.forEach((link) => {
+                    link.dataset.linkActive = "false";
+                });
+
+                e.target.dataset.linkActive = "true";
+            });
         });
     });
 });
