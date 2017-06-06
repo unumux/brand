@@ -63,17 +63,17 @@ hr {
     padding-right: 15px;
 
     @media(min-width: #{$inner-max-width}) {
-        // padding-left: calc((100vw - #{$inner-max-width})/2 + 15px);
-	    // padding-right: calc((100vw - #{$inner-max-width})/2 + 15px);
+        padding-left: calc((100vw - #{$inner-max-width})/2 + 15px);
+	    padding-right: calc((100vw - #{$inner-max-width})/2 + 15px);
 
-        width: $inner-max-width;
+        // width: $inner-max-width;
     }
 
     @media(min-width: #{$uber-max-width}) {
-        // padding-left: calc((#{$uber-max-width} - #{$inner-max-width})/2);
-	    // padding-right: calc((#{$uber-max-width} - #{$inner-max-width})/2);
+        padding-left: calc((#{$uber-max-width} - #{$inner-max-width})/2);
+	    padding-right: calc((#{$uber-max-width} - #{$inner-max-width})/2);
 
-        width: $uber-max-width;
+        // width: $uber-max-width;
     }
 
     //Full Width/Bleed edited to account for outer/uber-max width.
