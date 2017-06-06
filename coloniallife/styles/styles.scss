@@ -54,25 +54,100 @@ hr {
 .willow-page {
     $uber-max-width: 1900px;
     max-width: $uber-max-width;
+
+
+    $inner-max-width: 1200px;
+    margin: 0 auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media(min-width: #{$inner-max-width}) {
+        // padding-left: calc((100vw - #{$inner-max-width})/2 + 15px);
+	    // padding-right: calc((100vw - #{$inner-max-width})/2 + 15px);
+
+        width: $inner-max-width;
+    }
+
+    @media(min-width: #{$uber-max-width}) {
+        // padding-left: calc((#{$uber-max-width} - #{$inner-max-width})/2);
+	    // padding-right: calc((#{$uber-max-width} - #{$inner-max-width})/2);
+
+        width: $uber-max-width;
+    }
+
+    //Full Width/Bleed edited to account for outer/uber-max width.
+
+    .full-width {
+        margin-left: calc(0px - (100vw - 100%)/2);
+        margin-right: calc(0px - (100vw - 100%)/2);
+        padding-left: 0;
+        padding-right: 0;
+
+        @media(min-width: #{$uber-max-width}) {
+            margin-left: calc(0px - (#{$uber-max-width} - #{$inner-max-width})/2);
+            margin-right: calc(0px - (#{$uber-max-width} - #{$inner-max-width})/2);
+        }
+    }
+
+    .full-bleed {
+
+        margin-left: calc(0px - (100vw - 100%)/2);
+        margin-right: calc(0px - (100vw - 100%)/2);
+        padding-left: calc((100vw - 100%)/2);
+        padding-right: calc((100vw - 100%)/2);
+
+        @media(min-width: #{$uber-max-width}) {
+            margin-left: calc(0px - (#{$uber-max-width} - #{$inner-max-width})/2);
+            margin-right: calc(0px - (#{$uber-max-width} - #{$inner-max-width})/2);
+            padding-left: calc((#{$uber-max-width} - #{$inner-max-width})/2);
+            padding-right: calc((#{$uber-max-width} - #{$inner-max-width})/2);
+        }
+
+        &--left
+        {
+            padding-left: 0;
+        }
+
+        &--right {
+            padding-right: 0;
+        }
+    }
+
 }
 
 .willow-page {
-    &__introduction, 
-    &__content,
-    &__conclusion {
-        @extend .container;
-    }
+    // &__introduction, 
+    // &__content,
+    // &__conclusion {
+    //     @extend .container;
+    // }
+
+    // &__content {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: flex-start;
+    //     min-height: 100vh;
+    // }
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
 
     &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        min-height: 100vh;
+        flex-basis: auto;
+        flex-grow: 1;
+        flex-shrink: 1;
     }
+
+
 }
 
-.row.grow {
-    flex-grow: 1;
-}
+// .row.grow {
+//     flex-grow: 1;
+// }
+
 
 //how do we handle row margin bottom if we aren't incasing everything in a row? Then the margin bottom has to come from the components? can't come from the top/middle/bottom containers
