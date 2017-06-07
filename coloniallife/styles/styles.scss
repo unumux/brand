@@ -52,71 +52,86 @@ hr {
 }
 
 .willow-page {
-    $uber-max-width: 1900px;
-    max-width: $uber-max-width;
+    $outer-max-width: 100vw !default;
+	$inner-max-width: 100vw !default;
 
+	$outer-max-width: 1900px;
+	$inner-max-width: 1200px;
 
-    $inner-max-width: 1200px;
-    margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	min-height: 100vh;
 
-    padding-left: 15px;
-    padding-right: 15px;
+	max-width: $outer-max-width;
+	margin: 0 auto;
 
-    @media(min-width: #{$inner-max-width}) {
-        padding-left: calc((100vw - #{$inner-max-width})/2 + 15px);
-	    padding-right: calc((100vw - #{$inner-max-width})/2 + 15px);
+	&__content {
+		flex-basis: auto;
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
 
-        // width: $inner-max-width;
-    }
+	>*[class^="willow-page"] {
 
-    @media(min-width: #{$uber-max-width}) {
-        padding-left: calc((#{$uber-max-width} - #{$inner-max-width})/2);
-	    padding-right: calc((#{$uber-max-width} - #{$inner-max-width})/2);
+        // Handles setting basis for any direct child element with a class that starts with willow-page.
 
-        // width: $uber-max-width;
-    }
+		max-width: $inner-max-width;
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+    // The full-bleed/width need to beable to handle the outer/inner max widths.
+    // The code below is close, but there's something missing.
 
-    //Full Width/Bleed edited to account for outer/uber-max width.
+	// .full-width {
 
-    .full-width {
-        margin-left: calc(0px - (100vw - 100%)/2);
-        margin-right: calc(0px - (100vw - 100%)/2);
-        padding-left: 0;
-        padding-right: 0;
+    //     padding-left: 0;
+    //     padding-right: 0;
 
-        @media(min-width: #{$uber-max-width}) {
-            margin-left: calc(0px - (#{$uber-max-width} - #{$inner-max-width})/2);
-            margin-right: calc(0px - (#{$uber-max-width} - #{$inner-max-width})/2);
-        }
-    }
+	// 	@media (min-width: #{$inner-max-width}) {
+    //         margin-left: calc(0px - (100vw - #{$inner-max-width})/2);
+    //         margin-right: calc(0px - (100vw - #{$inner-max-width})/2);
+    //     }
 
-    .full-bleed {
+    //     @media (min-width: #{$outer-max-width}) {
+    //         margin-left: calc(0px - (#{$outer-max-width} - #{$inner-max-width})/2);
+    //         margin-right: calc(0px - (#{$outer-max-width} - #{$inner-max-width})/2);
+    //     }
+	// }
 
-        margin-left: calc(0px - (100vw - 100%)/2);
-        margin-right: calc(0px - (100vw - 100%)/2);
-        padding-left: calc((100vw - 100%)/2);
-        padding-right: calc((100vw - 100%)/2);
+	// .full-bleed {
 
-        @media(min-width: #{$uber-max-width}) {
-            margin-left: calc(0px - (#{$uber-max-width} - #{$inner-max-width})/2);
-            margin-right: calc(0px - (#{$uber-max-width} - #{$inner-max-width})/2);
-            padding-left: calc((#{$uber-max-width} - #{$inner-max-width})/2);
-            padding-right: calc((#{$uber-max-width} - #{$inner-max-width})/2);
-        }
+    //     @media (min-width: #{$inner-max-width}) {
 
-        &--left
-        {
-            padding-left: 0;
-        }
+    //         margin-left: calc(0px - (100vw - #{$inner-max-width})/2);
+    //         margin-right: calc(0px - (100vw - #{$inner-max-width})/2);
+    //         padding-left: calc((100vw - #{$inner-max-width})/2);
+    //         padding-right: calc((100vw - #{$inner-max-width})/2);
 
-        &--right {
-            padding-right: 0;
-        }
-    }
+    //     }
 
+    //     @media (min-width: #{$outer-max-width}) {
+
+    //         margin-left: calc(0px - (#{$outer-max-width} - #{$inner-max-width})/2);
+    //         margin-right: calc(0px - (#{$outer-max-width} - #{$inner-max-width})/2);
+    //         padding-left: calc((#{$outer-max-width} - #{$inner-max-width})/2);
+    //         padding-right: calc((#{$outer-max-width} - #{$inner-max-width})/2);
+    //     }
+
+	// 	&--left {
+	// 		padding-left: 0;
+	// 	}
+
+	// 	&--right {
+	// 		padding-right: 0;
+	// 	}
+	// }
 }
 
-.willow-page {
+
+// .willow-page {
     // &__introduction, 
     // &__content,
     // &__conclusion {
@@ -129,21 +144,7 @@ hr {
     //     justify-content: flex-start;
     //     min-height: 100vh;
     // }
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100vh;
-
-    &__content {
-        flex-basis: auto;
-        flex-grow: 1;
-        flex-shrink: 1;
-    }
-
-
-}
+// }
 
 // .row.grow {
 //     flex-grow: 1;
