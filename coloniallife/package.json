@@ -13,6 +13,7 @@
     "imagemin": "imagemin images-source/* --out-dir=images --plugin=pngquant --plugin=svgo"
   },
   "dependencies": {
+    "gulp": "^3.9.1",
     "jquery": "^3.2.1"
   }
 }

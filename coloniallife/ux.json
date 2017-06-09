@@ -9,10 +9,7 @@
         "main": "scripts/site.js"
     },
     "watch": [
-        "index.html",
-        "digital.html",
-        "print.html",
-        "voicetone.html"
+        "*.html"
     ],
     "server": true,
     "compileJs": true,
