@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Colonial Life Brand Guidelines</title>
+	<link rel="stylesheet" href="styles/styles.min.css">
+    <style>
+    
+        .willow-page > *:hover {
+            background-color: rgba(0,0,255,.25);
+        }
+
+    </style>
+</head>
+
+<body>
+	<div class="willow-page">
+        <div>This is a plain element inside of the .willow-page container.  It does not have a .willow-page class, therefore it will act as a standard element should. taking up the full width of it's parent.
+            <br /><br />
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa aliquid adipisci a, ducimus, explicabo eos architecto nam, sequi velit ab totam! Animi tempore culpa earum consequuntur, quasi quia architecto molestias.
+        Tenetur inventore voluptas quaerat, quibusdam, debitis incidunt eveniet eos architecto ab maiores fugit consectetur, porro quia, doloremque veniam ratione dolore officia corrupti! Distinctio vitae error esse dolores, sunt inventore eaque.
+        Quia, est quae harum quibusdam adipisci dolores porro ratione! Incidunt consequatur non quis et quisquam, aspernatur harum provident ipsam, aut, saepe commodi at quam nobis facilis fugit molestias praesentium adipisci.</div>
+        <br />
+        </div>
+        <div class="willow-page__top">
+            Willow-page__top: This is a willow-page element with the class of .willow-page__top.  It respects the inner max-width applied to all the willow-page direct child elements.<br /><br />
+        </div>
+        <div class="willow-page__content">
+            Willow-page__content<br /><br />
+            This is a willow page element with flex applied to take up the available vertical space & push the elements below it to the bottom.<br /><br />
+        </div>
+        <div class="row">
+            <div class="col">This row & these 2 columns are created using the bootstrap classes .row & .col</div>
+            <div class="col">This row & these 2 columns are created using the bootstrap classes .row & .col</div>
+        </div>
+        <div class="willow-page__random-row row">
+            <div class="col">These 2 columns are inside of a .willow-page__* element.  But still using the bootstrap .row & .col classes.</div>
+            <div class="col">These 2 columns are inside of a .willow-page__* element.  But still using the bootstrap .row & .col classes.</div>
+        </div>
+        <div class="willow-page__bottom">
+            Willow-page__bottom<br /><br />
+        </div>
+	</div>
+	<script src="scripts/site.min.js"></script>
+</body>
+
+</html>
