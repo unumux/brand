@@ -1,0 +1,18 @@
+@mixin base() {
+}
+
+&__link {
+    @include base;
+    
+    &[data-link-active="true"] {
+        @include base;
+
+        background-color: $component-secondary-nav-link-background-color-active;        
+        border-left: 4px solid $component-secondary-nav-link-border-color-active;
+
+        &:focus {
+            background-color: $component-secondary-nav-link-background-color-active;
+            color: $component-secondary-nav-link-color-active;
+        }
+    }
+}

@@ -2,39 +2,39 @@
     background-color: #BFBFBF;
 }
 
-&--pewter {
+&--lightgray {
     @include base;
 
     &-dark-4 {
-        background-color: #7F7F7F;
+        background-color: #969595;
     }
 
     &-dark-3 {
-        background-color: #8E8E8E;
+        background-color: #A09F9F;
     }
 
     &-dark-2 {
-        background-color: #9F9F9F;
+        background-color: #AAAAAA;
     }
 
     &-dark-1 {
-        background-color: #AFAFAF;
+        background-color: #B4B4B4;
     }
 
     &-light-1 {
-        background-color: #CFCFCF;
+        background-color: #CDCDCD;
     }
 
     &-light-2 {
-        background-color: #DFDFDF;
+        background-color: #DBDBDB;
     }
 
     &-light-3 {
-        background-color: #EFEFEF;
+        background-color: #E9E9E9;
     }
 
     &-light-4 {
-        background-color: #FFFFFF;
+        background-color: #F7F7F7;
     }
 
     &--print {
