@@ -5,4 +5,11 @@
 
 &__description {
     @include base;
+
+
+    &--inverse-text {
+        // @include base;
+
+        color: $component-body-text-color-inverse;
+    }
 }

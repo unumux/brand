@@ -10,9 +10,12 @@
 &__swatch {
     @include base;
 
-    &--inverse-text {
-        @include base;
+    
 
-        color: $component-body-text-color-inverse;
+    &--right {
+        @include base;
+        justify-content: flex-end;
     }
+
+    
 }

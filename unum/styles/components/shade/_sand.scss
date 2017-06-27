@@ -1,0 +1,46 @@
+@mixin base() {
+    background-color:#CCBD8F;
+}
+
+&--sand {
+    @include base;
+
+    &-dark-4 {
+        background-color: #BAAC83;
+    }
+
+    &-dark-3 {
+        background-color: #D3C7A2;
+    }
+
+    &-dark-2 {
+        background-color: #DBD2B7;
+    }
+
+    &-dark-1 {
+        background-color: #E3DDCA;
+    }
+
+    &-light-2 {
+        background-color: #EBE8DF;
+    }
+
+    &-light-1 {
+        background-color: #EDECE7;
+    }
+
+    &--print {
+        @include base;
+        
+        border-radius: 0.2rem;
+        height: 10rem;
+        width: 17rem;
+    }
+
+    &--reverse {
+        @include base;
+
+        border-radius: 0.4rem;
+    }
+
+}

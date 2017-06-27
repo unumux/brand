@@ -5,6 +5,30 @@
 &--blue {
     @include base;
 
+    &-dark-4 {
+        background-color: #024882;
+    }
+
+    &-dark-3 {
+        background-color: #19629D;
+    }
+
+    &-dark-2 {
+        background-color: #4981B0;
+    }
+
+    &-dark-1 {
+        background-color: #7AA2C3;
+    }
+
+    &-light-2 {
+        background-color: #A9C2D5;
+    }
+
+    &-light-1 {
+        background-color: #D9E1E8;
+    }
+
     &--print {
         @include base;
         border-radius: 0.2rem;
