@@ -1,6 +1,6 @@
 @mixin base() {
     align-items: center;
-    border: 1px solid $theme-action-3;
+    border: 1px solid $component-border-color;
     border-radius: 3px;
     display: flex;
     justify-content: center;

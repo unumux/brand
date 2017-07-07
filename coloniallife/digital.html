@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="styles/styles.min.css">
 </head>
 <body>
-    <div class="willow-layout">
-        <div class="willow-layout__row--remove-margin-bottom">
-			<div class="willow-layout__column--12">
+    <div class="container">
                 <div class="willow-skip-nav">
                     <a href="#mainContent" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
                 </div>
@@ -26,8 +24,8 @@
 					</div>
 					<div class="willow-page-header__content">
 						<div class="willow-page-header__navigation">
-							<nav class="willow-primary-nav" role="navigation" aria-label="Primary Navigation">
-								<h1 class="willow-primary-nav__heading">Primary Navigation</h1>
+							<nav class="willow-primary-nav" role="navigation" aria-label="primary">
+								<h1 class="willow-primary-nav__heading sr-only">Primary Navigation</h1>
 								<ul class="willow-primary-nav__list">
 									<li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="index.html">Overview</a></li>
 									<li class="willow-primary-nav__item"><a class="willow-primary-nav__link--active" href="digital.html">Digital</a></li>
@@ -38,10 +36,7 @@
 						</div>
 					</div>
 				</header>
-			</div>
-        </div>
-        <div class="willow-layout__row">
-			<div class="willow-layout__column--12">
+
                 <section class="willow-banner main-banner" role="region">
                     <h1 class="willow-banner__heading"><img class="main-banner__heading-icon" src="images/web-icon.svg" alt="">Digital Brand Guidelines</h1>
                     <div class="willow-banner__content">
@@ -55,12 +50,11 @@
                         </li>
                     </ul>-->
                 </section>
-			</div>
-        </div>
-        <div class="willow-layout__row--grow">
-			<div class="willow-layout__column--3">
-                <nav class="willow-secondary-nav" role="navigation" aria-label="Secondary Navigation">
-                    <h1 class="willow-secondary-nav__heading--visible">Digital Brand Guidelines</h1>
+
+        <div class="row flex-grow">
+			<div class="col-lg-3">
+                <nav class="willow-secondary-nav" role="navigation" aria-label="secondary">
+                    <h1 class="willow-secondary-nav__heading">Digital Brand Guidelines</h1>
                     <ul class="willow-secondary-nav__list">
                         <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#logo">Logos</a></li>
                         <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#logoUsage">Logo Usage</a></li>
@@ -73,7 +67,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="willow-layout__column--9">
+            <div class="col-lg-9">
                 <main class="willow-page-content" id="mainContent" role="main">
                     <section class="category">
                         <h1 class="category__heading" id="logo">Logos</h1>
@@ -110,7 +104,7 @@
                             </div>
                             <ul class="section__actions">
                                 <li class="section__action">
-                                    <a href="downloads/colonial-life-logos.zip" class="willow-button" download aria-label="Download default Colonial Life logos">Get Colonial Life Logos <img src="images/downloadarrowDark.svg"></a>
+                                    <a href="downloads/colonial-life-logos.zip" class="willow-button" download aria-label="Download default Colonial Life logos">Get Colonial Life Logos <img src="images/downloadarrow.svg"></a>
                                 </li>
                             </ul>
                         </section>
@@ -157,7 +151,7 @@
                             </div>
                             <ul class="section__actions">
                                 <li class="section__action">
-                                    <a class="willow-button" href="downloads/sub-brand-logos.zip" download="sub-brand-logos.zip" aria-label="Download sub brand logos">Get sub brand logos <img src="images/downloadarrowDark.svg" alt="Download sub brand logos"></a>
+                                    <a class="willow-button" href="downloads/sub-brand-logos.zip" download="sub-brand-logos.zip" aria-label="Download sub brand logos">Get sub brand logos <img src="images/downloadarrow.svg" alt="Download sub brand logos"></a>
                                 </li>
                             </ul> 
                         </section>
@@ -1291,7 +1285,7 @@
                             </div>
                             <ul class="section__actions">
                                 <li class="section__action">
-                                    <a href="downloads/voluntary-benefits-logos.zip" download aria-label="Download default Colonial Life logos" class="willow-button">Get New York Logos <img src="images/downloadarrowDark.svg" alt=""></a>
+                                    <a href="downloads/voluntary-benefits-logos.zip" download aria-label="Download default Colonial Life logos" class="willow-button">Get New York Logos <img src="images/downloadarrow.svg" alt=""></a>
                                 </li>
                             </ul>
                         </section>
@@ -1306,15 +1300,13 @@
                 </main>
             </div>
         </div>
-        <div class="willow-layout__row">
-			<div class="willow-layout__column--12">
                 <footer class="willow-page-footer" role="contentinfo">
                     <div class="willow-page-footer__branding">
                         <a class="willow-logo-link" href="/coloniallife" aria-label="go to home page"><img class="willow-logo-link__image" src="images/footer-logo.svg" alt="Colonial Life Brand Guidelines logo"></a>
                     </div>
                     <div class="willow-page-footer__navigation">
-                        <nav class="willow-footer-nav" role="navigation" aria-label="Footer Navigation">
-                            <h1 class="willow-footer-nav__heading">Footer Navigation</h1>
+                        <nav class="willow-footer-nav" role="navigation" aria-label="footer">
+                            <h1 class="willow-footer-nav__heading sr-only">Footer Navigation</h1>
                             <ul class="willow-footer-nav__list">
                                 <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="index.html" aria-label="">Overview</a></li>
                                 <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="digital.html" aria-label="">Digital</a></li>
@@ -1326,8 +1318,6 @@
                     <small class="willow-page-footer__copyright">© 2017 Colonial Life & Accident Insurance Company. All rights reserved. Colonial Life is a registered trademark and marketing brand of Colonial Life & Accident Insurance Company.</small>
                 </footer>
 			</div>
-        </div>
-    </div>
     <script src="scripts/site.min.js"></script>
 </body>
 </html>
