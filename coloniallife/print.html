@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="styles/styles.min.css">
 </head>
 <body>
-    <div class="willow-layout">
-        <div class="willow-layout__row--remove-margin-bottom">
-			<div class="willow-layout__column--12">
+    <div class="container">
                 <div class="willow-skip-nav">
                     <a href="#mainContent" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
                 </div>
@@ -26,8 +24,8 @@
 					</div>
 					<div class="willow-page-header__content">
 						<div class="willow-page-header__navigation">
-							<nav class="willow-primary-nav" role="navigation" aria-label="Primary Navigation">
-								<h1 class="willow-primary-nav__heading">Primary Navigation</h1>
+							<nav class="willow-primary-nav" role="navigation" aria-label="primary">
+								<h1 class="willow-primary-nav__heading sr-only">Primary Navigation</h1>
 								<ul class="willow-primary-nav__list">
 									<li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="index.html">Overview</a></li>
 									<li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="digital.html">Digital</a></li>
@@ -38,10 +36,6 @@
 						</div>
 					</div>
 				</header>
-			</div>
-        </div>
-        <div class="willow-layout__row">
-			<div class="willow-layout__column--12">
                 <section class="willow-banner main-banner" role="region">
                     <h1 class="willow-banner__heading"><img class="main-banner__heading-icon" src="images/print-icon.png" alt="">Print Brand Guidelines</h1>
                     <div class="willow-banner__content">
@@ -55,12 +49,11 @@
                         </li>
                     </ul>                    
                 </section>
-            </div>
-        </div>
-        <div class="willow-layout__row--grow">
-			<div class="willow-layout__column--3">
-                <nav class="willow-secondary-nav" role="navigation" aria-label="Secondary Navigation">
-                    <h1 class="willow-secondary-nav__heading--visible">Print Brand Guidelines</h1>
+
+        <div class="row flex-grow">
+			<div class="col-lg-3">
+                <nav class="willow-secondary-nav" role="navigation" aria-label="secondary">
+                    <h1 class="willow-secondary-nav__heading">Print Brand Guidelines</h1>
                     <ul class="willow-secondary-nav__list">
                         <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#logo">Logo</a></li>
                         <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#palette">Color Palette</a></li>
@@ -73,7 +66,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="willow-layout__column--9">
+            <div class="col-lg-9">
                 <main class="willow-page-content" id="mainContent" role="main">
                     <section class="category">
                         <h1 class="category__heading" id="logo">Logo</h1>
@@ -98,7 +91,7 @@
                             </div>
                             <ul class="section__actions">
                                 <li class="section__action">
-                                    <a class="willow-button" href="images/CL-logo-tag.svg" download aria-label="Download default Colonial Life logo">Get two color logo <img src="images/downloadarrowDark.svg" alt=""></a>
+                                    <a class="willow-button" href="images/CL-logo-tag.svg" download aria-label="Download default Colonial Life logo">Get two color logo <img src="images/downloadarrow.svg" alt=""></a>
                                 </li>
                             </ul>
                         </section>
@@ -122,7 +115,7 @@
                             </div>
                             <ul class="section__actions">
                                 <li class="section__action">
-                                    <a href="downloads/one-color-tagline-logos.zip" download aria-label="Download default Colonial Life logos with tagline" class="willow-button">Get one color logos <img src="images/downloadarrowDark.svg" alt="Download Colonial Life one color logos"></a>
+                                    <a href="downloads/one-color-tagline-logos.zip" download aria-label="Download default Colonial Life logos with tagline" class="willow-button">Get one color logos <img src="images/downloadarrow.svg" alt="Download Colonial Life one color logos"></a>
                                 </li>
                             </ul>
                         </section>
@@ -160,7 +153,7 @@
                             </div>
                             <ul class="section__actions">
                                 <li class="section__action">
-                                    <a href="images/CL-logo-white-withtag.svg" class="willow-button" download aria-label="Download default Colonial life white logo">Get Reversed Logo <img src="images/downloadarrowDark.svg" alt=""></a>
+                                    <a href="images/CL-logo-white-withtag.svg" class="willow-button" download aria-label="Download default Colonial life white logo">Get Reversed Logo <img src="images/downloadarrow.svg" alt=""></a>
                                 </li>
                             </ul>   
                         </section>
@@ -256,8 +249,8 @@
                             <h2 class="section__heading">Primary</h2>
                             <section class="willow-summary">
                                 <div class="willow-summary__content">
-                                    <div class="willow-grid">
-                                        <div class="willow-grid__item">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
                                             <div class="color">
                                                 <div class="color__base shade--steel--print"></div>
                                                 <h3>Steel Blue</h3>
@@ -265,7 +258,7 @@
                                                 <p>PANTONE: 647 C/U</p>
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-12 col-md-6">
                                             <div class="color">
                                                 <div class="color__base shade--slate--print"></div>
                                                 <h3>Slate</h3>
@@ -273,7 +266,7 @@
                                                 <p>PANTONE: 7545 C/U</p>
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-12 col-md-6">
                                             <div class="color">
                                                 <div class="color__base shade--pewter--print"></div>
                                                 <h3>Pewter</h3>
@@ -281,7 +274,7 @@
                                                 <p>PANTONE: 7544 C/U</p>
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-12 col-md-6">
                                             <div class="color">
                                                 <div class="color__base shade--moss--print"></div>
                                                 <h3>Moss</h3>
@@ -289,7 +282,7 @@
                                                 <p>PANTONE: 8321 C/U</p>
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-12 col-md-6">
                                             <div class="color">
                                                 <div class="color__base shade--leaf--print"></div>
                                                 <h3>Leaf</h3>
@@ -297,7 +290,7 @@
                                                 <p>PANTONE: 7489 C/U</p>
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-12 col-md-6">
                                             <div class="color">
                                                 <div class="color__base shade--sand--print"></div>
                                                 <h3>Sand</h3>
@@ -313,8 +306,8 @@
                             <h2 class="section__heading">Secondary</h2>
                             <section class="willow-summary">
                                     <div class="willow-summary__content">
-                                        <div class="willow-grid">
-                                            <div class="willow-grid__item">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
                                                 <div class="color">
                                                     <div class="color__base shade--darkred--print"></div>
                                                     <h3>Dark Red</h3>
@@ -322,7 +315,7 @@
                                                     <p>PANTONE: 193 C/U</p>
                                                 </div>
                                             </div>
-                                            <div class="willow-grid__item">
+                                            <div class="col-12 col-md-6">
                                                 <div class="color">
                                                     <div class="color__base shade--grape--print"></div>
                                                     <h3>Grape</h3>
@@ -330,7 +323,7 @@
                                                     <p>PANTONE: 519 C/U</p>
                                                 </div>
                                             </div>
-                                            <div class="willow-grid__item">
+                                            <div class="col-12 col-md-6">
                                                 <div class="color">
                                                     <div class="color__base shade--pumpkin--print"></div>
                                                     <h3>Pumpkin</h3>
@@ -338,7 +331,7 @@
                                                     <p>PANTONE: 7413 C/U</p>
                                                 </div>
                                             </div>
-                                            <div class="willow-grid__item">
+                                            <div class="col-12 col-md-6">
                                                 <div class="color">
                                                     <div class="color__base shade--darkgrey--print"></div>
                                                     <h3>Charcoal</h3>
@@ -354,8 +347,8 @@
                             <h2 class="section__heading">Accent</h2>
                             <section class="willow-summary">
                                     <div class="willow-summary__content">
-                                        <div class="willow-grid">
-                                            <div class="willow-grid__item">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
                                                 <div class="color">
                                                     <div class="color__base shade--ocean--print"></div>
                                                     <h3>Ocean</h3>
@@ -363,7 +356,7 @@
                                                     <p>PANTONE: 631 C/U</p>
                                                 </div>
                                             </div>
-                                            <div class="willow-grid__item">
+                                            <div class="col-12 col-md-6">
                                                 <div class="color">
                                                     <div class="color__base shade--asparagus--print"></div>
                                                     <h3>Asparagus</h3>
@@ -371,7 +364,7 @@
                                                     <p>PANTONE: 375 C/U</p>
                                                 </div>
                                             </div>
-                                            <div class="willow-grid__item">
+                                            <div class="col-12 col-md-6">
                                                 <div class="color">
                                                     <div class="color__base shade--mint--print"></div>
                                                     <h3>Mint</h3>
@@ -379,7 +372,7 @@
                                                     <p>PANTONE: 339 C/U</p>
                                                 </div>
                                             </div>
-                                            <div class="willow-grid__item">
+                                            <div class="col-12 col-md-6">
                                                 <div class="color">
                                                     <div class="color__base shade--tangerine--print"></div>
                                                     <h3>Tangerine</h3>
@@ -475,43 +468,43 @@
                             <p class="section__description">Samples of the iconography style</p>
                             <section class="willow-summary">
                                 <div class="willow-summary__content">
-                                    <div class="willow-grid">
-                                        <div class="willow-grid__item">
+                                    <div class="row">
+                                        <div class="col-3 col-lg-2">
                                             <div class="example">
                                                 <img class="examples-grid__image" src="images/people-group__icon.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-3 col-lg-2">
                                             <div class="example">
                                                 <img class="examples-grid__image" src="images/cell_icon.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-3 col-lg-2">
                                             <div class="example">
                                                 <img class="examples-grid__image" src="images/wallet_icon.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-3 col-lg-2">
                                             <div class="example">
                                                 <img class="examples-grid__image" src="images/support__icon.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-3 col-lg-2">
                                             <div class="example">
                                                 <img class="examples-grid__image" src="images/crutches.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-3 col-lg-2">
                                             <div class="example">
                                                 <img class="examples-grid__image" src="images/wheelchair_icon.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-3 col-lg-2">
                                             <div class="example">
                                                 <img class="examples-grid__image" src="images/comment-icon.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-3 col-lg-2">
                                             <div class="example">
                                                 <img class="examples-grid__image" src="images/handshake-icon.png" alt="">
                                             </div>
@@ -635,8 +628,8 @@
                             <p class="section__description">If placing copy or graphics on a colored background use one of these color options only.</p>
                             <section class="willow-summary">
                                 <div class="willow-summary__content">
-                                    <div class="willow-grid">
-                                        <div class="willow-grid__item">
+                                    <div class="row">
+                                        <div class="col-4 col-md-2">
                                             <div class="colors">
                                                 <div class="opacity-swatches">
                                                     <div class="opacity-swatches__color--sand"></div>
@@ -645,7 +638,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-4 col-md-2">
                                             <div class="colors">
                                                 <div class="opacity-swatches">
                                                     <div class="opacity-swatches__color--sand-5"></div>
@@ -654,7 +647,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-4 col-md-2">
                                             <div class="colors">
                                                 <div class="opacity-swatches">
                                                     <div class="opacity-swatches__color--sand-3"></div>
@@ -663,7 +656,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-4 col-md-2">
                                             <div class="colors">
                                                 <div class="opacity-swatches">
                                                     <div class="opacity-swatches__color--pewter-5"></div>
@@ -672,7 +665,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="willow-grid__item">
+                                        <div class="col-4 col-md-2">
                                             <div class="colors">
                                                 <div class="opacity-swatches">
                                                     <div class="opacity-swatches__color--pewter-2"></div>
@@ -686,7 +679,7 @@
                             </section>
                             <ul class="section__actions">
                                 <li class="section__action">
-                                    <a href="/" class="willow-button">Get indesign files <img src="images/downloadarrowDark.svg" alt=""></a>
+                                    <a href="/" class="willow-button">Get indesign files <img src="images/downloadarrow.svg" alt=""></a>
                                 </li>
                             </ul>
                         </section>
@@ -716,7 +709,7 @@
                             </div>
                             <ul class="section__actions">
                                 <li class="section__action">
-                                    <a href="downloads/voluntary-benefits-logos.zip" download aria-label="Download default Colonial life logos" class="willow-button">Get New York Logos <img src="images/downloadarrowDark.svg" alt=""></a>
+                                    <a href="downloads/voluntary-benefits-logos.zip" download aria-label="Download default Colonial life logos" class="willow-button">Get New York Logos <img src="images/downloadarrow.svg" alt=""></a>
                                 </li>
                             </ul>
                         </section>
@@ -731,15 +724,13 @@
                 </main>
             </div>
         </div>     
-        <div class="willow-layout__row">
-			<div class="willow-layout__column--12">
                 <footer class="willow-page-footer" role="contentinfo">
                     <div class="willow-page-footer__branding">
                         <a class="willow-logo-link" href="/coloniallife" aria-label="go to home page"><img class="willow-logo-link__image" src="images/footer-logo.svg" alt="Colonial Life Brand Guidelines logo"></a>
                     </div>
                     <div class="willow-page-footer__navigation">
-                        <nav class="willow-footer-nav" role="navigation" aria-label="Footer Navigation">
-                            <h1 class="willow-footer-nav__heading">Footer Navigation</h1>
+                        <nav class="willow-footer-nav" role="navigation" aria-label="footer">
+                            <h1 class="willow-footer-nav__heading sr-only">Footer Navigation</h1>
                             <ul class="willow-footer-nav__list">
                                 <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="index.html" aria-label="">Overview</a></li>
                                 <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="digital.html" aria-label="">Digital</a></li>
@@ -751,8 +742,6 @@
                     <small class="willow-page-footer__copyright">© 2017 Colonial Life & Accident Insurance Company. All rights reserved. Colonial Life is a registered trademark and marketing brand of Colonial Life & Accident Insurance Company.</small>
                 </footer>
             </div>
-        </div>
-    </div>
     <script src="scripts/site.min.js"></script>
 </body>
 </html>
