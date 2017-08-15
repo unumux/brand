@@ -1,0 +1,31 @@
+@mixin base {
+    position: relative;
+    margin-bottom: 20px;
+    
+    &:nth-child(odd) {
+        background-color: #f4f4f4;
+        margin-left: space(-2);
+        margin-right: space(-2);
+        padding: space(2);
+    }
+
+    @media screen and (min-width: breakpoint(medium)) {
+        display: flex;
+
+        // &:first-of-type: 
+    }
+}
+
+.voice-box {
+    @include base;
+
+    @import 'heading';
+    @import 'negative';
+    @import 'positive';
+}
+
+// .boxy {
+//     background-color: rgba(0, 0, 0, 0.1);
+//     padding: 10px;
+//     margin: 10px;
+// }

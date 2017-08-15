@@ -1,0 +1,22 @@
+@mixin base {
+    @include set-text-style($text-style-heading-3);
+
+    &::before {
+        content: attr(data-label);
+        display: block;
+
+        @include set-text-style($text-style-content-2);
+
+        @media screen and (min-width: breakpoint(medium)) {
+            position: absolute;
+            bottom: 100%;
+            .voice-box:not(:first-of-type) & {
+                display: none;
+            }
+        }
+    }
+}
+
+&__heading {
+    @include base;
+}
