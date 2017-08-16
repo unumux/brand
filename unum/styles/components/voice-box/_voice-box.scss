@@ -12,7 +12,16 @@
     @media screen and (min-width: breakpoint(medium)) {
         display: flex;
 
-        // &:first-of-type: 
+        &:first-of-type {
+            margin-top: 60px;
+        } 
+    }
+
+    @media screen and (min-width: breakpoint(large)) {
+        &:nth-child(odd) {
+            margin-left: space(0);
+            margin-right: space(0);
+        }
     }
 }
 
@@ -23,9 +32,3 @@
     @import 'negative';
     @import 'positive';
 }
-
-// .boxy {
-//     background-color: rgba(0, 0, 0, 0.1);
-//     padding: 10px;
-//     margin: 10px;
-// }
