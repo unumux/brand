@@ -1,8 +1,5 @@
-@mixin base() {
-    margin-bottom: space(1);
-    width: 30rem;
-}
-
 &__image {
-    @include base;
+    margin: $space-stack;
+    margin-left: $space;
+    width: 30rem;
 }

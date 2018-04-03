@@ -1,20 +1,14 @@
-@mixin base() {
+.assets {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     max-width: 680px;
     width: 100%;
-
     @media screen and (min-width: breakpoint(small)) {
-        justify-content: space-between;      
+        justify-content: space-between;
     }
-}
-
-.assets {
-    @include base;
-
     @import "asset";
     @import "caption";
     @import "image";
-    @import "link";  
+    @import "link";
 }

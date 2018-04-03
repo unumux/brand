@@ -3,24 +3,18 @@
     border: 1px solid $component-border-color;
     border-radius: 3px;
     display: flex;
-    justify-content: center;
-    //Min height doesnt work in IE11, has to have a height set to align-items in flex
-    height: 140px;
-    padding: space(2);
+    justify-content: center; //Min height doesnt work in IE11, has to have a height set to align-items in flex
+    height: 140px; // padding: space(2);
 }
 
 &__link {
     @include base;
-
     &--dark {
         @include base;
-
         background-color: #19557F;
     }
-
     &--light {
         @include base;
-
         background-color: #E0DDCE;
     }
 }

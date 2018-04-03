@@ -1,0 +1,4 @@
+&__heading {
+    @include set-text-style($text-style-content-1);
+    font-weight: 600;
+}

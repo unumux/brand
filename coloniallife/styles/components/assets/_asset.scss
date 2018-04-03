@@ -1,16 +1,11 @@
-@mixin base() {
+&__asset {
     flex-basis: 100%;
     flex-shrink: 0;
-    margin-bottom: space(2);
+    margin: $space-stack;
     max-width: 350px;
     min-width: 280px;
-
     @media screen and (min-width: breakpoint(small)) {
         flex-basis: 48%;
         justify-content: space-around;
     }
-}
-
-&__asset {
-    @include base;
 }
