@@ -1,11 +1,5 @@
-@mixin base() {
-    @include make-grid;
-
-}
-
-.examples-grid {
-    @include base;
-
+.willow-grid {
+    margin: $space-stack-l;
     @import "item";
     @import "image-container";
     @import "image";
