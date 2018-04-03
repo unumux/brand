@@ -1,7 +1,4 @@
-@mixin base() {
-    width: 100%;    
-}
-
 .photo {
-    @include base;
+    margin: $space-stack-l;
+    width: 100%;
 }
