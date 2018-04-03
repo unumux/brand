@@ -1,15 +1,20 @@
 {
   "private": true,
   "devDependencies": {
-    "@unumux/theme-coloniallife-default": "0.3.11",
+    "@unumux/stylelint-config-unumux": "2.0.1",
     "@unumux/ux-build-tools": "^3.6.0",
+    "@unumux/theme-coloniallife-default": "^1.0.0",
+    "@unumux/willow": "^1.0.0",
     "imagemin-cli": "^3.0.0",
     "imagemin-pngquant": "^5.0.0",
-    "imagemin-svgo": "^5.2.1"
+    "imagemin-svgo": "^5.2.1",
+    "stylelint": "9.2.0"
   },
   "scripts": {
-    "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=.",
-    "imagemin": "imagemin images-source/* --out-dir=images --plugin=pngquant --plugin=svgo"
+    "start":
+      "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=.",
+    "imagemin":
+      "imagemin images-source/* --out-dir=images --plugin=pngquant --plugin=svgo"
   },
   "dependencies": {
     "jquery": "^3.2.1"

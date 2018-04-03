@@ -1,6 +1,5 @@
-@mixin base() {
-}
+@mixin base() {}
 
 &__variants {
-    @include base;
+    margin: $space-stack-xxs;
 }

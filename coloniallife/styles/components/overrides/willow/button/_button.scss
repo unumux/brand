@@ -7,8 +7,11 @@
 }
 
 .willow-button {
+    @include set-text-style($text-style-content-1);
+    font-weight: 600;
+    text-transform: none;
+
     .section__action & {
         @include base;
-
     }
 }
