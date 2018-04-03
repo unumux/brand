@@ -1,3 +1,24 @@
 &__item--flex {
     display: flex;
 }
+
+&__item {
+    &.column {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &.legend-content {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: space-between;
+        width: 100%;
+
+        @media screen and (min-width: breakpoint(small)) {
+            flex-basis: auto;
+            width: 10*(100%/12);
+        }
+    }
+}

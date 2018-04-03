@@ -1,18 +1,6 @@
-@mixin base() {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: space(2);
-
-    @media screen and (min-width: breakpoint(small)) {
-        justify-content: flex-start;
-    }
-}
-
-.range-grid {
-    @include base;
-
-    @import "item";
+.range {
     @import "image";
     @import "icon";
     @import "legend";
+    @import "label";
 }

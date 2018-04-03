@@ -1,14 +1,10 @@
-@mixin base() {
-    margin-bottom: space(2);
+&__image {
+    // margin-bottom: space(2);
     max-width: 60px;
     max-height: 60px;
-
+    
     @media screen and (min-width: breakpoint(small)){
         max-width: initial;
         max-height: initial;
     }
-}
-
-&__image {
-    @include base;
 }
