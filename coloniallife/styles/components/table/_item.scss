@@ -1,23 +1,18 @@
-@mixin base() {
-    margin-bottom: space(2);
+&__item {
+    &:first-child {
+        margin-top: 0;
+    }
 
     @media screen and (min-width: breakpoint(medium)) {
-        margin-bottom: 0;
         width: 30%;
     }
-}
-
-&__item {
-    @include base;
 
     &--align-right {
-        @include base;
         order: 3;
         text-align: right;
     }
 
     .table__group & {
-        margin-bottom: 0;
 
         &:nth-child(2) {
             text-align: center;

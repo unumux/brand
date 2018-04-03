@@ -1,7 +1,8 @@
-@mixin base() {
+&__group {
     align-items: center;
     display: flex;
     flex-basis: 100%;
+    margin: $space-stack;
     order: 3;
     justify-content: space-between;
 
@@ -11,8 +12,4 @@
         order: 2;
         width: 30%;
     }
-}
-
-&__group {
-    @include base;
 }
