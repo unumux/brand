@@ -1,12 +1,8 @@
-@mixin base() {
+.samples {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-}
 
-.samples {
-    @include base;
-
-    @import "sample";
-    @import "image";
+    // @import "sample";
+    // @import "image";
 }
