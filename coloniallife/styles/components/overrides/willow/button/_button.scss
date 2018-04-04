@@ -1,17 +1,5 @@
-@mixin base() {
-    width: 100%;
-
-    @media screen and  (min-width: breakpoint(small)) {
-        width: initial;
-    }
-}
-
 .willow-button {
     @include set-text-style($text-style-content-1);
     font-weight: 600;
     text-transform: none;
-
-    .section__action & {
-        @include base;
-    }
 }

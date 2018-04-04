@@ -1,0 +1,9 @@
+.icon-group {
+    display: flex;
+    width: 100%;
+
+    @import "image-container";
+    @import "image";
+    @import "label";
+    @import "indicator";
+}
