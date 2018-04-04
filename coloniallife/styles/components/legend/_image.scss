@@ -1,9 +1,0 @@
-&__image {
-    transform: rotate(90deg);
-    transform-origin: top left;
-
-    @include media-breakpoint-up(sm) {
-        transform: none;
-        max-width: 50%;
-    }
-}

@@ -1,6 +1,5 @@
 .willow-secondary-nav {
-    margin-bottom: space(2);
-    top: space(2);
+    top: $space;
     @media screen and (min-width: breakpoint(large)) {
         // Note: this requires a polyfill for IE/Edge so when editing this, remember that.
         position: sticky;

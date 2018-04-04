@@ -1,11 +1,5 @@
-@mixin base() {
-
-    flex-direction: column;
-
-}
-
 .opacity-swatches {
-    @include base;
+    flex-direction: column;
 
     @import "color";
 }

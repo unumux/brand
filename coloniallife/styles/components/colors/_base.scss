@@ -1,14 +1,11 @@
-@mixin base() {
+&__base {
     align-items: center;
     border-radius: 3px;
     display: flex;
     height: 10rem;
     justify-content: space-between;
     padding: $space-inset;
-}
 
-&__base {
-    @include base;
     &--inverse-text {
         @include base;
         color: $component-body-text-color-inverse;

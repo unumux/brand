@@ -1,13 +1,10 @@
-@mixin base() {
+&__swatch {
     align-items: center;
     display: flex;
     height: 5rem;
     justify-content: space-between;
     padding: $space-inset;
-}
 
-&__swatch {
-    @include base;
     &--inverse-text {
         @include base;
         color: $component-body-text-color-inverse;

@@ -1,4 +1,4 @@
-@mixin base() {
+.colors {
     color: $component-body-text-color;
 
     @media screen and (min-width: breakpoint(small)) {
@@ -6,10 +6,6 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-}
-
-.colors {
-    @include base;
 
     @import "color";
     @import "base";
