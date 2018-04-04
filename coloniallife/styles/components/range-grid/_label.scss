@@ -1,8 +1,0 @@
-&__label {
-    margin: 0;
-    text-align: center;
-    
-    @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
-        flex-grow: 1;    
-    }
-}
