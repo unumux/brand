@@ -4,3 +4,34 @@
     @import "legend";
     @import "label";
 }
+
+.legend {
+    height: 100%;
+
+    @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
+        height: auto;
+    }
+}
+
+.legend-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include media-breakpoint-up(sm) {
+        align-items: center;
+        flex-direction: row;
+        margin: $space-stack-l;
+    }
+}
+
+.range__legend-image {
+    // flex-grow: 1;
+    transform: rotate(90deg);
+
+    @include media-breakpoint-up(sm) {
+        // flex-grow: 0;
+        transform: none;
+        max-width: 50%;
+    }
+}
