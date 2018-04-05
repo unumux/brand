@@ -1,9 +1,5 @@
-@mixin base() {
-    background-color: #537650;
-}
-
 &--moss {
-    @include base;
+    background-color: #537650;
 
     &-dark-4 {
         background-color: #2A4525;
@@ -35,13 +31,5 @@
 
     &-light-4 {
         background-color: #F3F8F3;
-    }
-
-    &--print {
-        @include base;
-        
-        border-radius: 0rem;
-        height: 10rem;
-        width: 17rem;
     }
 }

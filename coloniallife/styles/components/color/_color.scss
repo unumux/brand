@@ -10,4 +10,6 @@
         @include set-text-style($text-style-content-2);
         margin-top: 0;
     }
+
+    @import "base";
 }

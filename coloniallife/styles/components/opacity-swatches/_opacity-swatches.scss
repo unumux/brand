@@ -1,5 +1,6 @@
 .opacity-swatches {
     flex-direction: column;
+    margin: $space-stack;
 
     @import "color";
 }

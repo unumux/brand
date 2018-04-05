@@ -1,9 +1,5 @@
-@mixin base() {
-    background-color: #5B7183;
-}
-
 &--slate {
-    @include base;
+    background-color: #5B7183;
     
     &-dark-4 {
         background-color: #293D4F;
@@ -35,12 +31,5 @@
 
     &-light-4 {
         background-color: #F2F6FA;
-    }
-
-    &--print {
-        @include base;
-        border-radius: 0.2rem;
-        height: 10rem;
-        width: 17rem;
     }
 }

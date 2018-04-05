@@ -6,7 +6,6 @@
     padding: $space-inset;
 
     &--inverse-text {
-        @include base;
         color: $component-body-text-color-inverse;
     }
 }

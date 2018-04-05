@@ -1,9 +1,5 @@
-@mixin base() {
-    background-color: #A4CC44;
-}
-
 &--asparagus {
-    @include base;
+    background-color: #A4CC44;
 
     &-dark-4 {
         background-color: #83AB21;
@@ -36,19 +32,4 @@
     &-light-4 {
         background-color: #EEFFC6;
     }
-
-    &--print {
-        @include base;
-        
-        border-radius: 0.2rem;
-        height: 10rem;
-        width: 17rem;
-    }
-
-    &--reverse {
-        @include base;
-
-        border-radius: 0.4rem;
-    }
-
 }

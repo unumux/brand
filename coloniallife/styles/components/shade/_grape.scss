@@ -1,9 +1,5 @@
-@mixin base() {
-    background-color: #5F3A6C;
-}
-
 &--grape {
-    @include base;
+    background-color: #5F3A6C;
 
     &-dark-4 {
         background-color: #33163D;
@@ -36,19 +32,4 @@
     &-light-4 {
         background-color: #FBF6FC;
     }
-
-    &--print {
-        @include base;
-        
-        border-radius: 0.2rem;
-        height: 10rem;
-        width: 17rem;
-    }
-
-    &--reverse {
-        @include base;
-
-        border-radius: 0.4rem;
-    }
-
 }
