@@ -13,13 +13,6 @@
     }
 
     .table__group & {
-
-        &:nth-child(2) {
-            text-align: center;
-        }
-
-        &:last-child {
-            text-align: right;
-        }
+        flex-basis: 100%;
     }
 }

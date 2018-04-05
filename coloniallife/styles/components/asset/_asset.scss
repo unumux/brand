@@ -5,7 +5,7 @@
         display: flex;
         height: 140px;
         justify-content: center; //Min height doesnt work in IE11, has to have a height set to align-items in flex
-        margin: $space-stack-s;
+        margin: $space-stack;
 
     &--dark {
         background-color: #19557F;
@@ -30,8 +30,20 @@
     &--leaf {
         background-color: #78B25D;
     }
-
+    
     img {
         width: 190px;
     }
+    
+    &--container-only {
+        border: 0;
+        border-radius: 0;
+        display: block;
+        height: auto;
+
+        img {
+            width: auto;
+        }
+    }
+
 }
