@@ -28,22 +28,26 @@ $text-style-heading-3: (
 );
 
 @import "../node_modules/@unumux/willow/styles";
+@import "shared-components/shared-components";
 
 .unum-brand-card-image {
     background-color: $theme-primary;
-    background-image: url("/unum/images/header-logo-final.png");
+    background-image: url("/unum/images/unum-reversed-logo.svg");
     background-size: 50%;
 }
 
 .cl-brand-card-image {
     background-color: #19557f;
-    background-image: url("../coloniallife/images/header-logo-final.svg");
-    background-size: auto;
+    background-image: url("../coloniallife/images/CL-logo-white.svg");
+    background-size: 50%;
 }
 
-.willow-page-header__heading {
-    color: $theme-text-inverse;
-    font-weight: 300;
-    margin-bottom: $space-l;
-    margin-top: $space-l;
+.willow-card[href],
+.willow-card[href]:hover {
+    transform: none;
+    transition: none;
+}
+
+.willow-card.willow-card--link {
+    flex-grow: 1;
 }
