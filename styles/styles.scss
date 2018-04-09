@@ -1,0 +1,49 @@
+@import "../node_modules/@unumux/theme-unum-default/styles";
+
+$text-style-heading-1: ( 
+    family: $font-family-primary, 
+    desktop-size: 3.58318rem, 
+    desktop-line-height: line-height($font-size-4xl), 
+    mobile-size: 3.58318rem, 
+    mobile-line-height: line-height($font-size-3xl), 
+    weight: 500
+);
+
+$text-style-heading-2: ( 
+    family: $font-family-primary, 
+    desktop-size: 2.48832rem, 
+    desktop-line-height: line-height($font-size-2xl), 
+    mobile-size: 2.48832rem, 
+    mobile-line-height: line-height($font-size-xl), 
+    weight: 500
+);
+
+$text-style-heading-3: ( 
+    family: $font-family-primary, 
+    desktop-size: 2.0736rem, 
+    desktop-line-height: line-height($font-size-xl), 
+    mobile-size: 1.728rem, 
+    mobile-line-height: line-height($font-size-l), 
+    weight: 500
+);
+
+@import "../node_modules/@unumux/willow/styles";
+
+.unum-brand-card-image {
+    background-color: $theme-primary;
+    background-image: url("/unum/images/header-logo-final.png");
+    background-size: 50%;
+}
+
+.cl-brand-card-image {
+    background-color: #19557f;
+    background-image: url("../coloniallife/images/header-logo-final.svg");
+    background-size: auto;
+}
+
+.willow-page-header__heading {
+    color: $theme-text-inverse;
+    font-weight: 300;
+    margin-bottom: $space-l;
+    margin-top: $space-l;
+}

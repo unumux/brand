@@ -1,0 +1,46 @@
+$icons-folder: "../../node_modules/@unumux/theme-unum-default/icons";
+
+@import "../../node_modules/@unumux/theme-unum-default/styles";
+
+$list-style-type: disc;
+$component-banner-background-color: $color-neutral-darker;
+$component-banner-text-color: $theme-text-inverse;
+$component-border-color: $theme-base-3;
+$component-secondary-nav-border: $component-border-width solid
+$theme-base-3;
+$component-skip-nav-link-color: $theme-text-tertiary;
+$component-skip-nav-link-color-hover: $theme-text-tertiary;
+$component-skip-nav-link-color-active: $theme-text-tertiary;
+$component-skip-nav-link-color-visited: $theme-text-tertiary;
+
+$text-style-heading-1: ( 
+    family: $font-family-primary, 
+    desktop-size: 3.58318rem, 
+    desktop-line-height: line-height($font-size-4xl), 
+    mobile-size: 3.58318rem, 
+    mobile-line-height: line-height($font-size-3xl), 
+    weight: 500
+);
+
+$text-style-heading-2: ( 
+    family: $font-family-primary, 
+    desktop-size: 2.48832rem, 
+    desktop-line-height: line-height($font-size-2xl), 
+    mobile-size: 2.48832rem, 
+    mobile-line-height: line-height($font-size-xl), 
+    weight: 500
+);
+
+$text-style-heading-3: ( 
+    family: $font-family-primary, 
+    desktop-size: 2.0736rem, 
+    desktop-line-height: line-height($font-size-xl), 
+    mobile-size: 1.728rem, 
+    mobile-line-height: line-height($font-size-l), 
+    weight: 500
+);
+
+@import "../../node_modules/@unumux/willow/styles";
+
+@import "../../styles/shared-components/shared-components";
+@import "components/components";

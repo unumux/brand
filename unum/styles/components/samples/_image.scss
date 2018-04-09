@@ -1,9 +1,0 @@
-@mixin base() {
-    max-width: 190px;
-    min-width: 150px;
-    width: 100%;
-}
-
-&__image {
-    @include base;
-}

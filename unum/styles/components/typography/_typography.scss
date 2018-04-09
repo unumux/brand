@@ -1,42 +1,26 @@
-@mixin base() {
-    margin-bottom: space(2);
-}
-
 .typography {
-    @include base;
+    margin: $space-stack;
 
     p {
         font-weight: 600;
+        margin: 0;
     }
 
-    &--ubuntu {
-        @include base;
-        
+    &--ubuntu {        
         p {
-            @include set-text-style($text-style-heading-3);
+            @include set-text-style($text-style-heading-1);
         }
     }
-
-    &--open-sans {
-        @include base;
-        
+    
+    &--open-sans {        
         p {
             @include set-text-style($text-style-content-1);
         }
     }
     
-    &--open-sans-semibold {
-        @include base;
-        
-        p {
-            @include set-text-style($text-style-heading-3);
-        }
-    }
-
     &--arial {
-        @include base;
-
         p {
+            @include set-text-style($text-style-content-1);
             font-family: 'arial';
         }
     }

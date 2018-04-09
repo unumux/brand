@@ -1,8 +1,8 @@
 {
   "private": true,
   "devDependencies": {
-    "@unumux/theme-coloniallife-default": "0.2.9",
-    "@unumux/theme-unum-default": "0.2.9",
+    "@unumux/theme-unum-default": "^1.0.0",
+    "@unumux/willow": "^1.0.0",
     "@unumux/ux-build-tools": "^3.6.0",
     "imagemin-cli": "^3.0.0",
     "imagemin-pngquant": "^5.0.0",
