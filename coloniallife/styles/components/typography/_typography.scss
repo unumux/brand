@@ -2,6 +2,7 @@
 
 .typography {
     margin: $space-stack-s;
+    word-wrap: break-word;
 
     p {
         font-weight: 600;
