@@ -11,8 +11,15 @@
         "dest": "styles"
     },
     "js": {
-        "src": "scripts/**/*.js",
-        "dest": "scripts"
+        "src": [
+            "scripts/**/*.js",
+            "coloniallife/scripts/**/*.js",
+            "coloniallife/scripts/site.js",
+            "unum/scripts/**/*.js",
+            "unum/scripts/site.js"
+        ],
+        "dest": "scripts",
+        "main": "scripts/site.js"
     },
     "watch": [
         "index.html",
@@ -26,6 +33,6 @@
         "unum/voicetone.html"
     ],
     "server": true,
-    "compileJs": false,
+    "compileJs": true,
     "proxy": false
 }

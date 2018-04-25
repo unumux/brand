@@ -31,23 +31,17 @@ $text-style-heading-3: (
 @import "shared-components/shared-components";
 
 .unum-brand-card-image {
-    background-color: $theme-primary;
-    background-image: url("/unum/images/unum-reversed-logo.svg");
-    background-size: 50%;
+    background-image: url("/unum/images/unum-two-color-logo.svg");
 }
 
 .cl-brand-card-image {
-    background-color: #19557f;
-    background-image: url("../coloniallife/images/CL-logo-white.svg");
-    background-size: 50%;
-}
-
-.willow-card[href],
-.willow-card[href]:hover {
-    transform: none;
-    transition: none;
+    background-image: url("../coloniallife/images/logo-blue-pewter.svg");
 }
 
 .willow-card.willow-card--link {
     flex-grow: 1;
+}
+
+.index-content {
+    margin-top: $space;
 }
