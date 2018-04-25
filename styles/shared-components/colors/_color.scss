@@ -1,0 +1,7 @@
+&__color {
+    margin: $space-stack-l;
+    
+    @media screen and (min-width: breakpoint(small)) {
+        flex-basis: 48%;
+    }
+}

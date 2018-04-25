@@ -1,0 +1,8 @@
+&__image-container {
+    flex-basis: 25%;
+    margin: $space-inline-s;
+
+    @media screen and (min-width: breakpoint(medium)) {
+        flex-basis: auto;
+    }
+}

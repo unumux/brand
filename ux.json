@@ -1,0 +1,38 @@
+{
+    "scss": {
+        "src": [
+            "styles/styles.scss", 
+            "styles/**/*.scss",
+            "coloniallife/styles/coloniallife-styles.scss",
+            "coloniallife/styles/**/*.scss", 
+            "unum/styles/unum-styles.scss", 
+            "unum/styles/**/*.scss"
+        ],
+        "dest": "styles"
+    },
+    "js": {
+        "src": [
+            "scripts/**/*.js",
+            "coloniallife/scripts/**/*.js",
+            "coloniallife/scripts/site.js",
+            "unum/scripts/**/*.js",
+            "unum/scripts/site.js"
+        ],
+        "dest": "scripts",
+        "main": "scripts/site.js"
+    },
+    "watch": [
+        "index.html",
+        "coloniallife/index.html",
+        "coloniallife/digital.html",
+        "coloniallife/print.html",
+        "coloniallife/voicetone.html",
+        "unum/index.html",
+        "unum/digital.html",
+        "unum/print.html",
+        "unum/voicetone.html"
+    ],
+    "server": true,
+    "compileJs": true,
+    "proxy": false
+}

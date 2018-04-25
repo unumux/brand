@@ -1,0 +1,47 @@
+@import "../node_modules/@unumux/theme-unum-default/styles";
+
+$text-style-heading-1: ( 
+    family: $font-family-primary, 
+    desktop-size: 3.58318rem, 
+    desktop-line-height: line-height($font-size-4xl), 
+    mobile-size: 3.58318rem, 
+    mobile-line-height: line-height($font-size-3xl), 
+    weight: 500
+);
+
+$text-style-heading-2: ( 
+    family: $font-family-primary, 
+    desktop-size: 2.48832rem, 
+    desktop-line-height: line-height($font-size-2xl), 
+    mobile-size: 2.48832rem, 
+    mobile-line-height: line-height($font-size-xl), 
+    weight: 500
+);
+
+$text-style-heading-3: ( 
+    family: $font-family-primary, 
+    desktop-size: 2.0736rem, 
+    desktop-line-height: line-height($font-size-xl), 
+    mobile-size: 1.728rem, 
+    mobile-line-height: line-height($font-size-l), 
+    weight: 500
+);
+
+@import "../node_modules/@unumux/willow/styles";
+@import "shared-components/shared-components";
+
+.unum-brand-card-image {
+    background-image: url("/unum/images/unum-two-color-logo.svg");
+}
+
+.cl-brand-card-image {
+    background-image: url("../coloniallife/images/logo-blue-pewter.svg");
+}
+
+.willow-card.willow-card--link {
+    flex-grow: 1;
+}
+
+.index-content {
+    margin-top: $space;
+}

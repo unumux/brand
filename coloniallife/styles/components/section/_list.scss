@@ -1,8 +1,0 @@
-@mixin base() {
-    list-style-type: square;
-}
-
-&__list {
-    @include base;
-
-}

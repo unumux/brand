@@ -1,0 +1,15 @@
+&__swatch {
+    align-items: center;
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    padding: $space-inset;
+
+    &--inverse-text {
+        color: $component-body-text-color-inverse;
+    }
+
+    &--right {
+        justify-content: flex-end;
+    }
+}

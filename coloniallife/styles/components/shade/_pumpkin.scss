@@ -1,9 +1,5 @@
-@mixin base() {
-    background-color: #F38130;
-}
-
 &--pumpkin {
-    @include base;
+    background-color: #F38130;
 
     &-dark-4 {
         background-color: #903900;
@@ -36,19 +32,4 @@
     &-light-4 {
         background-color: #FFEFE1;
     }
-
-    &--print {
-        @include base;
-        
-        border-radius: 0.2rem;
-        height: 10rem;
-        width: 17rem;
-    }
-
-    &--reverse {
-        @include base;
-
-        border-radius: 0.4rem;
-    }
-
 }

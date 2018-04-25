@@ -1,11 +1,4 @@
-@mixin base() {
-    
-}
-
-
 .shade {
-    @include base;
-
     @import "asparagus";
     @import "darkgrey";
     @import "darkred";

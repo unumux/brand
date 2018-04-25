@@ -1,0 +1,8 @@
+&__image {
+    max-width: 60px;
+    
+    @media screen and (min-width: breakpoint(small)){
+        max-width: initial;
+        max-height: initial;
+    }
+}

@@ -1,0 +1,8 @@
+&__description {
+    display: inline-block;
+    margin-top: 0;
+
+    &--inverse-text {
+        color: $component-body-text-color-inverse;
+    }
+}

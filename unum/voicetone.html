@@ -4,207 +4,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Unum Brand Guidelines</title>
-    <link rel="stylesheet" href="styles/styles.min.css">
+    <link rel="stylesheet" href="/styles/unum-styles.min.css">
 </head>
 <body>
-    <div class="willow-layout">
-        <div class="willow-layout__row--remove-margin-bottom">
-            <div class="willow-layout__column--12">
-               <div class="willow-skip-nav">
-                    <a href="#mainContent" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
-                </div>
-                <header class="willow-page-header" role="banner">
-					<div class="willow-page-header__branding">
-						<a class="willow-logo-link" href="/unum" aria-label="go to home page">
-							<img class="willow-logo-link__image" src="images/header-logo-final.png" alt="Unum Brand Guidelines logo" />
-						</a>
-					</div>
-					<div class="willow-page-header__content-controls">
-						<a class="willow-page-header__content-open" aria-label="open menu" href="#"><span class="willow-icon--menu"></span></a>
-						<a class="willow-page-header__content-close" aria-label="close menu" href="#"><span class="willow-icon--close"></span></a>
-					</div>
-					<div class="willow-page-header__content">
-						<div class="willow-page-header__navigation">
-							<nav class="willow-primary-nav" role="navigation" aria-label="Primary Navigation">
-								<h1 class="willow-primary-nav__heading">Primary Navigation</h1>
-								<ul class="willow-primary-nav__list">
-									<li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="index.html">Overview</a></li>
-									<li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="digital.html">Digital</a></li>
-									<li class="willow-primary-nav__item"><a class="willow-primary-nav__link" href="print.html">Print</a></li>
-                                    <li class="willow-primary-nav__item"><a class="willow-primary-nav__link--active" href="voicetone.html">Voice & Tone</a></li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</header>
+    <div class="willow-page-container">
+        <div class="willow-skip-nav">
+            <div class="container-fluid">
+                <a href="#mainContent" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
             </div>
         </div>
-        <div class="willow-layout__row">
-            <div class="willow-layout__column--12">
-                <section class="willow-banner main-banner" role="region">					
-                    <h1 class="willow-banner__heading"><img class="main-banner__heading-icon" src="images/tone-and-voice-icon-unum.svg" alt="">Voice & Tone Guidelines</h1>
-                    <div class="willow-banner__content">
-                        <div class="willow-styling-context">
-                            <p>The way we speak to our partners and customers is a critical part of our brand identity.</p>
-                        </div>                    
+        <header class="willow-page-header" role="banner">
+            <div class="container-fluid">
+                <div class="willow-page-header__container">
+                    <div class="willow-page-header__branding">
+                        <a class="willow-logo-link" href="/unum" aria-label="go to home page">
+                            <img class="willow-logo-link__image" src="images/header-logo-final.png" alt="Unum Brand Guidelines logo" />
+                        </a>
                     </div>
-                </section>
+                    <div class="willow-page-header__content-controls">
+                        <a class="willow-page-header__content-open" aria-label="Open Menu" href="#">
+                            <span class="willow-icon willow-icon--menu"></span>
+                        </a>
+                        <a class="willow-page-header__content-close" aria-label="Close Menu" href="#">
+                            <span class="willow-icon willow-icon--close"></span>
+                        </a>
+                    </div>
+                    <div class="willow-page-header__content">
+                        <div class="willow-page-header__navigation">
+                            <nav class="willow-primary-nav" role="navigation" aria-label="primary">
+                                <h1 class="willow-primary-nav__heading sr-only">Site Primary Menu</h1>
+                                <ul class="willow-primary-nav__list">
+                                    <li class="willow-primary-nav__item">
+                                        <a class="willow-primary-nav__link" href="index.html">Overview</a>
+                                    </li>
+                                    <li class="willow-primary-nav__item">
+                                        <a class="willow-primary-nav__link" href="digital.html">Digital</a>
+                                    </li>
+                                    <li class="willow-primary-nav__item">
+                                        <a class="willow-primary-nav__link" href="print.html">Print</a>
+                                    </li>
+                                    <li class="willow-primary-nav__item willow-primary-nav__link--active">
+                                        <a class="willow-primary-nav__link" href="voicetone.html">Voice & Tone</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="willow-layout__row">
-            <div class="willow-layout__column--3">
-                <nav class="willow-secondary-nav" role="navigation" aria-label="Secondary Navigation">
-                    <h1 class="willow-secondary-nav__heading--visible">Voice & Tone Guidelines</h1>
-                    <ul class="willow-secondary-nav__list">
-                        <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#attributes">Brand Attributes</a></li>
-                        <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#vision">Vision</a></li>
-                        <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#loud-and-clear">Coming In Loud And Clear</a></li>
-                        <li class="willow-secondary-nav__item"><a class="willow-secondary-nav__link" href="#mapping-the-voice">Mapping the Voice</a></li>
-                    </ul>
-                </nav>
+        </header>
+        <section class="willow-banner main-banner" role="region">
+            <div class="container-fluid">
+                <img class="main-banner__icon" src="images/tone-and-voice-icon-unum.svg" alt="">
+                <h1 class="willow-banner__heading">Voice & Tone Guidelines</h1>
+                <div class="willow-banner__content">
+                    <div class="willow-styling-context">
+                        <p>The way we speak to our partners and customers is a critical part of our brand identity.</p>
+                    </div>
+                </div>
             </div>
-            <div class="willow-layout__column--9">
-                <main class="willow-page-content" role="main">
-                    <section class="category">
-                        <h1 class="category__heading" id="attributes">Brand Attributes</h1>
-                        <section class="section">
-                            <h2 class="section__heading">Forward Thinking</h2>
-                            <p class="section__description">We move ahead of the times. We look to the future and see what's coming. We are proactive versus reactive.</p>
+        </section>
+        <main class="willow-page-content flex-grow" role="main" id="mainContent">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <nav class="willow-secondary-nav" role="navigation" aria-label="secondary">
+                            <h1 class="willow-secondary-nav__heading">Voice & Tone Guidelines</h1>
+                            <ul class="willow-secondary-nav__list">
+                                <li class="willow-secondary-nav__item">
+                                    <a class="willow-secondary-nav__link" href="#attributes">Brand Attributes</a>
+                                </li>
+                                <li class="willow-secondary-nav__item">
+                                    <a class="willow-secondary-nav__link" href="#vision">Vision</a>
+                                </li>
+                                <li class="willow-secondary-nav__item">
+                                    <a class="willow-secondary-nav__link" href="#loud-and-clear">Coming In Loud And Clear</a>
+                                </li>
+                                <li class="willow-secondary-nav__item">
+                                    <a class="willow-secondary-nav__link" href="#mapping-the-voice">Mapping the Voice</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-9">
+                        <section class="category">
+                            <h1 class="category__heading" id="attributes">Brand Attributes</h1>
+                            <h2>Forward Thinking</h2>
+                            <p>We move ahead of the times. We look to the future and see what's coming. We are proactive versus reactive.</p>
+                            <h2>Caring</h2>
+                            <p>Our business is about helping people when they need it most. We understand the customers' needs.</p>
+                            <h2>Quietly Confident</h2>
+                            <p>We're knowledgeable and are experts in what we do, but we are never arrogant and are always professional.</p>
+                            <h2>Passionate</h2>
+                            <p>We realize how important our products, our services, and our company are. We go about our business with enthusiasm, energy and a love for what we do.</p>
+                            <h2>Responsible</h2>
+                            <p>We care about doing the right thing for our company, our customers and our communities.</p>
                         </section>
-                        <section class="section">
-                            <h2 class="section__heading">Caring</h2>
-                            <p class="section__description">Our business is about helping people when they need it most. We understand the customers' needs.</p>
+                        <hr>
+                        <section class="category">
+                            <h1 class="category__heading" id="vision">Vision</h1>
+                            <p>To be the leading provider of employee benefits products and services that help employers manage their businesses and employees protect their families and livelihoods.</p>
                         </section>
-                        <section class="section">
-                            <h2 class="section__heading">Quietly Confident</h2>
-                            <p class="section__description">We're knowledgeable and are experts in what we do, but we are never arrogant and are always professional.</p>
+                        <hr>
+                        <section class="category">
+                            <h1 class="category__heading" id="loud-and-clear">Coming In Loud And Clear</h1>
+                            <h2>The Voice of the Brand</h2>
+                            <p>Trust comes not from monologues, but from conversations. That’s why our brand speaks in a voice that connects us with our customers — allowing room for our shared humanity to build a trusting relationship.</p>
+                            <p>We form a personal connection by speaking in the first person, with a style that is friendly and approachable. We use our audience’s language, adapting our words and examples to reflect their lives, their businesses, their challenges, and our shared experiences. In short, we aim to inflect our voice with the humanizing qualities of empathy and emotion.</p>
+                            <p>But we also know that our customers trust us to be the experts.  So our tone is confident and professional, conveying the knowledge and authority that helps them feel protected.</p>
                         </section>
-                        <section class="section">
-                            <h2 class="section__heading">Passionate</h2>
-                            <p class="section__description">We realize how important our products, our services, and our company are. We go about our business with enthusiasm, energy and a love for what we do.</p>
+                        <hr>
+                        <section class="category">
+                            <h1 class="category__heading" id="mapping-the-voice">Mapping the Voice</h1>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h2>Our voice is...</h2>
+                                        </th>
+                                        <th>
+                                            <h2>without being...</h2>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h3>Professional</h3>
+                                            <p>Reneé, meet Aileen, your new Implementation Specialist. She'll help you set up your new client account.</p>
+                                        </td>
+                                        <td>
+                                            <h3>Formal</h3>
+                                            <p>Please allow us to introduce Aileen, who will serve as your Implementation Specialist for the duration of your onboarding period.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h3>Conversational</h3>
+                                            <p>Hi, Reneé, I'm your new Implementation Specialist.</p>
+                                        </td>
+                                        <td>
+                                            <h3>Casual</h3>
+                                            <p>What's up, Reneé?</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h3>Knowledgeable</h3>
+                                            <p>We work with dozens of benefit administration systems, so we can help you understand which is right for you.</p>
+                                        </td>
+                                        <td>
+                                            <h3>Condescending</h3>
+                                            <p>Understanding benefits administration is difficult. Let us choose a system for you.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h3>Confident</h3>
+                                            <p>With 165 years of experience protecting employees and their families, we can help solve your benefits problems quickly and easily.</p>
+                                        </td>
+                                        <td>
+                                            <h3>Arrogant</h3>
+                                            <p>As a leading benefits provider for more than a century, we are more than qualified to design exceptional benefit plans for your business.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h3>Empathetic</h3>
+                                            <p>When you can't work, we know that stress can mount. Between paying the bills and focusing on recovery, you've got a lot on your mind.</p>
+                                        </td>
+                                        <td>
+                                            <h3>Sentimental</h3>
+                                            <p>From blowing out birthday candles to walking the beach with your spouse, we cherish the moments that matter to you.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h3>Optimistic</h3>
+                                            <p>You see a bright future for your business. We can help you get there, with benefits that appeal to talented workers in your industry.</p>
+                                        </td>
+                                        <td>
+                                            <h3>Impractical</h3>
+                                            <p>With Unum, the sky's the limit. Our benefits will allow you to attract the highest quality talent, so you can become the leader in your industry.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </section>
-                        <section class="section">
-                            <h2 class="section__heading">Responsible</h2>
-                            <p class="section__description">We care about doing the right thing for our company, our customers and our communities.</p>
-                        </section>
-                    </section>
-                    <hr>
-                    <section class="category">
-                        <h1 class="category__heading" id="vision" >Vision</h1>
-                        <p class="category__description">To be the leading provider of employee benefits products and services that help employers manage their businesses and employees protect their families and livelihoods.</p>
-                    </section>
-                    <hr>
-                    <section class="category">
-                        <h1 class="category__heading" id="loud-and-clear">Coming In Loud And Clear</h1>
-                        <section class="section">
-                            <h2 class="section__heading">The Voice of the Brand</h2>
-                            <p class="category__description">Trust comes not from monologues, but from conversations. That’s why our brand speaks in a voice that connects us with our customers — allowing room for our shared humanity to build a trusting relationship.</p>
-                            <p class="category__description">We form a personal connection by speaking in the first person, with a style that is friendly and approachable. We use our audience’s language, adapting our words and examples to reflect their lives, their businesses, their challenges, and our shared experiences. In short, we aim to inflect our voice with the humanizing qualities of empathy and emotion.</p>
-                            <p class="category__description">But we also know that our customers trust us to be the experts.  So our tone is confident and professional, conveying the knowledge and authority that helps them feel protected.</p>
-                        </section>
-                    </section>
-                    <hr>
-                    <section class="category">
-                    <h1 class="category__heading" id="mapping-the-voice">Mapping the Voice</h1>
-                    <section class="section">
-                        <section class="voice-box">
-                            <div class="voice-box__positive">
-                                <h3 class="voice-box__heading" data-label="Our voice is...">Professional</h3>
-                                <p class="voice-box__content">Reneé, meet Aileen, your new Implementation Specialist. She'll help you set up your new client account.</p>
-                            </div>
-                            <div class="voice-box__negative">
-                                <h3 class="voice-box__heading" data-label="without being...">Formal</h3>
-                                <p class="voice-box__content">Please allow us to introduce Aileen, who will serve as your Implementation Specialist for the duration of your onboarding period.</p>
-                            </div>
-                        </section>
-                        <section class="voice-box">
-                            <div class="voice-box__positive">
-                                <h3 class="voice-box__heading" data-label="Our voice is...">Conversational</h3>
-                                <p class="voice-box__content">Hi, Reneé, I'm your new Implementation Specialist.</p>
-                            </div>
-                            <div class="voice-box__negative">
-                                <h3 class="voice-box__heading" data-label="without being...">Casual</h3>
-                                <p class="voice-box__content">What's up, Reneé?</p>
-                            </div>
-                        </section>
-                        <section class="voice-box">
-                            <div class="voice-box__positive">
-                                <h3 class="voice-box__heading" data-label="Our voice is...">Knowledgeable</h3>
-                                <p class="voice-box__content">We work with dozens of benefit administration systems, so we can help you understand which is right for you.</p>
-                            </div>
-                            <div class="voice-box__negative">
-                                <h3 class="voice-box__heading" data-label="without being...">Condescending</h3>
-                                <p class="voice-box__content">Understanding benefits administration is difficult. Let us choose a system for you.</p>
-                            </div>
-                        </section>
-                        <section class="voice-box">
-                            <div class="voice-box__positive">
-                                <h3 class="voice-box__heading" data-label="Our voice is...">Informative</h3>
-                                <p class="voice-box__content">Under the Affordable Care Act, you can cover your children until age 26.</p>
-                            </div>
-                            <div class="voice-box__negative">
-                                <h3 class="voice-box__heading" data-label="without being...">Academic</h3>
-                                <p class="voice-box__content">Pursuant to the Patient Protection and Affordable Care Act, taxpayers may insure their dependent children until the last day of the year in which they turn 25.</p>
-                            </div>
-                        </section>
-                        <section class="voice-box">
-                            <div class="voice-box__positive">
-                                <h3 class="voice-box__heading" data-label="Our voice is...">Confident</h3>
-                                <p class="voice-box__content">With 165 years of experience protecting employees and their families, we can help solve your benefits problems quickly and easily.</p>
-                            </div>
-                            <div class="voice-box__negative">
-                                <h3 class="voice-box__heading" data-label="without being...">Arrogant</h3>
-                                <p class="voice-box__content">As a leading benefits provider for more than a century, we are more than qualified to design exceptional benefit plans for your business.</p>
-                            </div>
-                        </section>
-                        <section class="voice-box">
-                            <div class="voice-box__positive">
-                                <h3 class="voice-box__heading" data-label="Our voice is...">Empathetic</h3>
-                                <p class="voice-box__content">When you can't work, we know that stress can mount. Between paying the bills and focusing on recovery, you've got a lot on your mind.</p>
-                            </div>
-                            <div class="voice-box__negative">
-                                <h3 class="voice-box__heading" data-label="without being...">Sentimental</h3>
-                                <p class="voice-box__content">From blowing out birthday candles to walking the beach with your spouse, we cherish the moments that matter to you.</p>
-                            </div>
-                        </section>
-                        <section class="voice-box">
-                            <div class="voice-box__positive">
-                                <h3 class="voice-box__heading" data-label="Our voice is...">Optimistic</h3>
-                                <p class="voice-box__content">You see a bright future for your business. We can help you get there, with benefits that appeal to talented workers in your industry.</p>
-                            </div>
-                            <div class="voice-box__negative">
-                                <h3 class="voice-box__heading" data-label="without being...">Impractical</h3>
-                                <p class="voice-box__content">With Unum, the sky's the limit. Our benefits will allow you to attract the highest quality talent, so you can become the leader in your industry.</p>
-                            </div>
-                        </section>
-                    </section>  
-                </main>
+                    </div>
+                </div>
             </div>
-        </div>
-    
-        <div class="willow-layout__row">
-			<div class="willow-layout__column--12">
-                <footer class="willow-page-footer" role="contentinfo">
+        </main>
+        <footer class="willow-page-footer" role="contentinfo">
+            <div class="container-fluid">
+                <div class="willow-page-footer__container">
                     <div class="willow-page-footer__branding">
                         <a class="willow-logo-link" href="/unum" aria-label="go to home page">
                             <img class="willow-logo-link__image" src="images/unum-reversed-logo.svg" alt="Unum Brand Guidelines logo" />
                         </a>
                     </div>
                     <div class="willow-page-footer__navigation">
-                        <nav class="willow-footer-nav" role="navigation" aria-label="Footer Navigation">
-                            <h1 class="willow-footer-nav__heading">Footer Navigation</h1>
+                        <nav class="willow-footer-nav" role="navigation" aria-label="footer">
+                            <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
                             <ul class="willow-footer-nav__list">
-                                <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="index.html" aria-label="">Overview</a></li>
-                                <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="digital.html" aria-label="">Digital</a></li>
-                                <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="print.html" aria-label="">Print</a></li>
-                                <li class="willow-footer-nav__item"><a class="willow-footer-nav__link" href="voicetone.html">Voice & Tone</a></li>
+                                <li class="willow-footer-nav__item">
+                                    <a class="willow-footer-nav__link" href="index.html" aria-label="">Overview</a>
+                                </li>
+                                <li class="willow-footer-nav__item">
+                                    <a class="willow-footer-nav__link" href="digital.html" aria-label="">Digital</a>
+                                </li>
+                                <li class="willow-footer-nav__item">
+                                    <a class="willow-footer-nav__link" href="print.html" aria-label="">Print</a>
+                                </li>
+                                <li class="willow-footer-nav__item">
+                                    <a class="willow-footer-nav__link" href="voicetone.html">Voice & Tone</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
                     <small class="willow-page-footer__copyright">© 2017 Unum Group. All rights reserved. Unum is a registered trademark and marketing brand of Unum Group and its insuring subsidiaries.</small>
-                </footer>
-			</div>
-        </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="scripts/site.min.js"></script>
 </body>

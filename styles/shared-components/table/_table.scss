@@ -1,0 +1,9 @@
+.table {
+    border: $component-border-width solid $component-table-border-color;
+    margin: $space-stack-l;
+
+    @import "row";
+    @import "group";
+    @import "item";
+    @import "grouped-content";
+}

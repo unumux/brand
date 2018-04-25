@@ -1,9 +1,5 @@
-@mixin base() {
-    background-color:#E0DDCE;
-}
-
 &--sand {
-    @include base;
+    background-color:#E0DDCE;
 
     &-dark-4 {
         background-color: #A7A07D;
@@ -36,19 +32,4 @@
     &-light-4 {
         background-color: #FBFAF7;
     }
-
-    &--print {
-        @include base;
-        
-        border-radius: 0.2rem;
-        height: 10rem;
-        width: 17rem;
-    }
-
-    &--reverse {
-        @include base;
-
-        border-radius: 0.4rem;
-    }
-
 }

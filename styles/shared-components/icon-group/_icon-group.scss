@@ -1,0 +1,10 @@
+.icon-group {
+    display: flex;
+    margin: $space-stack;
+    width: 100%;
+
+    @import "image-container";
+    @import "image";
+    @import "label";
+    @import "indicator";
+}

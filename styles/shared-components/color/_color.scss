@@ -1,0 +1,15 @@
+.color {
+    margin: $space-stack;
+
+    h3 {
+        @include set-text-style($text-style-heading-5);
+        margin-top: 0;
+    }
+
+    p {
+        @include set-text-style($text-style-content-2);
+        margin-top: 0;
+    }
+
+    @import "base";
+}

@@ -1,0 +1,49 @@
+.asset {
+        align-items: center;
+        border: 1px solid $component-border-color;
+        border-radius: 3px;
+        display: flex;
+        height: 140px;
+        justify-content: center; //Min height doesnt work in IE11, has to have a height set to align-items in flex
+        margin: $space-stack;
+
+    &--dark {
+        background-color: #19557F;
+    }
+    
+    &--light {
+        background-color: #E0DDCE;
+    }
+
+    &--slate {
+        background-color: #5B7183;
+    }
+
+    &--pewter {
+        background-color: #8394a1;
+    }
+
+    &--moss {
+        background-color: #537650;
+    }
+
+    &--leaf {
+        background-color: #78B25D;
+    }
+    
+    img {
+        width: 190px;
+    }
+    
+    &--container-only {
+        border: 0;
+        border-radius: 0;
+        display: block;
+        height: auto;
+
+        img {
+            width: auto;
+        }
+    }
+
+}

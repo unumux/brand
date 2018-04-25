@@ -1,0 +1,15 @@
+&__row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: $space-inset-l;
+    
+    &:nth-of-type(odd) {
+        background-color: $component-table-row-background-color-odd;
+    }
+    
+    &:nth-of-type(even) {
+        background-color: $component-table-row-background-color-even;
+    }
+}

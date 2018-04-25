@@ -1,0 +1,14 @@
+&__group {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    margin: $space-stack;
+    order: 3;
+
+    @media screen and (min-width: breakpoint(medium)) {
+        flex-basis: auto;
+        flex-wrap: nowrap;
+        order: 2;
+        width: 30%;
+    }
+}

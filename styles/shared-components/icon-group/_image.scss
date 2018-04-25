@@ -1,0 +1,7 @@
+&__image  {
+    height: 50px;
+    
+    @media screen and (min-width: breakpoint(medium)) {
+        margin: $space-inline-s;
+    }
+}

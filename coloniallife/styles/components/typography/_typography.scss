@@ -1,54 +1,52 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
-@mixin base() {
-    margin-bottom: space(2);
-}
-
 .typography {
-    @include base;
+    margin: $space-stack-s;
+    word-wrap: break-word;
 
     p {
         font-weight: 600;
+        margin-top: 0;
     }
 
-    &--oswald {
-        @include base;
-        
-        p {
-            @include set-text-style($text-style-heading-1);
+    &__image-container {
+        margin: $space-stack;
+        margin-left: $space;
+        width: 250px;
+
+        img {
+            width: 100%;
         }
     }
+}
 
-    &--open-sans {
-        @include base;
-        
-        p {
-            @include set-text-style($text-style-content-1);
-        }
+.typography--oswald {
+    p {
+        @include set-text-style($text-style-heading-1);
     }
-    
-    &--open-sans-semibold {
-        @include base;
-        
-        p {
-            @include set-text-style($text-style-heading-3);
-        }
+}
+
+.typography--open-sans {
+    p {
+        @include set-text-style($text-style-content-1);
     }
+}
 
-    &--source-sans-pro-light {
-        @include base;
-
-        p {
-            font-family: 'Source Sans Pro';
-        }
+.typography--open-sans-semibold {
+    p {
+        @include set-text-style($text-style-heading-3);
     }
+}
 
-    &--source-sans-pro-semibold {
-        @include base;
+.typography--source-sans-pro-light {
+    p {
+        font-family: 'Source Sans Pro';
+    }
+}
 
-        p {
-            font-family: 'Source Sans Pro';
-            font-weight: 600;
-        }
+.typography--source-sans-pro-semibold {
+    p {
+        font-family: 'Source Sans Pro';
+        font-weight: 600;
     }
 }

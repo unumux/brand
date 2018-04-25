@@ -1,0 +1,28 @@
+@import "asset/asset";
+@import "actions/actions";
+@import "colors/colors";
+@import "color/color";
+@import "table/table";
+@import "photo/photo";
+@import "range/range";
+@import "category/category";
+@import "overrides/overrides";
+@import "copyright/copyright";
+@import "icon-group/icon-group";
+@import "legend/legend";
+
+
+th,
+td {
+    h2,
+    h3 {
+        margin: 0;
+    }
+}
+
+hr {
+    background-color: $component-border-color;
+    border-style: none;
+    height: 3px;
+    margin: $space-stack-l;
+}

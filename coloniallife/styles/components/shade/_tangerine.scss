@@ -1,9 +1,5 @@
-@mixin base() {
-    background-color: #F1C44F;
-}
-
 &--tangerine {
-    @include base;
+    background-color: #F1C44F;
 
     &-dark-4 {
         background-color: #C79719;
@@ -36,19 +32,4 @@
     &-light-4 {
         background-color: #FFF7E1;
     }
-    
-    &--print {
-        @include base;
-        
-        border-radius: 0.2rem;
-        height: 10rem;
-        width: 17rem;
-    }
-
-    &--reverse {
-        @include base;
-
-        border-radius: 0.4rem;
-    }
-
 }

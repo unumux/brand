@@ -1,0 +1,12 @@
+&__base {
+    align-items: center;
+    border-radius: 3px;
+    display: flex;
+    height: 10rem;
+    justify-content: space-between;
+    padding: $space-inset;
+
+    &--inverse-text {
+        color: $component-body-text-color-inverse;
+    }
+}

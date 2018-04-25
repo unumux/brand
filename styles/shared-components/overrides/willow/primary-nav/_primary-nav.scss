@@ -1,0 +1,6 @@
+.willow-primary-nav {
+    &__link {
+        @include set-text-style($text-style-content-1);
+        font-weight: 600;
+    }
+}
