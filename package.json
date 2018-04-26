@@ -5,11 +5,16 @@
         "@unumux/willow": "^1.0.2",
         "@unumux/theme-coloniallife-default": "^1.0.0",
         "@unumux/theme-unum-default": "^1.0.0",
+        "imagemin-cli": "^3.0.0",
+        "imagemin-pngquant": "^5.0.0",
+        "imagemin-svgo": "^5.2.1",
         "handlebars": "^4.0.0",
         "marked": "^0.3.9",
         "uglify-js": "^2.6.0"
     },
     "scripts": {
-        "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=."
+        "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=.",
+        "unumimagemin": "imagemin ./unum/images-source/* --out-dir=./unum/images --plugin=pngquant --plugin=svgo",
+        "coloniallifeimagemin": "imagemin ./coloniallife/images-source/* --out-dir=./coloniallife/images --plugin=pngquant --plugin=svgo"
     }
 }
