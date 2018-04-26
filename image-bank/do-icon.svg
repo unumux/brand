@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>do-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Web" transform="translate(-585.000000, -6380.000000)" fill="#4BA389">
+            <g id="Iconography" transform="translate(375.000000, 5647.000000)">
+                <g id="Level-of-Detail" transform="translate(4.000000, 519.000000)">
+                    <path d="M243.762486,229.987155 L243.762486,236.012845 C242.318895,245.074867 234.468651,252 224.999997,252 C214.50606,252 206,243.493938 206,233 C206,222.506063 214.50606,214 224.999997,214 C234.468651,214 242.318895,220.925133 243.762486,229.987156 L243.762486,229.987155 Z M233.200872,224.575875 L235.799122,226.950875 L221.549122,242.722063 L214.200872,235.373813 L216.687497,232.887188 L221.325872,237.525563 L233.200872,224.574688 L233.200872,224.575875 Z" id="do-icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
