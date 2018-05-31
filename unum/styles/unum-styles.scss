@@ -43,3 +43,8 @@ $text-style-heading-3: (
 
 @import "../../styles/shared-components/shared-components";
 @import "components/components";
+
+.large-text {
+    font-size: $font-size-l;
+    font-weight: 600;
+}

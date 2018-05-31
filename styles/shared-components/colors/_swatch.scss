@@ -1,6 +1,7 @@
 &__swatch {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     height: 5rem;
     justify-content: space-between;
     padding: $space-inset;
