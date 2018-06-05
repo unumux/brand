@@ -1,4 +1,18 @@
+$color-blue-light: #4981B0;
+$color-blue: #015294;
+$color-blue-dark: #19629D;
+$color-blue-darker: #024882;
+
+$theme-primary: $color-blue;
+$theme-primary-2: $color-blue-dark;
+$theme-primary-3: $color-blue-light;
+$theme-primary-4: $color-blue-darker;
+
+$theme-action-primary: $color-blue;
+$theme-action-primary-2: $color-blue-light;
+$theme-action-primary-3: $color-blue-darker;
 @import "../node_modules/@unumux/theme-unum-default/styles";
+
 
 $text-style-heading-1: ( 
     family: $font-family-primary, 
