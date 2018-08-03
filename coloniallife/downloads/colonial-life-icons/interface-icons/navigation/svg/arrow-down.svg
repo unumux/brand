@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="20px" viewBox="0 0 32 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Interface/navigation/arrow-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-1423.000000, -354.000000)" fill="#FFFFFF">
+            <g id="Interface/navigation/arrow-down" transform="translate(1423.000000, 354.000000)">
+                <path d="M6.3031635,1.09834957 C4.86122765,-0.366116524 2.52338773,-0.366116524 1.08145188,1.09834957 C-0.360483962,2.56281566 -0.360483962,4.93718434 1.08145188,6.40165043 L13.3891442,18.9016504 C14.83108,20.3661165 17.16892,20.3661165 18.6108558,18.9016504 L30.9185481,6.40165043 C32.360484,4.93718434 32.360484,2.56281566 30.9185481,1.09834957 C29.4766123,-0.366116524 27.1387723,-0.366116524 25.6968365,1.09834957 L16,10.9466991 L6.3031635,1.09834957 Z" transform="translate(16.000000, 10.000000) scale(1, -1) rotate(-180.000000) translate(-16.000000, -10.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>interface/actions/filter</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-1498.000000, -108.000000)" fill="#FFFFFF">
+            <g id="Interface/actions/filter" transform="translate(1498.000000, 108.000000)">
+                <path d="M12.7826913,17.3332993 L0.244306695,1.74457202 C0.0910757078,1.55406294 0.00753845264,1.31691573 0.00753845264,1.07242965 C0.00753845264,0.480143108 0.487681561,0 1.0799681,0 L30.9199924,-3.55271368e-15 C31.1644785,-3.55271368e-15 31.4016257,0.0835372551 31.5921348,0.236768242 C32.0536578,0.607982223 32.1268678,1.28304897 31.7556538,1.74457202 L19.2172692,17.3332993 L19.2172692,25.2409299 C19.2172692,25.4739218 19.1413916,25.700576 19.0011143,25.886607 L14.7113957,31.5754847 C14.3547981,32.0483922 13.6823514,32.14268 13.2094439,31.7860824 C12.9407053,31.5834391 12.7826913,31.2663857 12.7826913,30.9298076 L12.7826913,17.3332993 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

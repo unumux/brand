@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>interface/actions/do-not</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-1354.000000, -108.000000)" fill="#FFFFFF">
+            <g id="Interface/actions/do-not" transform="translate(1354.000000, 108.000000)">
+                <path d="M5.93384162,9.46500198 C4.71064399,11.3452946 4,13.5896574 4,16 C4,22.627417 9.372583,28 16,28 C18.4103426,28 20.6547054,27.289356 22.534998,26.0661584 L5.93384162,9.46500198 Z M9.47030274,5.93039528 L26.0696047,22.5296973 C27.2906907,20.6504879 28,18.408078 28,16 C28,9.372583 22.627417,4 16,4 C13.591922,4 11.3495121,4.70930927 9.47030274,5.93039528 Z M16,32 C7.163444,32 0,24.836556 0,16 C0,7.163444 7.163444,0 16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

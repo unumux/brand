@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>interface/actions/edit</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-1547.000000, -289.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Interface/actions/edit" transform="translate(1547.000000, 288.000000)">
+                <path d="M22.4297688,2.14317697 L20.8320911,3.7408657 L28.2591601,11.1679859 L29.856823,9.57028241 C31.0404531,8.38664423 31.0404531,6.46759621 29.856823,5.28395802 L26.716108,2.14316219 C25.5324722,0.959518238 23.6134127,0.959511623 22.4297688,2.14314742 C22.4297639,2.14315234 22.4297589,2.14315727 22.429754,2.14316219 Z M19.5896953,4.98327 L2.91974815,21.6533321 L10.3468172,29.0804523 L27.0167644,12.4103902 L19.5896953,4.98327 Z M1.78657402,23.0049588 L0.0252707483,30.7661099 C-0.0982148977,31.3102472 0.242790624,31.8514625 0.7869279,31.9749481 C0.934117944,32.0083512 1.08692197,32.008351 1.23411191,31.9749475 L8.99519983,30.2136343 L1.78657402,23.0049588 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

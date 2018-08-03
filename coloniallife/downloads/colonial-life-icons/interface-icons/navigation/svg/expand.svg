@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Interface/navigation/expand</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-1257.000000, -228.000000)" fill="#FFFFFF">
+            <g id="Interface/navigation/expand" transform="translate(1257.000000, 228.000000)">
+                <path d="M20,12 L29.3333333,12 C30.8060927,12 32,13.1939073 32,14.6666667 L32,17.3333333 C32,18.8060927 30.8060927,20 29.3333333,20 L20,20 L20,29.3333333 C20,30.8060927 18.8060927,32 17.3333333,32 L14.6666667,32 C13.1939073,32 12,30.8060927 12,29.3333333 L12,20 L2.66666667,20 C1.19390733,20 0,18.8060927 0,17.3333333 L0,14.6666667 C0,13.1939073 1.19390733,12 2.66666667,12 L12,12 L12,2.66666667 C12,1.19390733 13.1939073,2.705415e-16 14.6666667,0 L17.3333333,0 C18.8060927,-2.705415e-16 20,1.19390733 20,2.66666667 L20,12 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

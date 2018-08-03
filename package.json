@@ -1,16 +1,16 @@
 {
     "private": true,
     "devDependencies": {
-        "@unumux/ux-build-tools": "^3.7.0",
-        "@unumux/willow": "^1.0.2",
         "@unumux/theme-coloniallife-default": "^1.0.0",
         "@unumux/theme-unum-default": "^1.0.0",
+        "@unumux/ux-build-tools": "^3.7.0",
+        "@unumux/willow": "^1.1.0",
+        "handlebars": "^4.0.11",
         "imagemin-cli": "^3.0.0",
-        "imagemin-pngquant": "^5.0.0",
-        "imagemin-svgo": "^5.2.1",
-        "handlebars": "^4.0.0",
-        "marked": "^0.3.9",
-        "uglify-js": "^2.6.0"
+        "imagemin-pngquant": "6.0.0",
+        "imagemin-svgo": "^7.0.0",
+        "marked": "^0.4.0",
+        "uglify-js": "^3.4.6"
     },
     "scripts": {
         "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=.",
