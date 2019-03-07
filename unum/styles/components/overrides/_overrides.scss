@@ -39,3 +39,11 @@ h2 {
 table h2 {
     color: #fff;
 }
+
+.willow-icon--menu {
+    background-image: hamburger-icon();
+}
+
+.willow-icon--close {
+    background-image: close-icon();
+}
