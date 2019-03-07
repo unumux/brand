@@ -26,3 +26,138 @@
         }
     }
 }
+
+
+
+
+@function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+
+    @return $number;
+}
+
+@function line-height($font-size) {
+    $increment: ($max-line-height - $min-line-height) / ($max-font-size - $min-font-size);
+
+    @return $min-line-height + (($max-font-size - strip-unit($font-size)) * $increment);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400');
+
+$font-family-primary: "Ubuntu", "sans-serif" !default;
+$font-family-secondary: "Open Sans", "helvetica", "arial", "sans-serif" !default;
+
+$min-font-size: 1rem !default;
+$max-font-size: 5rem !default;
+$min-line-height: 1.2 !default;
+$max-line-height: 1.6 !default;
+
+//Font Ratios
+$font-ratio: 1.2;
+$font-size: 1.6rem; //ONE POINT SIX
+
+$font-size-s: $font-size / $font-ratio; //  1.3rem   This one has to go first b/c its being called immediately into xs
+$font-size-xs: $font-size-s / $font-ratio; // 1.11rem
+$font-size-l: $font-size * $font-ratio; //1.92rem
+$font-size-xl: $font-size-l * $font-ratio; //2.304rem
+$font-size-2xl: $font-size-xl * $font-ratio; //2.765rem
+$font-size-3xl: $font-size-2xl * $font-ratio; //3.318
+$font-size-4xl: $font-size-3xl * $font-ratio * $font-ratio; //4.7775
+$font-size-5xl: $font-size-4xl * $font-ratio * $font-ratio; //6.8
+$font-size-6xl: $font-size-5xl * $font-ratio; //8.25
+
+//Line Heights for Fonts
+$line-height-font-size-xs: line-height($font-size-xs) !default;
+$line-height-font-size-s: line-height($font-size-s) !default;
+$line-height-font-size: line-height($font-size) !default;
+$line-height-font-size-l: line-height($font-size-l) !default;
+$line-height-font-size-xl: line-height($font-size-xl) !default;
+$line-height-font-size-2xl: line-height($font-size-2xl) !default;
+$line-height-font-size-3xl: line-height($font-size-3xl) !default;
+$line-height-font-size-4xl: line-height($font-size-4xl) !default;
+$line-height-font-size-5xl: line-height($font-size-5xl) !default;
+$line-height-font-size-6xl: line-height($font-size-6xl) !default;
+
+@mixin set-text($mapName) {
+    color: map-get($mapName, color);
+    font-family: map-get($mapName, family);
+    font-size: map-get($mapName, size);
+    font-style: map-get($mapName, style);
+    font-weight: map-get($mapName, weight);
+    line-height: map-get($mapName, line);
+}
+
+$base-text: (
+    family: $font-family-secondary,
+    weight: 400
+) !default;
+
+$base-plus-8: map-merge($base-text, (
+    family: $font-family-primary,
+    size: $font-size-6xl,
+    line: line-height($font-size-6xl)
+)) !default;
+
+$base-plus-7: map-merge($base-text, (
+    family: $font-family-primary,
+    size: $font-size-5xl,
+    line: line-height($font-size-5xl)
+)) !default;
+
+$base-plus-6: map-merge($base-text, (
+    size: $font-size-4xl,
+    line-height: line-height($font-size-4xl)
+));
+
+$base-plus-5: map-merge($base-text, (
+    family: $font-family-primary,
+    size: $font-size-3xl,
+    line: line-height($font-size-3xl)
+)) !default;
+
+$base-plus-4: map-merge($base-text, (
+    size: $font-size-2xl,
+    line-height: line-height($font-size-2xl)
+));
+
+$base-plus-3: map-merge($base-text, (
+    size: $font-size-xl,
+    line-height: line-height($font-size-xl)
+));
+
+$base-plus-2: map-merge($base-text, (
+    color: $color-blue-darker,
+    size: $font-size-l,
+    line-height: line-height($font-size-l),
+    weight: 600
+));
+
+$base-plus-1: map-merge($base-text, (
+    size: $font-size-l,
+    line-height: line-height($font-size-l),
+    weight: 400
+));
+
+$base: map-merge($base-text, (
+    size: $font-size,
+    line-height: line-height($font-size)
+));
+
+$base-minus-1: map-merge($base-text, (
+    size: $font-size-s,
+    line-height: line-height($font-size-s)
+));
+
+$base-minus-2: map-merge($base-text, (
+    size: $font-size-xs,
+    line-height: line-height($font-size-xs)
+));
+
+$base-minus-3: map-merge($base-text, (
+    size: $font-size-xs,
+    line-height: line-height($font-size-xs),
+    style: italic
+));

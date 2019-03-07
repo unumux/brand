@@ -1,1 +1,41 @@
 @import "willow/willow";
+@import "../../components/variables";
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+body, html {
+    color: $color-slate-darker;
+}
+
+h1 {
+    @include set-text($base-plus-5);
+    color: $color-blue;
+}
+
+h2 {
+    @include set-text($base-plus-4);
+    color: $color-slate-darker;
+
+    margin-top: 0.5rem;
+}
+
+.category {
+    section {
+        margin-top: 2.6rem;
+    }
+}
+
+.colors__color {
+    margin-top: 1.6rem;
+}
+
+table h2 {
+    color: #fff;
+}
