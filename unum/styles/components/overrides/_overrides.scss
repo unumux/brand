@@ -20,17 +20,22 @@ h1 {
 }
 
 h2 {
+    @include set-text($base-plus-4);
     color: $color-slate-darker;
-    font-weight: 400;
+
     margin-top: 0.5rem;
 }
 
 .category {
-    section + section {
+    section {
         margin-top: 2.6rem;
     }
 }
 
 .colors__color {
     margin-top: 1.6rem;
+}
+
+table h2 {
+    color: #fff;
 }
