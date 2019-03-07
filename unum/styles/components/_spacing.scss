@@ -1,0 +1,55 @@
+//spacing stuff
+@function pow($ratio, $exponent) {
+    $value: 1;
+
+    @if type-of($ratio) != "number" {
+        @warn "`#{$ratio}` is not a number. The 'pow' function requires a number for the ratio value";
+        @return false;
+    }
+
+    @if type-of($exponent) != "number" {
+        @warn "`#{$exponent}` is not a number. The 'pow' function requires a number for the exponent value";
+        @return false;
+    }
+
+    @if $exponent < 0 {
+        @warn "`#{$exponent}` must be greater than 0";
+        @return false;
+    }
+
+    @if $exponent > 0 {
+        @for $i from 1 through $exponent {
+            $value: $value * $ratio;
+        }
+    }
+
+    @return $value;
+}
+
+@function space($scale: 1) {
+    @if type-of($scale) != "number" {
+        @warn "`#{$scale}` is not a number. The 'space' function requires a number";
+        @return false;
+    }
+
+    @if $scale < 1 {
+        @return $base * pow($golden-inverse, floor(1 / $scale));
+    }
+
+    @return $base * pow($golden, $scale);
+}
+
+$base: 1.6rem;
+$golden: 1.618;
+$golden-inverse: $golden - 1;
+
+$space: $base; // 1.6rem
+$space-s: $space / $golden; // .95rem
+$space-xs: $space-s / $golden; // .56rem
+$space-xxs: $space-xs / $golden; // .33rem
+$space-l: $space * $golden; // 2.5rem
+$space-xl: $space-l * $golden; // 4.1rem
+$space-xxl: $space-xl * $golden; // 6.77777777777777777rem
+
+$component-padding: $space-xxl $space;
+$component-padding-desktop: 104px 0;

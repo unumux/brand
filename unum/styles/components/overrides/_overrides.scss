@@ -1,10 +1,6 @@
 @import "willow/willow";
 @import "../../components/variables";
-
-
-html {
-    font-size: 62.5%;
-}
+@import "../../components/spacing";
 
 body {
     font-size: 1.6rem;
@@ -26,9 +22,40 @@ h2 {
     margin-top: 0.5rem;
 }
 
+h3 {
+    @include set-text($base-plus-2);
+}
+
+<<<<<<< Updated upstream
+h4 {
+    @include set-text($base-plus-1);
+}
+
+h5 {
+
+}
+
+=======
+>>>>>>> Stashed changes
+p {
+    margin-top: 0.5rem;
+}
+
+hr {
+    margin: $space-xxl 0;
+}
+
+.support {
+    @include set-text($base-minus-1);
+    margin-top: 0;
+    span + span {
+        margin-left: $space;
+    }
+}
+
 .category {
     section {
-        margin-top: 2.6rem;
+        margin-top: $space-l;
     }
 }
 
@@ -36,9 +63,6 @@ h2 {
     margin-top: 1.6rem;
 }
 
-table h2 {
-    color: #fff;
-}
 
 .willow-icon--menu {
     background-image: hamburger-icon();
@@ -46,4 +70,38 @@ table h2 {
 
 .willow-icon--close {
     background-image: close-icon();
+}
+
+table {
+    h2 {
+        color: #fff;
+    } 
+}
+
+.table {
+    &__item {
+        color: $color-slate-darker;
+    }
+}
+
+.full-width {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+
+    @media screen and (min-width: 768px) {
+        
+        flex-flow: row nowrap;
+    }
+}
+
+.half-width {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 50%;
+        width: calc(50% - 1rem);
+    }
 }
