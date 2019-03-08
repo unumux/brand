@@ -33,17 +33,17 @@
     }
 
     @if $scale < 1 {
-        @return $base * pow($golden-inverse, floor(1 / $scale));
+        @return $spacebase * pow($golden-inverse, floor(1 / $scale));
     }
 
-    @return $base * pow($golden, $scale);
+    @return $spacebase * pow($golden, $scale);
 }
 
-$base: 1.6rem;
+$spacebase: 1.6rem;
 $golden: 1.618;
 $golden-inverse: $golden - 1;
 
-$space: $base; // 1.6rem
+$space: $spacebase; // 1.6rem
 $space-s: $space / $golden; // .95rem
 $space-xs: $space-s / $golden; // .56rem
 $space-xxs: $space-xs / $golden; // .33rem
