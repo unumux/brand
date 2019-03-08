@@ -1,4 +1,12 @@
 @mixin circle-color() {
+    &:before,
+    &:after {
+        opacity: 0;
+        transform: translateY(-5px);
+        visibility: hidden;
+        transition: 0.3s opacity, 0.2s transform;
+    }
+
     &:before {
         @include set-text($base-minus-2);
 
@@ -6,7 +14,6 @@
         background-color: $color-white;
         border: 1px solid $color-light-grey;
         border-radius: 4px;
-        display: none;
         left: -65px;
         padding: $space-xs;
         position: absolute;
@@ -17,7 +24,6 @@
     &:after {
         content: " ";
         border-bottom: 0;
-        display: none;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
         border-top: 10px solid $color-light-grey;
@@ -27,9 +33,13 @@
         top: -10px;
         width: 1px;
     }
-    &:hover:before,
-    &:hover:after {
-        display: block;
+    &:hover, &:focus {
+        &:before,
+        &:after {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+        }
     }
 }
 
