@@ -1,0 +1,239 @@
+@mixin circle-color() {
+    &:before,
+    &:after {
+        opacity: 0;
+        transform: translateY(-5px);
+        visibility: hidden;
+        transition: 0.3s opacity, 0.2s transform;
+    }
+
+    &:before {
+        @include set-text($base-minus-2);
+
+        content: " ";
+        background-color: $color-white;
+        border: 1px solid $color-light-grey;
+        border-radius: 4px;
+        left: -65px;
+        padding: $space-xs;
+        position: absolute;
+        text-align: center;
+        top: -41px;
+        width: 150px;
+    }
+    &:after {
+        content: " ";
+        border-bottom: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid $color-light-grey;
+        height: 1px;
+        position: absolute;
+        right: -3px;
+        top: -10px;
+        width: 1px;
+    }
+    &:hover, &:focus {
+        &:before,
+        &:after {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+        }
+    }
+}
+
+table {
+    h2 {
+        color: $color-white
+    } 
+}
+
+.circle {
+    border: 1px solid $color-light-grey;
+    border-radius: 8px;
+    //cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    margin-top: $space-s;
+    position: relative;
+    width: 16px;
+    &--white {
+        @include circle-color;
+        
+        background-color: $color-white;
+        &:before {
+            content: "White: #FFFFFF";
+        }
+    }
+    &--dark-grey {
+        @include circle-color;
+        
+        background-color: $color-dark-grey;
+        border-color: transparent;
+        &:before {
+            content: "Dark Grey: #2E2E2E";
+        }
+    }
+    &--unum-blue {
+        @include circle-color;
+        
+        background-color: $color-blue;
+        border-color: transparent;
+        &:before {
+            content: "Unum Blue: #015294";
+        }
+    }
+
+    &--slate {
+        @include circle-color;
+
+        background-color: $color-slate;
+        border-color: transparent;
+        &:before {
+            content: "Slate: #5A7184";
+        }
+    }
+
+    & + & {
+        margin-left: $space-l;
+    }
+}
+
+.table {
+    border: 0;
+    margin: 0;
+    margin-bottom: $space-l;
+
+    .h1 {
+        @include set-text($base-plus-5);
+    }
+
+    .h2 {
+        @include set-text($base-plus-4);
+    }
+
+    .h3 {
+        @include set-text($base-plus-3);
+    }
+
+    .h4 {
+        @include set-text($base-plus-1);
+    }
+
+    .h5 {
+        @include set-text($base);
+    }
+
+    .h6 {
+        @include set-text($base-minus-1);
+    }
+
+    .h7 {
+        @include set-text($base-minus-2);
+    }
+
+    &__heading {
+        @include set-text($base);
+        
+        color: $color-blue;
+        display: none;
+
+        @media screen and(min-width: 768px) {
+            display: inline-block;
+        }
+    }
+
+    .support {
+        clear: both;
+        display: inline-block;
+
+        @media screen and(min-width: 768px) {
+            display: none;
+        }
+
+    }
+
+    &__row {
+        
+        padding: 0;
+
+        &:nth-of-type(2n) {
+            background-color: transparent;
+        }
+        &:nth-of-type(2n+1) {
+            background-color: transparent;
+        }
+
+        & + & {
+            margin-top: $space-xl;
+            border-top: 1px solid $color-light-grey;
+            padding-top: $space-l;
+
+            @media screen and(min-width: 768px) {
+                margin-top: 0;
+                border-top: 0;
+                padding-top: 0;
+            }
+        }
+
+    }
+    
+    &__item {
+        color: $color-slate-darker;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        @media screen and(min-width: 768px) {
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        // &:not(.table__headings) {
+        //     border-top: 1px solid $color-light-grey;
+        //     padding-bottom: $space-xs;
+        // }
+
+        div {
+            flex-basis: 50%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            
+            &:nth-child(n + 3) {
+                margin-top: $space; // adds some space between the wrapped items on mobile
+
+                @media screen and(min-width: 768px) {
+                    margin-top: 0; //removes the margin after the column stop wrapping
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                flex-grow: 0;
+                flex-shrink: 0;
+                flex-basis: 24%;
+                margin-top: $space;
+            }
+        }
+    }
+
+    &__headings {
+        div {
+            justify-content: flex-start; //needed to move the column headings under the section heading.
+            margin-top: 0;
+        }
+    }
+}
+
+.font-example-image {
+    margin-top: $space-l;
+    width: 100%;
+}

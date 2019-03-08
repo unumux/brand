@@ -4,24 +4,6 @@
         margin-top: $space-l;
     }
 
-    &-heading {
-        margin-top: 3.2rem;
-        font-size: 2.4rem;
-        font-weight: 600;
-
-        &--do {
-            color: #4F8B33
-        }
-
-        &--donot {
-            color: #C44242
-        }
-    }
-
-    &-hr {
-        margin: 6.4rem 0;
-    }
-
     &-image {
         margin-top: $space-l;
         width: 100%;
@@ -32,26 +14,4 @@
         margin-top: $space;
     }
 
-    &-list {
-        padding: 0;
-        list-style: none;
-
-        li {
-            font-size: 1.3rem;
-            margin-top: .8rem;
-            padding-left: 19px;
-            position: relative;
-
-            &:before {
-                background-color: #000;
-                border-radius: 50%;
-                content: "";
-                height: 8px;
-                position: absolute;
-                left: 3px;
-                top: 6px;
-                width: 8px;
-            }
-        }
-    }
 }

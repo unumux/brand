@@ -16,5 +16,8 @@
         "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=.",
         "unumimagemin": "imagemin ./unum/images-source/* --out-dir=./unum/images --plugin=pngquant --plugin=svgo",
         "coloniallifeimagemin": "imagemin ./coloniallife/images-source/* --out-dir=./coloniallife/images --plugin=pngquant --plugin=svgo"
+    },
+    "dependencies": {
+        "jquery": "^3.3.1"
     }
 }

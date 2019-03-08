@@ -1,0 +1,15 @@
+.detail {
+    &-heading {
+        margin-top: $space-l;
+        font-size: 2.4rem;
+        font-weight: 600;
+
+        &--do {
+            color: $color-affirmative;
+        }
+
+        &--donot {
+            color: $color-negative;
+        }
+    }
+}
