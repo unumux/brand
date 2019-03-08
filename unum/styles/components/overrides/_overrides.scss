@@ -1,17 +1,14 @@
 @import "willow/willow";
 @import "../../components/variables";
-
-
-html {
-    font-size: 62.5%;
-}
+@import "../../components/spacing";
+@import "../../components/breakpoints";
 
 body {
     font-size: 1.6rem;
 }
 
 body, html {
-    color: $color-slate-darker;
+    color: $color-slate;
 }
 
 h1 {
@@ -21,23 +18,68 @@ h1 {
 
 h2 {
     @include set-text($base-plus-4);
-    color: $color-slate-darker;
+    color: $color-slate;
 
     margin-top: 0.5rem;
 }
 
+h3 {
+    @include set-text($base-plus-2);
+}
+
+h4 {
+    @include set-text($base-plus-1);
+}
+
+h5 {
+
+}
+
+p {
+    margin-top: 0.5rem;
+}
+
+hr {
+    margin: $space-xxl 0;
+}
+
+.support {
+    @include set-text($base-minus-1);
+    margin-top: 0;
+    span + span {
+        margin-left: $space;
+    }
+}
+
 .category {
+    padding-bottom: 0; //testing this atm
+
+    .half-width {
+        margin-top: 0;
+    }
+
+    .half-width + .half-width {
+        margin-top: $space-l;
+
+        @media screen and(min-width: 768px) {
+            margin-top: 0;
+        }
+       
+        
+    }
+
     section {
-        margin-top: 2.6rem;
+        margin-top: $space-l;
+        @media screen and(min-width:768px) {
+            margin-top: 0;
+        }
+
+
     }
 }
 
 .colors__color {
     margin-top: 1.6rem;
-}
-
-table h2 {
-    color: #fff;
 }
 
 .willow-icon--menu {
@@ -46,4 +88,34 @@ table h2 {
 
 .willow-icon--close {
     background-image: close-icon();
+}
+
+
+
+.color-use {
+    justify-content: space-around;
+}
+
+
+
+.full-width {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        
+        flex-flow: row nowrap;
+    }
+}
+
+.half-width {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 50%;
+        width: calc(50% - 1rem);
+    }
 }
