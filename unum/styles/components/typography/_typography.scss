@@ -132,9 +132,10 @@ $base-minus-3: map-merge($base-text, (
 
 .typography {
     margin-top: $space-l;
-    
+
     p {
         word-wrap: break-word;
+        margin-top: $space-xs;
     }
 
     &--ubuntu {     
