@@ -35,10 +35,6 @@ h5 {
 
 }
 
-p {
-    margin-top: 0.5rem;
-}
-
 hr {
     margin: $space-xxl 0;
 }
@@ -70,11 +66,6 @@ hr {
 
     section {
         margin-top: $space-l;
-        @media screen and(min-width:768px) {
-            margin-top: 0;
-        }
-
-
     }
 }
 
@@ -101,7 +92,13 @@ hr {
 .full-width {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-top: $space-l;
     width: 100%;
+    
+    & + & {
+        
+    }
 
     @media screen and (min-width: 768px) {
         
@@ -115,7 +112,8 @@ hr {
     @media screen and (min-width: 768px) {
         flex-grow: 0;
         flex-shrink: 1;
-        flex-basis: 50%;
+        flex-basis: 49%;
         width: calc(50% - 1rem);
+        justify-self: space-between;
     }
 }
