@@ -162,3 +162,24 @@
 		}
 	}
 }
+
+.dodont {
+
+      img {
+            height: auto;
+            margin-top: $space-s;
+            width: 100%;
+
+            @media (min-width: 768px) {
+                  height: 260px
+            }            
+      }
+
+      p {
+            margin: 0;
+            
+            @media (min-width: 768px) {
+                  min-height: 48px;
+            }
+      }
+}
