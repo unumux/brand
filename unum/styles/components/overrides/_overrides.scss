@@ -1,6 +1,3 @@
-@import "../../components/variables";
-@import "../../components/spacing";
-@import "../../components/breakpoints";
 @import "willow/willow";
 
 body, html {
@@ -32,9 +29,7 @@ h5 {
 
 }
 
-hr {
-    margin: $space-xxl 0;
-}
+
 
 .support {
     @include set-text($base-minus-1);

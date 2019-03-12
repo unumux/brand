@@ -1,75 +1,7 @@
-$icons-folder: "../../node_modules/@unumux/theme-unum-default/icons";
-$color-blue-light: #4981B0;
-$color-blue: #015294;
-$color-blue-dark: #19629D;
-$color-blue-darker: #01335C;
-
-$color-pool-dark: #2299a2;
-
-$theme-primary: $color-blue;
-$theme-primary-2: $color-blue-dark;
-$theme-primary-3: $color-blue-dark;
-$theme-primary-4: $color-blue-darker;
-
-$theme-action: $color-blue;
-$theme-action-2: $color-blue-dark;
-$theme-action-3: $color-blue-darker;
-
 @import "../../node_modules/@unumux/theme-unum-default/styles";
-
-$list-style-type: disc;
-$component-banner-background-color: $color-neutral-darker;
-$component-banner-text-color: $theme-text-inverse;
-$component-border-color: $theme-base-3;
-$component-secondary-nav-border: $component-border-width solid
-$theme-base-3;
-$component-skip-nav-link-color: $theme-text-tertiary;
-$component-skip-nav-link-color-hover: $theme-text-tertiary;
-$component-skip-nav-link-color-active: $theme-text-tertiary;
-$component-skip-nav-link-color-visited: $theme-text-tertiary;
-
-$component-button-text-color: $theme-text-inverse;
-$component-button-text-color-visited: $theme-text-inverse;
-$component-button-text-color-hover: $theme-text-inverse;
-$component-button-text-color-active: $theme-text-inverse;
-$component-button-text-color-focus: $theme-text-inverse;
-
-$component-link-color: $color-blue-dark;
-$component-link-color-hover: $color-pool-dark;
-$component-link-color-focus: $color-pool-dark;
-$component-link-color-active: $color-pool-dark;
-$component-link-color-visited: $color-blue-dark;
-
-$text-style-heading-1: ( 
-    family: $font-family-primary, 
-    desktop-size: 3.58318rem, 
-    desktop-line-height: line-height($font-size-4xl), 
-    mobile-size: 3.58318rem, 
-    mobile-line-height: line-height($font-size-3xl), 
-    weight: 500
-);
-
-$text-style-heading-2: ( 
-    family: $font-family-primary, 
-    desktop-size: 2.48832rem, 
-    desktop-line-height: line-height($font-size-2xl), 
-    mobile-size: 2.48832rem, 
-    mobile-line-height: line-height($font-size-xl), 
-    weight: 500
-);
-
-$text-style-heading-3: ( 
-    family: $font-family-primary, 
-    desktop-size: 2.0736rem, 
-    desktop-line-height: line-height($font-size-xl), 
-    mobile-size: 1.728rem, 
-    mobile-line-height: line-height($font-size-l), 
-    weight: 500
-);
 
 @import "../../node_modules/@unumux/willow/styles";
 
 @import "../../styles/shared-components/shared-components";
-@import "components/base-elements";
-@import "components/base-classes";
+
 @import "components/components";
