@@ -1,0 +1,33 @@
+&__link {
+    @include set-text($base);
+
+    color: $color-slate;
+
+    &:visited,
+    &:active,
+    &:hover,
+    &:focus {
+        color: $color-slate;
+        background-color: transparent;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:focus {
+        text-decoration: underline;
+    }
+
+    &--active {
+        background-color: transparent;
+        color: $color-blue !important;
+        font-weight: 600;
+        
+    }
+
+    @media screen and (min-width: 828px) {
+        padding: $space-s $space;
+    }
+
+}

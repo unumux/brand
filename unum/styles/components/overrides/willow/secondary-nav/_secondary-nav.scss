@@ -1,0 +1,8 @@
+&-secondary-nav {
+    border: 0;
+
+    @import "link";
+    @import "list";
+    @import "item";
+    @import "heading";
+}
