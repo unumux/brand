@@ -76,3 +76,20 @@ h5 {
 .willow-page-footer {
     margin-top: $space-xl;
 }
+
+.willow-button {
+    background-color: $color-success;
+    border: 1px solid transparent;
+    color: #fff;
+
+    &:focus, 
+    &:visited {
+        background-color: $color-success;
+        border: 1px solid transparent;
+        color: $color-white;
+    }
+    &:hover {
+        background-color: $color-blue;
+        color: $color-white;
+    }
+}
