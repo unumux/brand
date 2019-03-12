@@ -194,11 +194,6 @@ table {
             justify-content: space-between;
         }
 
-        // &:not(.table__headings) {
-        //     border-top: 1px solid $color-light-grey;
-        //     padding-bottom: $space-xs;
-        // }
-
         div {
             flex-basis: 50%;
             flex-grow: 1;
@@ -231,9 +226,4 @@ table {
             margin-top: 0;
         }
     }
-}
-
-.font-example-image {
-    margin-top: $space-l;
-    width: 100%;
 }
