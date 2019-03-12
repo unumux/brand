@@ -1,0 +1,8 @@
+&__heading {
+    @include set-text($base-plus-2); 
+
+    background-color: transparent;
+    border-bottom: 1px solid $color-light-grey;
+    color: $color-blue;
+    padding: $space-s 0;
+  }
