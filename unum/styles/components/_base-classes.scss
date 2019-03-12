@@ -1,0 +1,42 @@
+.image-constrain {
+    width: 100%;
+}
+
+
+.color-use {
+    justify-content: space-around;
+}
+
+
+.full-width {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-top: 0;
+    width: 100%;
+    
+    & + & {
+        
+    }
+
+    @media screen and (min-width: 768px) {
+        
+        flex-flow: row nowrap;
+    }
+}
+
+.half-width {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 49%;
+        width: calc(50% - 1rem);
+        justify-self: space-between;
+    }
+}
+
+.example {
+    margin-top: $space-l;
+}
