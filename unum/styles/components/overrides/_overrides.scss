@@ -3,10 +3,6 @@
 @import "../../components/breakpoints";
 @import "willow/willow";
 
-body {
-    font-size: 1.6rem;
-}
-
 body, html {
     color: $color-slate;
 }
@@ -80,41 +76,4 @@ hr {
 
 .willow-icon--close {
     background-image: close-icon();
-}
-
-
-
-.color-use {
-    justify-content: space-around;
-}
-
-
-
-.full-width {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    margin-top: $space-l;
-    width: 100%;
-    
-    & + & {
-        
-    }
-
-    @media screen and (min-width: 768px) {
-        
-        flex-flow: row nowrap;
-    }
-}
-
-.half-width {
-    width: 100%;
-
-    @media screen and (min-width: 768px) {
-        flex-grow: 0;
-        flex-shrink: 1;
-        flex-basis: 49%;
-        width: calc(50% - 1rem);
-        justify-self: space-between;
-    }
 }
