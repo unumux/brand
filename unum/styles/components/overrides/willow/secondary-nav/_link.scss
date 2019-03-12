@@ -1,0 +1,30 @@
+&__link {
+    @include set-text($base); 
+    
+    color: $color-slate;
+    padding: $space-s 0;
+
+    &[data-link-active="true"] {
+        background-color: transparent;
+        border: 0;
+        font-weight: 600;
+
+        &:focus {
+            background-color: transparent;
+            color: $color-slate;
+        }
+    }
+
+    &:hover {
+        text-decoration: underline;
+        
+    }
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+        background-color: transparent;
+        color: $color-slate;
+    }
+}
