@@ -1,7 +1,7 @@
 &__link {
     @include set-text($base); 
     
-    color: $color-slate;
+    color: $color-dark-grey;
     padding: $space-s 0;
 
     &[data-link-active="true"] {
@@ -11,7 +11,7 @@
 
         &:focus {
             background-color: transparent;
-            color: $color-slate;
+            color: $color-dark-grey;
         }
     }
 
@@ -25,6 +25,6 @@
     &:focus,
     &:visited {
         background-color: transparent;
-        color: $color-slate;
+        color: $color-dark-grey;
     }
 }
