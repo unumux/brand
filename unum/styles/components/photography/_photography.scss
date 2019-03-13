@@ -76,14 +76,14 @@
         width: calc(50% - 6px);
         
         &:nth-child(1) {
-            background-position-y: 65%;
+            background-position-y: 55%;
             height: calc(25% - 6px);
             order: 1;
 
         }
 		&:nth-child(2) {
             background-position-x: center;
-            height: calc(40% - 6px);
+            height: calc(35% - 6px);
             order: 2;
 
 		}
@@ -94,29 +94,30 @@
 
 		}
 		&:nth-child(4) {
-            height: calc(50% - 6px);
+            background-position-y: bottom;
+            height: calc(40% - 6px);
             order: 7;
 
 		}
 		&:nth-child(5) {
-            background-position-y: 40%;
-            height: calc(15% - 6px);
+            background-position-y: 35%;
+            height: calc(20% - 6px);
             order: 4;
 
 		}
 		&:nth-child(6) {
-            background-position-y: 65%;
+            background-position-y: 45%;
             height: calc(20% - 6px);
             order: 3;
 
 		}
 		&:nth-child(7) {
-            background-position-y: 80%;
+            background-position-y: 75%;
             height: calc(20% - 6px);
             order: 8;
 		}
 		&:nth-child(8) {
-            background-position-y: 70%;
+            background-position-y: 65%;
             height: calc(15% - 6px);
             order: 5;
 		}
