@@ -1,74 +1,4 @@
-@import "../../components/variables";
-@import "../../components/spacing";
-@import "../../components/breakpoints";
 @import "willow/willow";
-
-body, html {
-    color: $color-slate;
-}
-
-h1 {
-    @include set-text($base-plus-5);
-    color: $color-blue;
-    margin-top: 0;
-}
-
-h2 {
-    @include set-text($base-plus-4);
-    color: $color-slate;
-
-    margin-top: 0.5rem;
-}
-
-h3 {
-    @include set-text($base-plus-2);
-}
-
-h4 {
-    @include set-text($base-plus-1);
-}
-
-h5 {
-
-}
-
-hr {
-    margin: $space-xxl 0;
-}
-
-.support {
-    @include set-text($base-minus-1);
-    margin-top: 0;
-    span + span {
-        margin-left: $space;
-    }
-}
-
-.category {
-    padding-bottom: 0; //testing this atm
-
-    .half-width {
-        margin-top: 0;
-    }
-
-    .half-width + .half-width {
-        margin-top: $space-l;
-
-        @media screen and(min-width: 768px) {
-            margin-top: 0;
-        }
-       
-        
-    }
-
-    section {
-        margin-top: $space-l;
-    }
-}
-
-.colors__color {
-    margin-top: 1.6rem;
-}
 
 .willow-icon--menu {
     background-image: hamburger-icon();
@@ -80,4 +10,21 @@ hr {
 
 .willow-page-footer {
     margin-top: $space-xl;
+}
+
+.willow-button {
+    background-color: $color-success;
+    border: 1px solid transparent;
+    color: #fff;
+
+    &:focus, 
+    &:visited {
+        background-color: $color-success;
+        border: 1px solid transparent;
+        color: $color-white;
+    }
+    &:hover {
+        background-color: $color-blue;
+        color: $color-white;
+    }
 }

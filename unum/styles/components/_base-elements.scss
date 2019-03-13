@@ -1,3 +1,40 @@
 body {
     font-size: 1.6rem;
 }
+
+body, html {
+    color: $color-slate;
+}
+
+h1 {
+    @include set-text($base-plus-5);
+    color: $color-blue;
+    margin-top: 0;
+}
+
+h2 {
+    @include set-text($base-plus-4);
+    color: $color-slate;
+    
+    margin-top: 0.5rem;
+}
+
+h3 {
+    @include set-text($base-plus-2);
+}
+
+h4 {
+    @include set-text($base-plus-1);
+}
+
+h5 {
+    
+}
+ul {
+    list-style-type: disc;
+}
+
+hr {
+    margin: $space-xxl 0;
+    background-color: $color-light-grey;
+}

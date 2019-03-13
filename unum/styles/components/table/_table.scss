@@ -1,48 +1,3 @@
-@mixin circle-color() {
-    &:before,
-    &:after {
-        opacity: 0;
-        transform: translateY(-5px);
-        visibility: hidden;
-        transition: 0.3s opacity, 0.2s transform;
-    }
-
-    &:before {
-        @include set-text($base-minus-2);
-
-        content: " ";
-        background-color: $color-white;
-        border: 1px solid $color-light-grey;
-        border-radius: 4px;
-        left: -65px;
-        padding: $space-xs;
-        position: absolute;
-        text-align: center;
-        top: -41px;
-        width: 150px;
-    }
-    &:after {
-        content: " ";
-        border-bottom: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-top: 10px solid $color-light-grey;
-        height: 1px;
-        position: absolute;
-        right: -3px;
-        top: -10px;
-        width: 1px;
-    }
-    &:hover, &:focus {
-        &:before,
-        &:after {
-            opacity: 1;
-            transform: translateY(0);
-            visibility: visible;
-        }
-    }
-}
-
 table {
     h2 {
         color: $color-white
@@ -50,9 +5,8 @@ table {
 }
 
 .circle {
-    border: 1px solid $color-light-grey;
+    border: 1px solid $color-slate;
     border-radius: 8px;
-    //cursor: pointer;
     display: inline-block;
     height: 16px;
     margin-top: $space-s;
@@ -139,7 +93,7 @@ table {
         color: $color-blue;
         display: none;
 
-        @media screen and(min-width: 768px) {
+        @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
             display: inline-block;
         }
     }
@@ -148,7 +102,7 @@ table {
         clear: both;
         display: inline-block;
 
-        @media screen and(min-width: 768px) {
+        @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
             display: none;
         }
 
@@ -170,7 +124,7 @@ table {
             border-top: 1px solid $color-light-grey;
             padding-top: $space-l;
 
-            @media screen and(min-width: 768px) {
+            @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
                 margin-top: 0;
                 border-top: 0;
                 padding-top: 0;
@@ -189,7 +143,7 @@ table {
         padding: 0;
         width: 100%;
 
-        @media screen and(min-width: 768px) {
+        @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
             flex-flow: row nowrap;
             justify-content: space-between;
         }
@@ -206,12 +160,12 @@ table {
             &:nth-child(n + 3) {
                 margin-top: $space; // adds some space between the wrapped items on mobile
 
-                @media screen and(min-width: 768px) {
+                @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
                     margin-top: 0; //removes the margin after the column stop wrapping
                 }
             }
 
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
                 flex-grow: 0;
                 flex-shrink: 0;
                 flex-basis: 24%;

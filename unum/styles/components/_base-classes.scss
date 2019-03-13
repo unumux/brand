@@ -2,11 +2,13 @@
     width: 100%;
 }
 
-
 .color-use {
     justify-content: space-around;
 }
 
+.colors__color {
+    margin-top: 1.6rem;
+}
 
 .full-width {
     display: flex;
@@ -19,8 +21,7 @@
         
     }
 
-    @media screen and (min-width: 768px) {
-        
+    @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {        
         flex-flow: row nowrap;
     }
 }
@@ -28,7 +29,7 @@
 .half-width {
     width: 100%;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: 49%;
@@ -38,5 +39,38 @@
 }
 
 .example {
+    margin-top: $space-l;
+}
+
+.support {
+    @include set-text($base-minus-1);
+
+    margin-top: 0;
+    span + span {
+        margin-left: $space;
+    }
+}
+
+.category {
+    padding-bottom: 0; //testing this atm
+
+    .half-width {
+        margin-top: 0;
+    }
+
+    .half-width + .half-width {
+        margin-top: $space-l;
+
+        @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
+            margin-top: 0;
+        }
+    }
+
+    section {
+        margin-top: $space-l;
+    }
+}
+
+.subheading {
     margin-top: $space-l;
 }

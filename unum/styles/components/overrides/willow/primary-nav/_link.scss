@@ -26,7 +26,7 @@
         
     }
 
-    @media screen and (min-width: 828px) {
+    @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
         padding: $space-s $space;
     }
 
