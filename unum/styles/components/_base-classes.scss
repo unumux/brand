@@ -7,6 +7,10 @@
     justify-content: space-around;
 }
 
+.colors__color {
+    margin-top: 1.6rem;
+}
+
 
 .full-width {
     display: flex;
@@ -39,4 +43,34 @@
 
 .example {
     margin-top: $space-l;
+}
+
+.support {
+    @include set-text($base-minus-1);
+    margin-top: 0;
+    span + span {
+        margin-left: $space;
+    }
+}
+
+.category {
+    padding-bottom: 0; //testing this atm
+
+    .half-width {
+        margin-top: 0;
+    }
+
+    .half-width + .half-width {
+        margin-top: $space-l;
+
+        @media screen and(min-width: 768px) {
+            margin-top: 0;
+        }
+       
+        
+    }
+
+    section {
+        margin-top: $space-l;
+    }
 }
