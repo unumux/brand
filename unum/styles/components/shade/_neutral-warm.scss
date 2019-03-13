@@ -1,0 +1,14 @@
+@mixin base() {
+    background-color: #F0EFE3;
+}
+
+&--neutral-warm {
+    @include base;
+
+    &--print {
+        @include base;
+        border-radius: 0.2rem;
+        height: 10rem;
+        width: 17rem;
+    }
+}

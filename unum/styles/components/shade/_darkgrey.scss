@@ -1,0 +1,46 @@
+@mixin base() {
+    background-color: #2E2E2E;
+}
+
+&--darkgrey {
+    @include base;
+
+    &-dark-4 {
+        background-color: #000000;
+    }
+
+    &-dark-3 {
+        background-color: #181818;
+    }
+
+    &-dark-2 {
+        background-color: #242424;
+    }
+
+    &-dark-1 {
+        background-color: #292929;
+    }
+
+    &-light-4 {
+        background-color: #404040;
+    }
+
+    &-light-3 {
+        background-color: #525252;
+    }
+
+    &-light-2 {
+        background-color: #636363;
+    }
+
+    &-light-1 {
+        background-color: #757575;
+    }
+
+    &--print {
+        @include base;
+        border-radius: 0.2rem;
+        height: 10rem;
+        width: 17rem;
+    }
+}

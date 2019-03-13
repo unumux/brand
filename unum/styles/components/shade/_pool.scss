@@ -1,0 +1,38 @@
+@mixin base() {
+    background-color: #47B4BC;
+}
+
+&--pool {
+    @include base;
+
+    &-dark-4 {
+        background-color: #2399A2;
+    }
+
+    &-dark-3 {
+        background-color: #58BAC1;
+    }
+
+    &-dark-2 {
+        background-color: #7AC6CC;
+    }
+
+    &-dark-1 {
+        background-color: #94D0D4;
+    }
+
+    &-light-2 {
+        background-color: #ADD9DC;
+    }
+
+    &-light-1 {
+        background-color: #C7E2E4;
+    }
+
+    &--print {
+        @include base;
+        border-radius: 0.2rem;
+        height: 10rem;
+        width: 17rem;
+    }
+}

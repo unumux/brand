@@ -1,0 +1,31 @@
+@mixin base() {
+    background-color: #14ADCC;
+}
+
+&--ocean {
+    @include base;
+
+    &-dark-4 {
+        background-color: #0095BB;
+    }
+
+    &-dark-3 {
+        background-color: #40BAD3;
+    }
+
+    &-dark-2 {
+        background-color: #6DC9DB;
+    }
+
+    &-dark-1 {
+        background-color: #8ED3E1;
+    }
+
+    &-light-2 {
+        background-color: #AFDDE6;
+    }
+
+    &-light-1 {
+        background-color: #DBEAED;
+    }
+}
