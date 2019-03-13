@@ -28,3 +28,31 @@
         color: $color-white;
     }
 }
+
+h1+dl, 
+h1+ol, 
+h1+p, 
+h1+ul,
+h1+h2, 
+h2+dl, 
+h2+ol, 
+h2+p, 
+h2+ul, 
+h3+dl, 
+h3+ol, 
+h3+p, 
+h3+ul, 
+h4+dl, 
+h4+ol, 
+h4+p, 
+h4+ul, 
+h5+dl, 
+h5+ol, 
+h5+p, 
+h5+ul, 
+h6+dl, 
+h6+ol, 
+h6+p, 
+h6+ul {
+    margin: $space 0 0 0;
+}
