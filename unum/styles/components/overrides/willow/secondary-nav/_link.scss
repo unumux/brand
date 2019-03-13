@@ -1,5 +1,5 @@
 &__link {
-    @include set-text($base); 
+    @include set-text($base-minus-1); 
     
     color: $color-dark-grey;
     padding: $space-s 0;
