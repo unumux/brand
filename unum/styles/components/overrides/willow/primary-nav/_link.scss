@@ -1,13 +1,13 @@
 &__link {
     @include set-text($base);
 
-    color: $color-slate;
+    color: $color-dark-grey;
 
     &:visited,
     &:active,
     &:hover,
     &:focus {
-        color: $color-slate;
+        color: $color-dark-grey;
         background-color: transparent;
     }
 

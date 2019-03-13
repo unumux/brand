@@ -1,9 +1,10 @@
 .detail {
     &-heading {
-        margin-top: $space-l;
-        font-size: 2.4rem;
-        font-weight: 600;
+        @include set-text($base-plus-3);
 
+        font-weight: 600;
+        margin-top: $space-l;
+     
         &--do {
             color: $color-affirmative;
         }

@@ -3,7 +3,7 @@ body {
 }
 
 body, html {
-    color: $color-slate;
+    color: $color-slate-darker;
 }
 
 h1 {
@@ -14,7 +14,7 @@ h1 {
 
 h2 {
     @include set-text($base-plus-4);
-    color: $color-slate;
+    color: $color-slate-darker;
     
     margin-top: 0.5rem;
 }
