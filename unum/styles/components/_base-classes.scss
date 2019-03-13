@@ -42,6 +42,29 @@
     margin-top: $space-l;
 }
 
+.color-marker {
+    display: inline-block;
+    position: relative;
+    padding-left: $space-l;
+
+    &:before {
+        content: "";
+        border-radius: 8px;
+        display: block;
+        height: 16px;
+        position: absolute;
+        width: 16px;
+        top: 6px;
+        left: 4px;
+    }
+
+    &--green {
+        &:before {
+            background-color: $color-success;
+        }
+    }
+}
+
 .support {
     @include set-text($base-minus-1);
 
