@@ -173,9 +173,13 @@
 
       p {
             margin: 0;
-            
-            @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
-                  min-height: 48px;
-            }
+      }
+
+      section+section {
+            margin-top: $space-xxl;
+      }
+
+      .full-width+.full-width {
+            margin-top: $space-xl;
       }
 }
