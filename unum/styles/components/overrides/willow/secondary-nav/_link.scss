@@ -1,13 +1,13 @@
 &__link {
     @include set-text($base-minus-1); 
     
+    border: 0;
     color: $color-dark-grey;
     padding: $space-s 0;
 
     &[data-link-active="true"] {
         background-color: transparent;
         border: 0;
-        //font-weight: 600;
 
         &:focus {
             background-color: transparent;
