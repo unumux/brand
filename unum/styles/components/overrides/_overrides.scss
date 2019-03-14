@@ -13,13 +13,13 @@
 }
 
 .willow-button {
-    background-color: $color-success;
+    background-color: $color-affirmative;
     border: 1px solid transparent;
     color: #fff;
 
     &:focus, 
     &:visited {
-        background-color: $color-success;
+        background-color: $color-affirmative;
         border: 1px solid transparent;
         color: $color-white;
     }
