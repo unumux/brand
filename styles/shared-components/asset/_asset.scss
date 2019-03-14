@@ -53,21 +53,15 @@
     display: block;
     height: auto;
     margin: 1.6rem 0 0;
+    width: auto;
 
-    img {
+    .actual-size {
         width: auto;
-
-        @media screen and (min-width: 576px) { // what var is this?
-            width: 100%;
-        }
     }
 
-    // margin: 1.6rem 0 0;
-    // align-items: center;
-    // display: flex;
-    // height: 140px;
-    // justify-content: center; //Min height doesnt work in IE11, has to have a height set to align-items in flex
-    //     margin: $space-stack;
+    img {
+        width: 100%;
+    }
 }
 
 p.usage-help {
