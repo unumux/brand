@@ -1,10 +1,11 @@
 .header {
-    // background-image: url("../../images/logo-header.png");
-    // background-image: url('http://www.placecage.com/300/600');
-    background-image: url("../../images/logo-header.png");
-    height: 300px;
-    width: 100%;
+    background-image: url('../../../images/logo-header.png');
+    // background-color: #ccc;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 8px;
+    height: 300px;
+    width: 100%;
+    z-index: 100;
 }
