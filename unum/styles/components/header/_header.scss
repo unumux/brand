@@ -1,5 +1,4 @@
 .header {
-    background-image: url('../../../../unum/images/logo-header.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -8,4 +7,28 @@
     margin-bottom: $space;
     width: 100%;
     z-index: 100;
+    
+    &--logo-usage {
+        background-image: url('../../../../unum/images/headers/logo-header.png');
+    }
+
+    &--color-usage-digital {
+        background-image: url('../../../../unum/images/headers/digital-color-header.png');
+    }
+
+    &--photography {
+        background-image: url('../../../../unum/images/headers/photography-header.png');
+    }
+
+    &--voiceandtone {
+        background-image: url("../../../../unum/images/headers/voiceandtone-header.png");
+    }
+
+    &--iconography {
+        background-image: url("../../../../unum/images/headers/icon-header.png");
+    }
+
+    &--typography {
+        background-image: url("../../../../unum/images/headers/typography-header.png");
+    }
 }
