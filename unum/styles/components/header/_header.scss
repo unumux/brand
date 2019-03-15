@@ -12,16 +12,24 @@
         background-image: url('../../../../unum/images/headers/logo-header.png');
     }
 
+    &--logo-usage-print {
+        background-image: url("../../../../unum/images/headers/print-logo-usage@2x.png");
+    }
+
     &--color-usage-digital {
         background-image: url('../../../../unum/images/headers/digital-color-header.png');
     }
 
     &--color-usage-print {
-        background-image: url('../../../../unum/images/headers/print-color-header.png');
+        background-image: url('../../../../unum/images/headers/print-digital-color@2x.png');
     }
 
     &--photography {
         background-image: url('../../../../unum/images/headers/photography-header.png');
+    }
+
+    &--photography-print {
+        background-image: url("../../../../unum/images/headers/print-photography@2x.png");
     }
 
     &--voiceandtone {
@@ -32,7 +40,15 @@
         background-image: url("../../../../unum/images/headers/icon-header.png");
     }
 
+    &--iconography-print {
+        background-image: url("../../../../unum/images/headers/print-icon@2x.png");
+    }
+
     &--typography {
         background-image: url("../../../../unum/images/headers/typography-header.png");
+    }
+
+    &--typography-print {
+        background-image: url("../../../../unum/images/headers/print-typography@2x.png");
     }
 }
