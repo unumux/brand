@@ -49,7 +49,17 @@ table {
         }
     }
 
-    & + & {
+    &--green {
+        @include circle-color;
+
+        background-color: $color-affirmative;
+        border-color: transparent;
+        &:before {
+            content: "Dark Lawn: #357C08";
+        }
+    }
+
+    &:not(.drop) + &:not(.drop) {
         margin-left: $space-s;
     }
 }
