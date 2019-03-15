@@ -1,11 +1,11 @@
 .header {
-    background-image: url('../../../images/logo-header.png');
-    // background-color: #ccc;
+    background-image: url('../../../../unum/images/logo-header.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 8px;
-    height: 300px;
+    height: 250px;
+    margin-bottom: $space;
     width: 100%;
     z-index: 100;
 }
