@@ -1,0 +1,25 @@
+&__toggle {
+    border-left: 10px solid transparent;
+    border-top: 10px solid $color-new-leaf-green-darker;
+    border-right: 10px solid transparent;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    transform: rotate(0);
+    text-align: center;
+    line-height: 2rem;
+    transform-origin: 10px 5px;
+    transition:  transform .3s ease-in-out;
+
+    @media screen and (min-width: breakpoint(lg, $breakpoint-list)) {
+        top: 20px;
+    }
+
+    &.active {
+        transform: rotate(180deg);
+        transition: transform .2s ease-in-out;
+    }
+}

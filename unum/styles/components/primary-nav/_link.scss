@@ -1,0 +1,45 @@
+&__link {
+    @include set-text($base);
+    
+    color: $color-slate-darker;
+    display: block;
+    padding: 0 $space-xxs 0 $space-s;
+    position: relative;
+    text-decoration: none;
+
+    &:visited,
+    &:active,
+    &:hover,
+    &:focus {
+        color: $color-slate-darker;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:focus {
+        text-decoration: underline;
+    }
+
+    &--active {
+        background-color:  $color-new-leaf-green;
+        border-bottom-left-radius: 4px;
+        border-top-left-radius: 4px;
+        
+        color: $color-blue !important;
+        font-weight: 600;
+        margin-right: -$space-s;
+        padding: $space-xs $space-xs $space-xs $space-s;
+        
+        @media screen and (min-width: breakpoint(lg, $breakpoint-list)) {
+            border-right: $space solid $color-new-leaf-green-darker;
+            padding: $space-xs 0;
+            margin-right: -$space-xs;
+        }
+    }
+
+    @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
+        padding: $space-xs 0 $space-xs $space-s;
+    }
+}

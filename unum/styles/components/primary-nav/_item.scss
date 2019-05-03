@@ -1,0 +1,9 @@
+&__item {
+    position: relative;
+    padding: $space-s 0 $space-s $space;
+
+    @media screen and (min-width: breakpoint(lg, $breakpoint-list)) {
+        overflow: visible; //dirty b.c I had to show the green 'current page' indicator over the parent sidebar shadow
+        padding: $space-s $space-xs $space-s $space;
+    }
+}

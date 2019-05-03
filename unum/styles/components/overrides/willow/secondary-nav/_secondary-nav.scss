@@ -1,8 +1,28 @@
 &-secondary-nav {
+    background-color: transparent;
     border: 0;
+    margin-top: 0;
 
     @import "link";
     @import "list";
     @import "item";
     @import "heading";
+
+
+    @media screen and (min-width: breakpoint(lg, $breakpoint-list)) {
+        margin-top: 0;
+    }
+
+    &.collapse {
+        display: block;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height .5s cubic-bezier(0, 1, 0, 1); 
+
+        &.show {
+        max-height: 99em;
+        transition: max-height .5s ease-in-out;
+    }
+}
+
 }

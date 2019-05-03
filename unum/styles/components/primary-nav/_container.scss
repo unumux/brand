@@ -1,0 +1,7 @@
+&__container {
+    padding-right: $space;
+    
+    @media screen and (min-width: breakpoint(lg, $breakpoint-list)) {
+        overflow: visible;
+    }
+}

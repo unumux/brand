@@ -33,7 +33,9 @@
 // }
 
 @function hamburger-icon($color: $color-blue) {
-    @return svg-uri('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="18px" viewBox="0 0 34 18" version="1.1"><g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Icons" transform="translate(-76.000000, -177.000000)" fill="#{$color}"><g id="White" transform="translate(76.000000, 164.000000)"><g id="Buger-Menu:-Normal" transform="translate(0.000000, 13.000000)"><rect id="Rectangle" x="0" y="0" width="34" height="2"/><rect id="Rectangle" x="0" y="8" width="34" height="2"/><rect id="Rectangle" x="0" y="16" width="34" height="2"/></g></g></g></g></svg>');
+    //@return svg-uri('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34px" height="18px" viewBox="0 0 34 18" version="1.1"><g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Icons" transform="translate(-76.000000, -177.000000)" fill="#{$color}"><g id="White" transform="translate(76.000000, 164.000000)"><g id="Buger-Menu:-Normal" transform="translate(0.000000, 13.000000)"><rect id="Rectangle" x="0" y="0" width="34" height="2"/><rect id="Rectangle" x="0" y="8" width="34" height="2"/><rect id="Rectangle" x="0" y="16" width="34" height="2"/></g></g></g></g></svg>');
+
+    @return svg-uri('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><style>.a{fill:#{$color}}</style></defs><g transform="translate(-11 -16)"><rect class="a" width="24" height="4" rx="2" transform="translate(11 16)"/><rect class="a" width="24" height="4" rx="2" transform="translate(11 26)"/><rect class="a" width="24" height="4" rx="2" transform="translate(11 36)"/></g></svg>');
 }
 
 @function close-icon($color: $color-blue) {

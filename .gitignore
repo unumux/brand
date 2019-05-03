@@ -43,3 +43,4 @@ jspm_packages
 
 #minified stylesheet
 styles/*.min.css
+unum/styles/components/sidebar/_sidebar.scss

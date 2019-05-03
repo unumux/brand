@@ -2,9 +2,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 8px;
-    height: 250px;
-    margin-bottom: $space;
+    background-color: $color-blue;
+    position: relative;
     width: 100%;
     z-index: 100;
     
@@ -37,6 +36,7 @@
     }
 
     &--iconography {
+        height: 250px;
         background-image: url("../../../../unum/images/headers/icon-header.png");
     }
 
@@ -51,4 +51,6 @@
     &--typography-print {
         background-image: url("../../../../unum/images/headers/print-typography@2x.png");
     }
+
+    @import "heading";
 }

@@ -17,157 +17,255 @@
 			</div>
 		</div>
 		<header class="willow-page-header" role="banner">
-			<div class="container-fluid">
-				<div class="willow-page-header__container">
-					<div class="willow-page-header__branding">
-						<a class="willow-logo-link" href="/unum" aria-label="go to home page">
-							<img class="willow-logo-link__image" src="images/unumfullcolor2x.svg" alt="Unum logo" />
-						</a>
-					</div>
-					<div class="willow-page-header__content-controls">
-						<a class="willow-page-header__content-open" aria-label="Open Menu" href="#">
-							<span class="willow-icon willow-icon--menu"></span>
-						</a>
-						<a class="willow-page-header__content-close" aria-label="Close Menu" href="#">
-							<span class="willow-icon willow-icon--close"></span>
-						</a>
-					</div>
-					<div class="willow-page-header__content">
-						<div class="willow-page-header__navigation">
-							<nav class="willow-primary-nav" role="navigation" aria-label="primary">
-								<h1 class="willow-primary-nav__heading sr-only">Site Primary Menu</h1>
-								<ul class="willow-primary-nav__list">
-									<li class="willow-primary-nav__item">
-										<a class="willow-primary-nav__link willow-primary-nav__link--active"
-											href="index.html">Brand Guidelines</a>
-									</li>
-									<li class="willow-primary-nav__item">
-										<a class="willow-primary-nav__link" href="digital/logo-usage.html">Digital</a>
-									</li>
-									<li class="willow-primary-nav__item">
-										<a class="willow-primary-nav__link" href="print/logo-usage.html">Print</a>
-									</li>
-									<li class="willow-primary-nav__item">
-										<a class="willow-primary-nav__link" href="tone/overview.html">Voice & Tone</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
+			<div class="willow-page-header__content-controls">
+				<a class="willow-page-header__content-open" aria-label="Open Menu" href="#">
+					<span class="willow-icon willow-icon--menu"></span>
+				</a>
+				<a class="willow-page-header__content-close" aria-label="Close Menu" href="#">
+					<span class="willow-icon willow-icon--close"></span>
+				</a>
 			</div>
 		</header>
-		<main class="willow-page-content flex-grow" role="main" id="mainContent">
+		<main class="willow-page-content flex-grow" role="main">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-lg-12">
-						<section class="category">
+					<div class="col-lg-3 sidebar__container">
+						<div class="sidebar-content">
+							<input type="checkbox" id="nav-checkbox" class="primary-nav__checkbox">
+							<label for="nav-checkbox" tabindex="0" class="primary-nav__label"></label>
+							<div class="logo-container">
+								<a class="logo-link" href="/unum" aria-label="go to home page">
+									<img class="logo-link__image" src="./images/unumfullcolor2x.svg" alt="Unum logo" />
+								</a>
+							</div>
+							<div class="primary-nav__container">
+								<nav class="primary-nav" role="navigation" aria-label="primary">
+									<h1 class="willow-primary-nav__heading sr-only">Site Primary Menu</h1>
+									<ul class="primary-nav__list">
+										<li class="primary-nav__item separate">
+											<a class="primary-nav__link" href="./overview.html">Overview</a>
+										</li>
+										<li class="primary-nav__item">
+											<a class="primary-nav__link" href="./who-we-are.html">Who we are
+											</a>
+										</li>
+										<li class="primary-nav__item">
+											<a class="primary-nav__link" href="./logo.html">Logo</a>
+											<a href="#" data-toggle="collapse" data-target=".collapse.first"
+												data-text="Collapse" class="primary-nav__toggle"></a>
+											<nav class="willow-secondary-nav collapse first" role="navigation"
+												aria-label="secondary">
+												<h1 class="willow-secondary-nav__heading sr-only">Iconography Section
+													Nav</h1>
+												<ul class="willow-secondary-nav__list">
+													<li class="willow-secondary-nav__item">
+														<a class="willow-secondary-nav__link"
+															href="./logo/logo-tagline-usage.html">Logo &
+															Tagline
+															Usage</a>
+													</li>
+													<li class="willow-secondary-nav__item">
+														<a class="willow-secondary-nav__link"
+															href="./logo/unum-u.html">Unum "U"
+														</a>
+													</li>
+												</ul>
+											</nav>
+										</li>
+										<li class="primary-nav__item">
+											<a class="primary-nav__link" href="./color.html">Color
+											</a>
+											<a href="#" data-toggle="collapse" data-target=".collapse.second"
+												data-text="Collapse" class="primary-nav__toggle"></a>
+											<nav class="willow-secondary-nav collapse second" role="navigation"
+												aria-label="secondary">
+												<h1 class="willow-secondary-nav__heading sr-only">Color Section
+													Nav</h1>
+												<ul class="willow-secondary-nav__list">
+													<li class="willow-secondary-nav__item">
+														<a class="willow-secondary-nav__link"
+															href="./color/primary.html">Primary
+															Usage</a>
+													</li>
+													<li class="willow-secondary-nav__item">
+														<a class="willow-secondary-nav__link"
+															href="./color/secondary.html">Secondary
+														</a>
+													</li>
+													<li class="willow-secondary-nav__item">
+														<a class="willow-secondary-nav__link"
+															href="./color/tertiary.html">Tertiary
+														</a>
+													</li>
+													<li class="willow-secondary-nav__item">
+														<a class="willow-secondary-nav__link"
+															href="./color/color-balance.html">Color
+															Balance
+														</a>
+													</li>
+													<li class="willow-secondary-nav__item">
+														<a class="willow-secondary-nav__link"
+															href="./color/contrast-accessibility.html">Color
+															Contrast/Accessibility
+														</a>
+													</li>
+												</ul>
+											</nav>
+										</li>
+										<li class="primary-nav__item">
+											<a class="primary-nav__link" href="./typography.html">Typography
+											</a>
+										</li>
 
-							<h1 class="category__heading" id="overview">Brand Guidelines</h1>
-							<p class="category__description">The Unum brand is made up of visual and written elements
-								that communicate our company’s identity and purpose. These guidelines show the approved
-								use of all the components of our brand, including colors, typography, logos, icons and
+										<li class="primary-nav__item">
+											<a class="primary-nav__link" href="./iconography.html">Iconography
+											</a>
+											<a href="#" data-toggle="collapse" data-target=".collapse.third"
+												data-text="Collapse" class="primary-nav__toggle"></a>
+											<nav class="willow-secondary-nav collapse third" role="navigation"
+												aria-label="secondary">
+												<h1 class="willow-secondary-nav__heading sr-only">Iconography Section
+													Nav</h1>
+												<ul class="willow-secondary-nav__list">
+													<li class="willow-secondary-nav__item">
+														<a class="willow-secondary-nav__link"
+															href="./iconography/general-usage.html">General
+															Usage</a>
+													</li>
+													<li class="willow-secondary-nav__item">
+														<a class="willow-secondary-nav__link"
+															href="./iconography/product-icons.html">Product Icons
+														</a>
+													</li>
+													<li class="willow-secondary-nav__item">
+														<a class="willow-secondary-nav__link"
+															href="./iconography/icon-creation.html">Icon
+															Creation</a>
+													</li>
+												</ul>
+											</nav>
+										</li>
+										<li class="primary-nav__item">
+											<a class="primary-nav__link" href="./photography.html">Photography
+											</a>
+											<a href="#" data-toggle="collapse" data-target=".collapse.fourth"
+												data-text="Collapse" class="primary-nav__toggle"></a>
+											<nav class="willow-secondary-nav collapse fourth" role="navigation"
+												aria-label="secondary">
+												<h1 class="willow-secondary-nav__heading sr-only">Photography Section
+													Nav</h1>
+												<ul class="willow-secondary-nav__list">
+													<li class="willow-secondary-nav__item">
+														<a class="willow-secondary-nav__link"
+															href="./photography/general-usage.html">General
+															Usage</a>
+													</li>
+													<li class="willow-secondary-nav__item">
+														<a class="willow-secondary-nav__link"
+															href="./photography/text-on-images.html">Text
+															On Images
+														</a>
+													</li>
+												</ul>
+											</nav>
+										</li>
+										<li class="primary-nav__item">
+											<a class="primary-nav__link" href="./videography.html">
+												Videography
+											</a>
+											<a href="#" data-toggle="collapse" data-target=".collapse.fifth"
+												data-text="Collapse" class="primary-nav__toggle"></a>
+											<nav class="willow-secondary-nav collapse fifth" role="navigation"
+												aria-label="secondary">
+												<h1 class="willow-secondary-nav__heading sr-only">Videography Section
+													Nav</h1>
+												<ul class="willow-secondary-nav__list">
+													<li class="willow-secondary-nav__item">
+														<a class="willow-secondary-nav__link"
+															href="./videography/general-usage.html">General
+															Usage</a>
+													</li>
+													<li class="willow-secondary-nav__item">
+														<a class="willow-secondary-nav__link"
+															href="./videography/graphics.html">Graphics
+														</a>
+													</li>
+													<li class="willow-secondary-nav__item">
+														<a class="willow-secondary-nav__link"
+															href="./videography/audio.html">Audio
+														</a>
+													</li>
+												</ul>
+											</nav>
+										</li>
+										<li class="primary-nav__item separate">
+											<a class="primary-nav__link" href="./voice-tone.html">Voice & Tone
+											</a>
+										</li>
+										<li class="primary-nav__item separate">
+											<a class="primary-nav__link" href="./resources.html">Resources
+											</a>
+										</li>
+										<li class="primary-nav__item">
+											<a class="primary-nav__link distinct" href="./campaigns.html">Campaigns
+											</a>
+										</li>
+									</ul>
+								</nav>
+								<div class="sidebar__support-content separate">
+									<p>Latest log: Change set 1.2</p>
+
+								</div>
+								<div class="sidebar__support-content separate">
+									<p>If you have questions about these guidelines, <a
+											href="mailto:brandux@unum.com">send us
+											a messsage</a>.
+									</p>
+								</div>
+								<div class="sidebar__support-content">
+									<small class="sidebar__copyright">© 2019 Unum Group. All rights
+										reserved. Unum is a registered trademark and marketing brand of Unum Group
+										and its insuring subsidiaries.
+									</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9">
+						<section class="category" id="mainContent">
+							<h2>Our Brand Promise</h2>
+							<p>The Unum brand is made up of visual and written elements that communicate our
+								company’s identity and purpose. These
+								guidelines show the approved use of all the components of our brand, including
+								colors, typography, logos, icons and
 								writing style. When you’re creating content for Unum, please stay within these
-								parameters, to ensure our brand is presented consistently to the world.</p>
-
-						</section>
-
-						<hr>
-						<section class="category">
-							<h2>Purpose</h2>
-							<p class="category__description">To deliver the #1 customer experience in employee benefits.
-								More than great customer service, what guides us is the goal to create an exceptional
-								experience for everyone who interacts with our people, our products and the Unum
-								brand—at every point in their journey with us.</p>
-						</section>
-
-						<hr>
-						<section class="category">
-							<h2 id="cornerstones">Our Brand Cornerstones</h2>
-							<p class="category__description">Simplicity, empathy and expertise are at the heart of the
-								Unum brand and are what bring our brand to life. Our brand cornerstones are also at the
-								core of how we communicate to our customers—in their direct experience and in the
-								competitive marketplace. Simplicity, empathy and expertise are essential elements of our
-								brand’s personality. These traits should be inseparable from our brand.</p>
-						</section>
-
-						<hr>
-						<section class="category">
-							<h2 id="positioning">Our Positioning</h2>
-							<p class="category__description">Unum is the pioneering benefits provider that delivers
-								expertise, empathy and simplicity to help employees thrive.</p>
-						</section>
-
-						<hr>
-						<section class="category">
-							<h2 id="prologue">Past is Prologue</h2>
-							<p class="category__description">Unum has been a trusted brand in the benefits business for
-								more than 170 years. But it’s not why we’re unique. Our expertise makes us a resource of
-								unparalleled knowledge; through caring and empathetic support, we connect as human
-								beings; and, with technology and know-how, we create economies and efficiency to make
-								things simple. This enables our customers and their employees to thrive in everything
-								they do.</p>
-						</section>
-						<hr>
-						<section class="category">
-							<h2 id="updates">Updates</h2>
-							<p class="category__description">The Unum brand will evolve over time, and these guidelines
-								will be updated periodically to reflect that. Our last update occurred in <b>February
-									2019.</b></p>
-						</section>
-						<hr>
-						<section class="category">
-							<h2 id="weve-got-u">We’ve Got You Campaign</h2>
-							<p class="category__description">The We’ve Got You campaign style guide is now available for
-								use by our approved internal partners and select external vendors. To request a copy or
-								ask questions, <a href="mailto:brandux@unum.com">send us a message</a>.</p>
-						</section>
-						<hr>
-						<section class="category">
-							<h2 id="questions">Questions</h2>
-							<p class="category__description">If you have questions about these guidelines, <a
-									href="mailto:brandux@unum.com">send us a message</a>.</p>
+								parameters, to ensure our brand is
+								presented consistently to the world.
+							</p>
+							<p><a href="./changelog.html">View full change log</a></p>
+							<h2>Our Purpose</h2>
+							<p>
+								To deliver the #1 customer experience in employee benefits. More than great customer
+								service, what guides us is the goal
+								to create an exceptional experience for everyone who interacts with our people, our
+								products and the Unum brand—at every
+								point in their journey with us.
+							</p>
+							<h2>Our Brand Cornerstones</h2>
+							<p>
+								Simplicity, empathy and expertise are at the heart of the Unum brand and are what
+								bring our brand to life. Our brand
+								cornerstones are also at the core of how we communicate to our customers—in their
+								direct experience and in the
+								competitive marketplace. Simplicity, empathy and expertise are essential elements of
+								our brand’s personality. These
+								traits should be inseparable from our brand.
+							</p>
 						</section>
 					</div>
 				</div>
 			</div>
 		</main>
-		<footer class="willow-page-footer" role="contentinfo">
-			<div class="container-fluid">
-				<div class="willow-page-footer__container">
-					<div class="willow-page-footer__branding">
-						<a class="willow-logo-link" href="/unum" aria-label="go to home page">
-							<img class="willow-logo-link__image" src="images/unum-reversed-logo.svg"
-								alt="Unum Brand Guidelines logo" />
-						</a>
-					</div>
-					<div class="willow-page-footer__navigation">
-						<nav class="willow-footer-nav" role="navigation" aria-label="footer">
-							<h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
-							<ul class="willow-footer-nav__list">
-								<li class="willow-footer-nav__item">
-									<a class="willow-footer-nav__link" href="index.html" aria-label="">Brand
-										Guidelines</a>
-								</li>
-								<li class="willow-footer-nav__item">
-									<a class="willow-footer-nav__link" href="digital/logo-usage.html"
-										aria-label="">Digital</a>
-								</li>
-								<li class="willow-footer-nav__item">
-									<a class="willow-footer-nav__link" href="print/logo-usage.html"
-										aria-label="">Print</a>
-								</li>
-								<li class="willow-footer-nav__item">
-									<a class="willow-footer-nav__link" href="tone/overview.html">Voice & Tone</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<small class="willow-page-footer__copyright">© 2019 Unum Group. All rights reserved. Unum is a
-						registered trademark and marketing brand of Unum Group and its insuring subsidiaries.</small>
-				</div>
-			</div>
-		</footer>
 	</div>
 	<script src="../../scripts/site.min.js"></script>
 </body>

@@ -1,7 +1,0 @@
-&__list {
-    //border-bottom: 2px solid $color-blue;
-
-    @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
-        border-bottom: 0;
-    }
-}

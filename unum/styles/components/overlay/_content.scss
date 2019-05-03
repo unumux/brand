@@ -1,0 +1,11 @@
+&__content {
+    padding: $space;
+    padding-bottom: $space-l;
+    padding-top: $space-xxxl;
+    z-index: 1;
+
+    @media screen and (min-width: breakpoint(lg, $breakpoint-list)) {
+        padding: $space-xxl;
+        padding-bottom: $space-xl;
+    }
+}

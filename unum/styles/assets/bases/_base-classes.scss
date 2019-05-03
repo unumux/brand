@@ -17,10 +17,6 @@
     margin-top: 0;
     width: 100%;
     
-    & + & {
-        
-    }
-
     @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {        
         flex-flow: row nowrap;
     }
@@ -36,6 +32,12 @@
         width: calc(50% - 1rem);
         justify-self: space-between;
     }
+}
+
+.container-fluid {
+    margin: 0;
+    text-align: left;
+    max-width: 1300px;
 }
 
 .example {
@@ -60,7 +62,10 @@
 }
 
 .category {
-    padding-bottom: 0; //testing this atm
+    padding: $space;
+    padding-top: $space-l;
+    padding-bottom: 0;
+    margin-top: 0;
 
     .half-width {
         margin-top: 0;
@@ -77,8 +82,29 @@
     section {
         margin-top: $space-l;
     }
+
+    @media screen and (min-width: breakpoint(lg, $breakpoint-list)) {
+        padding: $space $space-xxl;
+    }
 }
 
 .subheading {
     margin-top: $space-l;
+}
+
+.separate {
+    border-bottom: 1px solid $color-neutral;
+}
+
+.overview {
+    background-color: $color-slate-lighter;
+    padding: $space $space;
+    
+    @media screen and (min-width: breakpoint(lg, $breakpoint-list)) {
+        padding: $space $space-xxl;
+    }
+}
+
+.distinct {
+    color: deeppink;
 }

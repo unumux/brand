@@ -44,12 +44,14 @@ $golden: 1.618;
 $golden-inverse: $golden - 1;
 
 $space: $spacebase; // 1.6rem
-$space-s: $space / $golden; // .95rem
-$space-xs: $space-s / $golden; // .56rem
-$space-xxs: $space-xs / $golden; // .33rem
-$space-l: $space * $golden; // 2.5rem
-$space-xl: $space-l * $golden; // 4.1rem
-$space-xxl: $space-xl * $golden; // 6.77777777777777777rem
+$space-s: $space * .5; // .8rem
+$space-xs: $space-s * .5; // .4rem
+$space-xxs: $space-xs * .5; //.2rem
+$space-l: $space * 1.5; //2.4rem
+$space-xl: $space * 2; // 32rem
+$space-xxl: $space-xl * 1.5; // 48rem
+$space-xxxl: $space-xl * 2; //64rem
+$space-xxxxl: $space-xxl * 1.5; //72rem 
 
 $component-padding: $space-xxl $space;
 $component-padding-desktop: 104px 0;

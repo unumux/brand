@@ -1,0 +1,7 @@
+&__content {
+    position: relative;
+    
+    @media screen and (min-width: breakpoint(lg, $breakpoint-list)) {
+        padding-left: $space-xs;
+    }
+}

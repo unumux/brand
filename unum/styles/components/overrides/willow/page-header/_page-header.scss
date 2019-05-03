@@ -1,6 +1,8 @@
 &-page-header {
     background-color: $color-neutral-light;
-
+    display: none;
+    
     @import "container";
     @import "branding";
+    @import "navigation";
 }

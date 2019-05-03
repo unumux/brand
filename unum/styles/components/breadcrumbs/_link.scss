@@ -1,0 +1,11 @@
+&__link {
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+        color: $color-neutral; 
+
+   }
+}

@@ -1,0 +1,8 @@
+&__container {
+    background-color: $color-slate-lighter;
+
+    @media screen and (min-width: breakpoint(lg, $breakpoint-list)) {
+        box-shadow: inset -16px 0 0 $color-neutral-darker; //sneaky fake way to get that scroll-bar looking effect on primary nav...
+        
+    }
+}

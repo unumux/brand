@@ -1,0 +1,8 @@
+&__support-content {
+    @include set-text($base-minus-1);
+    padding: $space-l;
+
+    p {
+        margin: 0;
+    }
+}

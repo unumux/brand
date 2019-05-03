@@ -2,17 +2,19 @@
     @include set-text($base-minus-1); 
     
     border: 0;
-    color: $color-dark-grey;
-    padding: $space-s 0;
+    border-left: 2px solid $color-neutral-darker;
+    color: $color-slate-darker;
+    padding: $space-s;
+    margin-left: $space-xs;
 
     &[data-link-active="true"] {
         background-color: transparent;
-        border: 0;
+        border-left: 2px solid $color-new-leaf-green-darker;
         font-weight: 600;
 
         &:focus {
             background-color: transparent;
-            color: $color-dark-grey;
+            color: $color-slate-darker;
         }
     }
 
@@ -26,6 +28,6 @@
     &:focus,
     &:visited {
         background-color: transparent;
-        color: $color-dark-grey;
+        color: $color-slate-darker;
     }
 }

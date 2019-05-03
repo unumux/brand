@@ -1,0 +1,16 @@
+&__item {
+    display: inline-block;
+    padding: $space-xs 0;
+    & + & {
+        &:before {
+            content: "/";
+            color: $color-neutral; 
+            padding: 0 $space-xs;
+            margin: 0;
+        }
+    }
+
+    &--active {
+        color: $color-white;
+    }
+}

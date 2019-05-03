@@ -1,0 +1,10 @@
+.breadcrumbs {
+    @include set-text($base-minus-1);
+    
+    color: $color-white;
+    
+    @import "heading";
+    @import "item";
+    @import "list";
+    @import "link";
+}

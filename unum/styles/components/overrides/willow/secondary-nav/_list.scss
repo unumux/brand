@@ -1,3 +1,7 @@
 &__list {
     border: 0;
+
+    @media screen and (min-width: breakpoint(lg, $breakpoint-list)) {
+        margin-top: $space-xs;
+    }
 }
