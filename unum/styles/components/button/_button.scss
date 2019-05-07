@@ -1,3 +1,9 @@
 .button {
-    
+    background-color: $white;
+    background-image: url("../images/iconography/download-icon.svg");
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px #356A95;
+    color: $color-blue;
+    padding: 8px 10px;
 }
