@@ -38,3 +38,11 @@ hr {
     margin: $space-xl 0;
     background-color: $color-light-grey;
 }
+
+a {
+    color: $color-blue;
+
+    &:hover, &:active, &:visited {
+        color: $color-blue;
+    }
+}
