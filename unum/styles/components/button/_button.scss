@@ -1,9 +1,16 @@
 .button {
     background-color: $white;
-    background-image: url("../../../../unum/images/iconography/download-icon.svg");
-    border: none;
+    background-image: url("../../../../unum/images/iconography/NEW-download-icon.svg");
+    background-position: center right $space;
+    background-repeat: no-repeat;
+    border: 2px solid transparent;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px -8px #356A95; // this is bottom only, removing the last value and resetting the other two from XD gets you regular...
+    box-shadow: 0px 4px 8px rgba(53, 106, 149, 0.4);
     color: $color-blue;
-    padding: 8px 10px;
+    padding: $space-s $space-xxl $space-s $space;
+    text-decoration: none;
+
+    &:hover {
+        border: 2px solid #B9D4E9;
+    }
 }

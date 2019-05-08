@@ -1,15 +1,11 @@
 .example-container {
     border: 2px solid #B9D4E9;
     border-radius: 8px;
-    padding: 20px;
+    padding: $space;
     text-align: center;
 
     &--light {
         border-color: transparent;
         background-color: $color-blue;
-    }
-
-    & + & {
-        margin-left: 10px;
     }
 }
