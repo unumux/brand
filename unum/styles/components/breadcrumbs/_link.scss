@@ -1,11 +1,16 @@
+
 &__link {
     text-decoration: none;
+    color: $color-neutral; 
 
     &:hover,
     &:active,
     &:focus,
     &:visited {
         color: $color-neutral; 
+    }
 
-   }
+    &:hover {
+        text-decoration: underline;
+    }
 }

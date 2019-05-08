@@ -101,10 +101,10 @@
     padding: $space $space;
     
     @media screen and (min-width: breakpoint(lg, $breakpoint-list)) {
-        padding: $space $space-xxl;
+        padding: $space $space-xxl $space-xl;
     }
 }
 
-.distinct {
-    color: deeppink;
+a.primary-nav__link.distinct {
+    color: $color-pool;
 }
