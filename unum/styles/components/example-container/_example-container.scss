@@ -65,7 +65,7 @@
         }
 
         &:not(:first-of-type) {
-            margin-left: $space;
+            // margin-left: $space-s;
         }
     }
 
@@ -74,7 +74,7 @@
         background-color: $color-blue;
         
         @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
-            margin-left: $space;
+            // margin-left: $space;
         }
     }
 
@@ -84,8 +84,14 @@
 }
 
 .logo-image {
-
     @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
         width: 100%;
+    }
+}
+
+// this is horrible and i'm sorry
+.logo-help {
+    @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
+        margin-left: $space-s;
     }
 }
