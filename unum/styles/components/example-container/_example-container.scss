@@ -1,11 +1,91 @@
 .example-container {
-    border: 2px solid #B9D4E9;
+    border: 2px solid #dfe7ec;
     border-radius: 8px;
     padding: $space;
     text-align: center;
 
+    @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
+        margin-bottom: 0;
+    }
+
+    &__columns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
+            padding: 0 $space;
+            flex-basis: 50%;
+            display: initial;
+        }
+    }
+
+    &__column1 {
+        flex-basis: 30%;
+        padding-left: $space;
+
+        @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
+            // flex-basis: unset;
+            padding-left: 0;
+            flex-basis: 50%;
+        }
+    }
+
+    &__column2 {
+        flex-basis: 70%;
+        text-align: center;
+
+        @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
+            // flex-basis: unset;
+            flex-basis: 50%;
+        }
+    }
+
+    &__subheading {
+        color: $color-blue;
+    }
+
+    &__description {
+        font-size: 13px;
+        margin-top: $space-xs;
+    }
+    
+    & + & {
+        @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
+            margin-left: $space;
+            background-color: red !important;
+        }
+    }
+
+    &--color {
+        margin-bottom: $space;
+
+        @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
+            margin-bottom: 0;
+        }
+
+        &:not(:first-of-type) {
+            margin-left: $space;
+        }
+    }
+
     &--light {
         border-color: transparent;
         background-color: $color-blue;
+        
+        @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
+            margin-left: $space;
+        }
+    }
+
+    &--spacing {
+        text-align: left;
+    }
+}
+
+.logo-image {
+
+    @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
+        width: 100%;
     }
 }
