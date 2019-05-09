@@ -1,5 +1,6 @@
 .info-banner {
-    background-color: #F6F8FA;
+    background-color: #F6F8FA; // color requested in design
+    background-color: $color-slate-lighter; // to match "overview" and nav backgrounds that all match in design just w a slightly different color
     background-image: url("../../../../unum/images/iconography/NEW-info-icon.svg");
     background-repeat: no-repeat;
     background-position: left 1.6rem center;
