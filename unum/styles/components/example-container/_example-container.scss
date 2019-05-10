@@ -84,8 +84,10 @@
 }
 
 .logo-image {
+    width: 100%;
+    
     @media screen and (min-width: breakpoint(sm, $breakpoint-list)) {
-        width: 100%;
+        width: auto;
     }
 }
 
