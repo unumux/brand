@@ -1,0 +1,27 @@
+.type {
+    margin-top: $space-xs;
+    
+    @include set-text($base-minus-1);
+
+    &__weight {
+        &--light {
+            font-weight: 200;
+        }
+
+        &--semibold {
+            font-weight: 500;
+        }
+
+        &--bold {
+            font-weight: 600;
+        }
+
+        &--italics {
+            font-style: italic;
+        }
+    }
+
+    &__weight + &__weight {
+        margin-left: $space-s;
+    }
+}
