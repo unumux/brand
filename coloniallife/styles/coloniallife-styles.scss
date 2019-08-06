@@ -27,6 +27,15 @@ $text-style-heading-3: (
     weight: 600
 );
 
+$text-style-heading-4: ( 
+    family: $font-family-secondary, 
+    desktop-size: 1.8rem, 
+    desktop-line-height: line-height($font-size-xl), 
+    mobile-size: 1.6rem, 
+    mobile-line-height: line-height($font-size-l), 
+    weight: 600
+);
+
 @import "../../node_modules/@unumux/willow/styles";
 
 @import "../../styles/shared-components/shared-components";
