@@ -9,7 +9,7 @@
         "imagemin-cli": "^3.0.0",
         "imagemin-pngquant": "6.0.0",
         "imagemin-svgo": "^7.0.0",
-        "marked": "^0.4.0",
+        "marked": "^4.0.10",
         "uglify-js": "^3.4.6"
     },
     "scripts": {
